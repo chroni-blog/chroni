@@ -1,11 +1,12 @@
 # Site wide configuration
 
-title: Skinny Bones
-description: "A lightweight site starter for Jekyll"
+title: chroni - this is our Chronicle! 
+description: "Chronicle, Blog and Daily Hacks"
 logo: 120x120.gif
 teaser: 400x250.gif
 locale: en_US
-url: //mmistakes.github.io/skinny-bones-jekyll
+url: http://chroni-blog.github.io/chroni/
+url: http://chroni.de
 
 # Jekyll configuration
 
@@ -20,18 +21,15 @@ gems:
 
 
 # Site owner
-owner:
-  name: Michael Rose
-  web: http://mademistakes.com
-  email: michael@mademistakes.com
-  twitter: mmistakes
-  bio: "Just another boring, tattooed, time traveling designer."
-  avatar: bio-photo.jpg # 160x160 px image for author byline
-  google:
-    plus: +MichaelRoseDesign
-    ad-client: ca-pub-7328585512091257
-    ad-slot: 3049671934
-  disqus-shortname:
+owner: Toni und Christian
+name: Admin
+web: http://chroni.de
+email: mail@chroni.de
+twitter: 
+bio: 
+avatar: bio-photo.jpg # 160x160 px image for author byline
+google:
+plus: 
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]

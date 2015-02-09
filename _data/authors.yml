@@ -1,20 +1,18 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
+Toni Fetzer:
+  name: Toni Fetzer
+  web: http://toni-fetzer.de
+  email: mail@chroni.de
+  bio: "No, I will not fix your computer."
   avatar: bio-photo.jpg
-  twitter: extravagantman
   google:
-    plus: +BillyRick
 
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
+
+Christian Petry:
+  name: Christian Petry
+  web: http://petry-christian.de
+  email: mail@chroni.de
+  bio: "Still giving Goku my power!"
   avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
   google:
-    plus: +CorneliusFiddlebone
