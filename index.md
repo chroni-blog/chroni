@@ -19,7 +19,7 @@ image:
 
 <div class="tile">
   <h2 class="post-title">Customizable</h2>
-  <p class="post-excerpt">Packed with layouts and modules. Include Disqus comments, social sharing buttons, and table of contents on one or all pages.</p>
+  <p class="post-excerpt">Test das ist ein Test.</p>
 </div><!-- /.tile -->
 
 <div class="tile">
