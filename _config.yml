@@ -11,8 +11,8 @@ url: http://chroni-blog.github.io/chroni
 # Jekyll configuration
 
 sass:
-    sass_dir: _sass
-    style: compressed
+sass_dir: _sass
+style: compressed
 permalink: /:categories/:title/
 markdown: kramdown
 highlighter: pygments
@@ -21,15 +21,15 @@ gems:
 
 
 # Site owner
-owner: Christian and Toni
-  name: 
-  email: mail@chroni.de
-  twitter:
-  google:
-    ad-client: 
-    ad-slot: 
-  bio: 
-  avatar: bio-photo.jpg # 160x160 px image for author byline
+owner: 
+name: 
+email: 
+twitter:
+google:
+ad-client: 
+ad-slot: 
+bio: 
+avatar: bio-photo.jpg # 160x160 px image for author byline
 disqus-shortname:
 
 
