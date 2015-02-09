@@ -1,11 +1,12 @@
 # Site wide configuration
 
-title:
-description:
+title: chroni - this is our Chronicle! 
+description: Chronicle, Blog and Daily Hacks
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale:
-url:
+url: http://chroni.de
+url: http://chroni-blog.github.io/chroni
 
 # Jekyll configuration
 
@@ -20,9 +21,9 @@ gems:
 
 
 # Site owner
-owner:
+owner: Christian & Toni
   name:
-  email:
+  email: mail@chroni.de
   twitter:
   google:
     ad-client: 
