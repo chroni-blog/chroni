@@ -148,6 +148,7 @@
 		}
 		@include media($large) {
 			margin-left: 50px;
+			width: 100%;
 		}	
 
 	}
@@ -156,7 +157,7 @@
 			@include row($direction: RTL);
 		}
 		@include media($large) {
-			@include span-columns(1 of 12);
+			@include span-columns(2 of 12);
 		}
 	}
 	.page-title {
@@ -170,7 +171,7 @@
 				//@include span-columns(7 of 9);
 			}
 			@include media($large) {
-				@include span-columns(11 of 12);
+				@include span-columns(10 of 12);
 				float: left;
 			}
 			// larger font for intro paragraph
