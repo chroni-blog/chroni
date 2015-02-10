@@ -6,7 +6,7 @@ modified:
 excerpt: "A collection of thoughts, inspiration, mistakes, and other minutia."
 tags: []
 image:
-  feature: wood-texture-1600x800.jpg
+  feature: book.jpg
   teaser:
 ---
 
