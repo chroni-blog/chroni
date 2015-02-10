@@ -173,8 +173,6 @@
 					@include font-size(20,yes,30);
 				}
 				text-align:justify;
-				margin-left: 50px;
-				width: 100%;
 			}
 			// cleaner underlines for links
 			a { text-decoration: none; }
@@ -199,6 +197,9 @@
 					color: lighten($black,60);
 				}
 			}
+			
+			margin-left: 50px;
+			width: 100%;
 		}
 	}
 	@at-root {
