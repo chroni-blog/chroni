@@ -160,6 +160,10 @@
 	}
 	@at-root {
 		.page-content {
+					
+			margin-left: 50px;
+			width: 100%;
+			
 			@include media($medium) {
 				@include row($direction: RTL);
 				//@include span-columns(7 of 9);
@@ -197,9 +201,6 @@
 					color: lighten($black,60);
 				}
 			}
-			
-			margin-left: 50px;
-			width: 100%;
 		}
 	}
 	@at-root {
