@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Terms & Conditions"
+title: "Impressum"
 modified: 2014-08-27T15:00:35-04:00
 excerpt: "Terms & conditions, privacy policy, license, and other legal stuff you won’t read."
 image:
@@ -11,7 +11,15 @@ share: false
 toc: true
 ---
 
-All content provided is for informational purposes only. The articles and posts on this website are my own and don't necessarily represent the positions, strategies, or opinions of my employer or its subsidiaries. I make no representations as to the accuracy or completeness of any information found here or by following any links. I will not be liable for any errors or omissions in this information nor for the availability of this information. I will not be liable for any losses, injuries, or damages from the display or use of this information.
+Toni Fetzer
+Münzstraße 4
+97070 Würzburg
+toni@chroni.de
+[www.toni-fetzer.de](www.toni-fetzer.de)
+
+Christian Petry
+christian@chroni.de
+[www.petry-christian.de](www.petry-christian.de)
 
 ## Privacy Policy
 
@@ -69,6 +77,20 @@ What this means for you:
 
 Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page.
 
-## License
+## Bild- und Textrechte
 
-This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+Falls nicht anders angegeben, unterliegen alle Bilder sowie Texte dieser Chronik der [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) Lizenz. Ihr dürft damit also alles machen was ihr wollt, solange eine angemessene Namensnennung stattfindet. Verfasser eines Artikels ist auch Urheber der Grafik.
+
+**"Autor es Artikels" / www.chroni.de / CC-BY 4.0**
+
+![](https://licensebuttons.net/l/by/4.0/88x31.png)
+
+## Fremde Bildrechte
+Neben unseren eigenen Grafiken und Texten kommt es auch mal vor, dass wir uns bei anderen Bloggern, Autoren, Fotografen und Designer bedienen. Diesen sind folgende Zeilen und Erwähnungen gewidmnet: 
+
+######Das Banner auf /home
+Vielen Dank [Markus Spiske](http://www.temporausch.com) für dieses grandiose Bild und deine tolle 'Free for commercial use' Initiative auf [raumrot.com](raumrot.com). Wir hoffen das du noch viele weitere Fotografen und Designer animierst und ein Vorbild bist. 
+
+Hipster Desktop Office / Markus Spiske / www.temporausch.com / CC-BY 2.0 
+
+![](https://licensebuttons.net/l/by/4.0/88x31.png)
