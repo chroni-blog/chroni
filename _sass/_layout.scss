@@ -191,7 +191,7 @@
 			}
 			.page-meta {
 				p{
-					@include font-size(18,no);
+					@include font-size(14,no);
 					font-family: $alt-font;
 					color: lighten($black,60);
 				}
@@ -204,6 +204,8 @@
 			.page-content {
 				@include reset-all;
 				@include fill-parent;
+				text-align: justify;
+				margin-left: 50px;
 			}
 		}
 	}
