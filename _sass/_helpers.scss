@@ -52,7 +52,7 @@
   margin-right: auto;
   @include media($medium) {
     float: right;
-    margin-left: $gutter;
+    margin-left: $gutter + 50px;
   }
 }
 
