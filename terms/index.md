@@ -11,86 +11,65 @@ share: false
 toc: true
 ---
 
-Toni Fetzer
-Münzstraße 4
-97070 Würzburg
-toni@chroni.de
-[www.toni-fetzer.de](www.toni-fetzer.de)
+Toni Fetzer **/**
+Münzstraße 4 **/**
+97070 Würzburg **/**
+toni@chroni.de **/**
+[www.toni-fetzer.de](www.toni-fetzer.de) **/**
 
-Christian Petry
-christian@chroni.de
-[www.petry-christian.de](www.petry-christian.de)
+Christian Petry **/**
+St. Nepomuk-Straße 2a **/**
+97218 Gerbrunn **/**
+christian@chroni.de **/**
+[www.petry-christian.de](www.petry-christian.de) **/**
 
-## Privacy Policy
+## Datenschutz
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+Die Privatsphäre unserer Leser liegt uns sehr am Herzen. Durch beinahe tägliche Enthüllungen über massive Verstöße gegen das Datenschutzrecht, sehen wir es als Pflicht eine möglichst genaue Auskunft zu geben. 
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+Zu allererst sei angemerkt, dass wir niemals und zu keinem Zeitpunkt eure E-Mail Adressen teilen oder an Dritte weitergeben würden. Eure E-Mail Adressen bekommen wir zum einen über von euch gesendete Mails sowie den von uns eingesetzten Online-Dienst [Disqus](https://disqus.com) für die jeweiligen Kommentare unter den Artikeln. 
 
-### Log Files
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+### Logfiles
 
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
+Wie viele anderen Seiten, nutzen auch wir sog. Logfiles um etwas über das Verhalten unsere Nutzer herauszufinden. Im Grunde stellen wir folgende Fragen: Wann? Von Wo? Wie oft? 
 
-All of this information is not linked to anything that is personally identifiable.
+Das Logfile besteht also aus folgenden Informationen:
 
-### Cookies and Web Beacons
+* Datum / Uhrzeit
+* Die abgerufene Seite
+* Statuscode des Webservers
+* Browser/Betriebssystem
+* Referrer und Exit Page
 
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
+Die IP-Adresse, von der aus die Seite abgerufen wurde, speichern wir nicht. Somit können wir keinerlei Rückschlüsse auf die eure Identität schließen. Außerdem widersprechen wir der Weitergabe jeglicher Daten an Dritte. 
 
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+Wer sich etwas genauer mit dem Schutz seiner Daten im Internet auseinander setzen möchte, seien die Organisation ['Electronic Frontier Foundation'](https://www.eff.org/de/wp/effs-top-12-ways-protect-your-online-privacy) sowie der hierzulande agierende [Chaos Computer Club](www.ccc.de) nahegelegt.
 
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
 
-#### Amazon
+### Cookies 
 
-Amazon, a third party affiliate marketing network, uses cookies to help make sure I get a commission when you buy a product after clicking on a link or ad banner that takes you to the site of one of their merchants. You can read [Amazon's Privacy Policy](http://www.amazon.com/gp/help/customer/display.html?nodeId=468496).
+Falls ihr euch für die Optionen "Log in faster to [Disqus](http://disqus.com)" entscheidet,  werden sog. "convenience" Cookies auf eurem Computer gespeichert. Diese führen dazu, das ihr bei einem erneuten Besuchen der Seite automatisch mit eurem für Disques verwendeten Account eingeloggt werdet.
 
-#### Google Adsense
+Falls Ihr das **nicht** möchtet, empfehlen wir euch das Deaktivieren der Cookies im Browser. Anleitungen hierfür können leicht über eine Suchmaschine eurer Wahl gefunden werden. Außerdem gibt es viele tolle Browser Erweiterungen/Addons die Werbung blockieren, Skripte stoppen oder diverse Tracker deaktivieren. 
 
-Google Adsense, a third party affiliate marketing network, uses cookies to help make sure I get a commission when you buy a product after clicking on a link or ad banner that takes you to the site of one of their merchants. You can read [Google Adsense Privacy Policy](http://support.google.com/adsense/bin/answer.py?hl=en&answer=48182).
 
 #### Google Analytics
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+Google Analytics ist ein Analyse Werkzeug, das uns dabei hilft, unsere Nutzer ein wenig zu verstehen. Genau hier werden die initial besprochenen Fragen: Wo? Wann? Wie oft? beantwortet. Hierbei wird zu keinem Zeitpunkt eine Identifikation vorgenommen. Was Google Inc. ganz am Ende mit diesen Informationen macht, mag keiner so richtig wissen. Da aber auch Google Analytics mit Hilfe von Cookies und sog. Beacons arbeitet, können diese über die bereits erwähnten Browsereinstellungen deaktiviert werden. Für mehr Informationen über das was Google Inc. da macht empfehlen wir die [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
 
-## Disclosure Policy
-
-I make money on this website through affiliate programs. If you click an affiliate link or ad banner and buy the product, you help support this website because I'll get a percentage of that sale.
-
-Currently I'm an affiliate for Amazon and Google Adsense.
-
-What this means for you:
-
-* I do not and will not recommend a product just because I'm an affiliate.
-* I became an affiliate to earn some revenue towards the costs of running and maintaining this website. Where I have direct control over which ads are served on this website I offer only products that are directly related to the topic of this website and products that a reader/subscriber would have a genuine interest in or need of.
-* I do not recommend products just for the sake of making money.
-* I recommend products because I think they are valuable to my readers.
-* I do not let the compensation I receive influence the content, topics, posts, or opinions expressed on this website.
-* I respect and value my readers too much to write anything other than my own genuine and objective opinions and advice.
-
-Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page.
 
 ## Bild- und Textrechte
 
 Falls nicht anders angegeben, unterliegen alle Bilder sowie Texte dieser Chronik der [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) Lizenz. Ihr dürft damit also alles machen was ihr wollt, solange eine angemessene Namensnennung stattfindet. Verfasser eines Artikels ist auch Urheber der Grafik.
 
-**"Autor es Artikels" / www.chroni.de / CC-BY 4.0**
+**"Autor des Artikels" / www.chroni.de / CC-BY 4.0**
 
-![](https://licensebuttons.net/l/by/4.0/88x31.png)
 
 ## Fremde Bildrechte
-Neben unseren eigenen Grafiken und Texten kommt es auch mal vor, dass wir uns bei anderen Bloggern, Autoren, Fotografen und Designer bedienen. Diesen sind folgende Zeilen und Erwähnungen gewidmnet: 
+Neben unseren eigenen Grafiken und Texten kommt es auch mal vor, dass wir uns bei anderen Bloggern, Autoren, Fotografen und Designer bedienen. Diesen sind folgende Zeilen und Erwähnungen gewidmet: 
 
 ######Das Banner auf /home
 Vielen Dank [Markus Spiske](http://www.temporausch.com) für dieses grandiose Bild und deine tolle 'Free for commercial use' Initiative auf [raumrot.com](raumrot.com). Wir hoffen das du noch viele weitere Fotografen und Designer animierst und ein Vorbild bist. 
 
-Hipster Desktop Office / Markus Spiske / www.temporausch.com / CC-BY 2.0 
-
-![](https://licensebuttons.net/l/by/4.0/88x31.png)
+Hipster Desktop Office / Markus Spiske / www.temporausch.com / [CC-BY 2.0](https://creativecommons.org/licenses/by/2.0/de/legalcode) 
