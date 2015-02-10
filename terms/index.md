@@ -10,18 +10,19 @@ image:
 share: false
 toc: true
 ---
+## Kontakt
 
 Toni Fetzer **/**
-Münzstraße 4 **/**
+Münzstr. 4 **/**
 97070 Würzburg **/**
 toni@chroni.de **/**
-[www.toni-fetzer.de](www.toni-fetzer.de) **/**
+[www.toni-fetzer.de](http://www.toni-fetzer.de) **/**
 
 Christian Petry **/**
-St. Nepomuk-Straße 2a **/**
+St. Nepomuk-Str. 2a **/**
 97218 Gerbrunn **/**
 christian@chroni.de **/**
-[www.petry-christian.de](www.petry-christian.de) **/**
+[www.petry-christian.de](http://www.petry-christian.de) **/**
 
 ## Datenschutz
 
@@ -44,7 +45,7 @@ Das Logfile besteht also aus folgenden Informationen:
 
 Die IP-Adresse, von der aus die Seite abgerufen wurde, speichern wir nicht. Somit können wir keinerlei Rückschlüsse auf die eure Identität schließen. Außerdem widersprechen wir der Weitergabe jeglicher Daten an Dritte. 
 
-Wer sich etwas genauer mit dem Schutz seiner Daten im Internet auseinander setzen möchte, seien die Organisation ['Electronic Frontier Foundation'](https://www.eff.org/de/wp/effs-top-12-ways-protect-your-online-privacy) sowie der hierzulande agierende [Chaos Computer Club](www.ccc.de) nahegelegt.
+Wer sich etwas genauer mit dem Schutz seiner Daten im Internet auseinander setzen möchte, seien die Organisation ['Electronic Frontier Foundation'](https://www.eff.org/de/wp/effs-top-12-ways-protect-your-online-privacy) sowie der hierzulande agierende [Chaos Computer Club](https://www.ccc.de) nahegelegt.
 
 
 ### Cookies 
