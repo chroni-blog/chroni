@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Syntax High Test"
+title: "Syntax HighQQQ Test"
 modified:
 categories: articles
 excerpt: "Demo post to test the various ways of using syntax highlighting."
