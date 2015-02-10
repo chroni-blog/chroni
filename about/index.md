@@ -12,6 +12,12 @@ share: false
 ads: false
 ---
 
-This is a work in progress.
+###Was ist Chroni?
 
-Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
+Chroni ist unsere Vorstellung eines Blogs oder besser gesagt: einer Chronik. Einer Chronik über all das, was uns interessiert und beschäftigt. Neben Projekten, diversen Hacks und Code wollen wir komplexe Probleme der Informatik grafisch und inhaltich ansprechend an den Leser bringen. 
+
+###Wer ist Chroni?
+
+Toni Fetzer
+
+Christian Petry
