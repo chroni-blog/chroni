@@ -146,6 +146,8 @@
 		@include media($medium) {
 			@include span-columns(9);
 		}
+		margin-left: 50px;
+		width: 100%;
 	}
 	.toc {
 		@include media($medium) {
