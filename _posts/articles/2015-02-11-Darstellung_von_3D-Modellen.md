@@ -8,7 +8,8 @@ toc: true
 comments: true
 author: Christian
 excerpt: "Wie werden 3D-Modelle auf einem Display dargestellt? Eine kurze Einführung in die Computergrafik."
-image: /images/NormalMap/Darstellung_von_3D_Modellen_Vorschau.jpg
+image:
+  feature: NormalMap/Darstellung_von_3D_Modellen_Vorschau.jpg
 ---
 
 <!-- Kurzbeschreibung -->
