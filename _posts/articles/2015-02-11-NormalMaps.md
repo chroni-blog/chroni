@@ -11,13 +11,11 @@ ads: true
 
 Das sind Bilddateien mit Oberflächeninformationen.
 
-# Was sind NormalMaps? 
-
-## Heading 2: Wie genau wird ein 3D-Modell am PC dargestellt? 
+# Wie werden 3D-Modelle am PC dargestellt?
 
 <figure>
 	<img src="{{ site.url }}/images/NormalMap/stone_and_displ_and_ao.jpg">
-	<figcaption>Image caption.</figcaption>
+	<figcaption>Beispielmodell: Ein Turm.</figcaption>
 </figure>
 
 ### Body text
