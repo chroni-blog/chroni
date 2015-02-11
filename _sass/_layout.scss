@@ -397,7 +397,7 @@
 .author-content {
 	word-wrap: break-word;
 	padding-left: 100px; //avatar width + 20px padding
-	min-height: 80px; //mirrors avatar height
+	min-height: 100px; //mirrors avatar height
 }
 .author-name {
 	@include font-size(20,no);
