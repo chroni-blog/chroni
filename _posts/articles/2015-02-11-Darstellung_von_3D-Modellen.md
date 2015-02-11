@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Darstellung von 3D-Modellen"
-categories: articles, Computergrafik
+categories: articles
 modified: 2015-02-11
 tags: [rendern]
 toc: true
