@@ -13,14 +13,13 @@ image:
   teaser: Darstellung_von_3D_Modellen/Vorschau.jpg
 ---
 
-Computergrafik verfolgt uns in jeden Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm:  
-Doch wieso sieht das Auto in der Werbung so real im Vergleich zu den Autos in Computerspielen?  Gut, diese werden auch immer besser, aber dennoch gibt es große Unterschiede.
+Computergrafik verfolgt uns in jedem Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm. Doch wieso sieht das Auto in der Werbung so real aus? Wieso sehen Autos in Computerspielen nicht genauso gut aus? Wo liegen die Unterschiede?
 
-Als aller erstes schauen wir uns an was ein 3D-Modell ist und was man alles machen kann um dieses hübsch aussehen zu lassen.
+Als aller erstes schauen wir uns an was woraus so ein Modell besteht.
 
 ## **Die Grundstruktur**: Aus was bestehen 3D-Modelle?
 
-Meist[^footnote] besteht ein Modell aus lauter kleinen Dreiecken, **Polygonen**. Jedes Polygon hat zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die andere nicht. Die **Normale**, also das Lot auf die Fläche des Polygons, zeigt uns die Richtung aus der das Polygon sichtbar ist.
+Meist[^footnote] besteht ein Modell aus lauter kleinen Dreiecken, **Polygonen**. Jedes Polygon hat zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die andere nicht. Das Lot auf der Fläche des Polygons, die **Normale**, zeigt uns die Richtung aus der das Polygon sichtbar ist.
 
 [^footnote]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
 
