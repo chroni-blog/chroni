@@ -9,8 +9,8 @@ tags: [rendern]
 toc: true
 comments: true
 image:
-  feature: Darstellung_von_3D_Modellen/Vorschau.jpg
-  teaser:
+  feature: 
+  teaser: Darstellung_von_3D_Modellen/Vorschau.jpg
 ---
 
 <!-- Kurzbeschreibung -->
@@ -26,7 +26,7 @@ Als aller erstes schauen wir uns an was ein 3D-Modell ist und was man alles mach
 ## Aus was bestehen 3D-Modelle?
 
 <figure>
-	<img src="{{ site.url }}/images/NormalMap/stone_and_displ_and_ao.jpg">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg">
 	<figcaption>Beispielmodell: Ein Turm.</figcaption>
 </figure>
 
