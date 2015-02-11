@@ -360,7 +360,6 @@
 			top: 0;
 			left: 0;
 			background: rgba($base-color,0);
-			box-shadow: 0px 0px 20px 2px black;
 			pointer-events: none;
 			@include transition(background 0.3s);
 		}
