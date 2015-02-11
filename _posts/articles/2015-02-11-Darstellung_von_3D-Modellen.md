@@ -1,15 +1,16 @@
 ---
 layout: article
 title: "Darstellung von 3D-Modellen"
+date: 2015-02-11
+author: Christian
 categories: articles
-modified: 2015-02-11
+excerpt: "Wie werden 3D-Modelle auf einem Display dargestellt? Eine kurze Einführung in die Computergrafik."
 tags: [rendern]
 toc: true
 comments: true
-author: Christian
-excerpt: "Wie werden 3D-Modelle auf einem Display dargestellt? Eine kurze Einführung in die Computergrafik."
 image:
-  feature: NormalMap/Darstellung_von_3D_Modellen_Vorschau.jpg
+  feature: Darstellung_von_3D_Modellen/Vorschau.jpg
+  teaser:
 ---
 
 <!-- Kurzbeschreibung -->
