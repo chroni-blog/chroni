@@ -13,10 +13,6 @@ image:
   teaser: Darstellung_von_3D_Modellen/Vorschau.jpg
 ---
 
-<!-- Kurzbeschreibung -->
-Wie werden 3D-Modelle auf einem Display dargestellt? Eine kurze Einführung in die Computergrafik.
-<!-- Kurzbeschreibung ENDE -->
-
 In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm: Computergrafik verfolgt uns in jeden Bereich der mit Technik zu tun hat. Doch wieso sieht das Auto in der Werbung so real im Vergleich zu den Autos in Computerspielen?  Gut, diese werden auch immer besser, aber dennoch gibt es große Unterschiede.
 
 Was ist das eigentlich, dieses "rendern"?
