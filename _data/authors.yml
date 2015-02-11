@@ -5,7 +5,7 @@ Toni:
   web: http://toni-fetzer.de
   email: toni@chroni.de
   bio: "No, I will not fix your computer."
-  avatar: {{ site.url }}/images/Toni.png
+  avatar: http://chroni.de/images/Toni.png
 
 
 Christian:
@@ -13,4 +13,3 @@ Christian:
   web: http://petry-christian.de
   email: christian@chroni.de
   bio: "Still giving Goku my power!"
-  avatar: {{ site.url }}/images/Christian.jpg
