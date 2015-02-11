@@ -1,18 +1,16 @@
 # Authors
 
-Toni Fetzer:
+Toni:
   name: Toni Fetzer
   web: http://toni-fetzer.de
-  email: mail@chroni.de
+  email: toni@chroni.de
   bio: "No, I will not fix your computer."
-  avatar: bio-photo.jpg
-  google:
+  avatar: {{ site.url }}/images/Toni.png
 
 
-Christian Petry:
+Christian:
   name: Christian Petry
   web: http://petry-christian.de
-  email: mail@chroni.de
+  email: christian@chroni.de
   bio: "Still giving Goku my power!"
-  avatar: bio-photo.jpg
-  google:
+  avatar: {{ site.url }}/images/Christian.jpg
