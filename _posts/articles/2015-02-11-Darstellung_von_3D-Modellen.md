@@ -6,7 +6,7 @@ modified: 2015-02-11
 tags: [rendern]
 toc: true
 comments: true
-authoer: Christian
+author: Christian
 excerpt: "Wie werden 3D-Modelle auf einem Display dargestellt? Eine kurze Einführung in die Computergrafik."
 image: /images/NormalMap/Darstellung_von_3D_Modellen_Vorschau.jpg
 ---
