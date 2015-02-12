@@ -23,12 +23,13 @@ Meist[^footnote] besteht ein Modell aus lauter kleinen Dreiecken, **Polygonen**.
 
 [^footnote]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
 
-Wenn man mehrere Polygone verbindet, entsteht ein Netz - auch **Mesh** genannt - was die Basis eines Modells darstellt. Natürlich muss man nicht händisch all diese Polygone verbinden. Man kann relativ schnell aus Formen wie Würfeln, Kugeln, Ringe oder sonstigen Grundstrukturen erstellen.
-
 <figure>
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg">
-	<figcaption>Hier muss noch ein anderes Bild rein :).</figcaption>
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon.gif">
+	<figcaption>Ein Polygon.
+	Hier dargestellt mit Vertices (rot) und Edges/Kanten (hellblau). (</figcaption>
 </figure>
+
+Wenn man mehrere Polygone verbindet, entsteht ein Netz - auch **Mesh** genannt. Das stellt die Basis eines Modells dar. Natürlich muss man nicht händisch all diese Polygone verbinden. Man kann relativ schnell aus Formen wie Würfeln, Kugeln, Ringe oder sonstigen Grundstrukturen erstellen.
 
 ## **Texturen**: Die Wandfarbe der Modelle?
 
