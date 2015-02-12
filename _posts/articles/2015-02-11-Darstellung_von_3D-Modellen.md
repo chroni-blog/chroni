@@ -77,13 +77,14 @@ So wenig Polygone wie möglich, so viele wie nötig.
 
 Es reichen vielleicht sogar schon sehr grobe Strukturen. In diesem Fall ist in das Fenster nur ein kleines Loch mit einem Steinbogen drum herum. Durch den Schatten und die Perspektive fällt das auch gar nicht auf.
 
+<!--
 <figure>
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline_lathe.gif">
 	<figcaption>
 		Ein Rotationskörper aus einem Spline und der Lathe Funktion (Drehverfahren)
 	</figcaption>
 </figure>
-
+-->
 Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und durch die **Lathe**-Funktion (Drehverfahren) einen Rotationskörper daraus erstellt. Ein Spline ist ein Konstrukt aus Linien, Kurven und Ankerpunkten. Damit kann man grobe Umrisse und Formen zweidimensional vorzeichnen. Die Lathe-Funktion erstellt dann ein Mesh durch Rotation um eine beliebige Achse im Raum.
 
 Sobald die grobe Form festliegt geht es an die Details. Noch fehlen die Zinnen und das Fenster des Turms. Mit der **Extrude**-Funktion lassen sich Polygone "herausziehen" oder "hereinschieben". Eine sehr praktische Möglichkeit um mehr Details zu erzeugen. 
