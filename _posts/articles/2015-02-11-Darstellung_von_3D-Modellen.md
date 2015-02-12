@@ -26,7 +26,8 @@ Meist[^footnote] besteht ein Modell aus lauter kleinen Dreiecken, **Polygonen**.
 <figure>
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon.gif">
 	<figcaption>Ein Polygon.
-	Hier dargestellt mit Vertices (rot) und Edges/Kanten (hellblau). (</figcaption>
+	Hier dargestellt mit Vertices (rot) und Edges/Kanten (hellblau).
+	</figcaption>
 </figure>
 
 Wenn man mehrere Polygone verbindet, entsteht ein Netz - auch **Mesh** genannt. Das stellt die Basis eines Modells dar. Natürlich muss man nicht händisch all diese Polygone verbinden. Man kann relativ schnell aus Formen wie Würfeln, Kugeln, Ringe oder sonstigen Grundstrukturen erstellen.
