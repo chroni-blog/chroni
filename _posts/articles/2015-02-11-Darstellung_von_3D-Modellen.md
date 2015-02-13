@@ -36,7 +36,7 @@ Meist[^footnote] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - a
 
 [^footnote]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
 
-<figure>
+<figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon.gif">
 	<figcaption>Ein Polygon.
 	Hier dargestellt mit Vertices (rot) und Edges/Kanten (blau).
@@ -52,7 +52,7 @@ Wieso etwas zeichnen/berechnen was man nicht braucht?
 
 Polygone werden bei vielen Objekten nur für die Außenhülle berechnet, nicht das innere (sieht man ja eh nicht). Falls ein Polygon "falsch gepolt" wäre, also die Normale nach innen zeigen würde, fällt das sofort auf. An der Stelle wäre nämlich ein Loch und man kann dort durch das Objekt durchsehen. Natürlich ist das bei Glas oder anderen transparenten Gegenständen anders, im Regelfall aber spart man sich dadurch eine Menge Rechenleistung. Das leuchtet sicher noch mehr ein wenn man einen Schritt weiter geht.
 
-<figure>
+<figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/hemisphere.gif">
 	<figcaption>Eine sehr simple halbe Kugel aus wenigen Polygonen. 
 	</figcaption>
@@ -63,12 +63,16 @@ Wenn man mehrere Polygone verbindet, entsteht ein Netz - auch **Mesh** genannt. 
 Es gibt eine Vielzahl von Techniken und Möglichkeiten wie man von Grundformen zu Modellen kommt. Je nach Modell beginnt man auf eine andere Weise.
 {: .notice-info}
 
-<figure>
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline_lathe.gif">
+
+## Erstellen eines Meshes
+<figure class="half" style="text-align: center">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_below.jpg">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_top.jpg">
 	<figcaption>
-		Ein Rotationskörper aus einem Spline und der Lathe Funktion (Drehverfahren)
+		Je nach Distanz, Blickwinkel und Verwendungszweck variiert der nötige Detailgrad stark
 	</figcaption>
 </figure>
+
 
 Bevor man ein Modell erstellt sollte man sich immer im klaren sein wie detailliert es sein muss. Bin ich Befehlshaber mittelalterlicher Truppen in einem Strategiespiel oder befreie ich als Ritter die gefangene Prinzessin hoch oben im Turm nachdem ich mich durch Horden von Gegnern gemetzelt hab? Ja nachdem wie genau der Betrachter das Modell sehen kann, können Details ausgelassen und Polygone gespart werden. Denn gerade darauf kommt es an. 
 
@@ -77,14 +81,13 @@ So wenig Polygone wie möglich, so viele wie nötig.
 
 Es reichen vielleicht sogar schon sehr grobe Strukturen. In diesem Fall ist in das Fenster nur ein kleines Loch mit einem Steinbogen drum herum. Durch den Schatten und die Perspektive fällt das auch gar nicht auf.
 
-<!--
-<figure>
+<figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline_lathe.gif">
 	<figcaption>
 		Ein Rotationskörper aus einem Spline und der Lathe Funktion (Drehverfahren)
 	</figcaption>
 </figure>
--->
+
 Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und durch die **Lathe**-Funktion (Drehverfahren) einen Rotationskörper daraus erstellt. Ein Spline ist ein Konstrukt aus Linien, Kurven und Ankerpunkten. Damit kann man grobe Umrisse und Formen zweidimensional vorzeichnen. Die Lathe-Funktion erstellt dann ein Mesh durch Rotation um eine beliebige Achse im Raum.
 
 Sobald die grobe Form festliegt geht es an die Details. Noch fehlen die Zinnen und das Fenster des Turms. Mit der **Extrude**-Funktion lassen sich Polygone "herausziehen" oder "hereinschieben". Eine sehr praktische Möglichkeit um mehr Details zu erzeugen. 
