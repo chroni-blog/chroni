@@ -32,7 +32,7 @@ Als aller erstes schauen wir uns an woraus so ein Modell besteht.
 ## **Die Grundstruktur**: Aus was bestehen 3D-Modelle?
 
 Meist[^footnote] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - aufgebaut. Die drei Ecken bzw. **Vertices** bilden mit ihren Kanten ein Polygon. Je mehr davon desto detaillierter die Form. Das ist der Grundbaustein eines jeden Modells.
-{: .notice-info}
+<!--{: .notice-info}-->
 
 [^footnote]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
 
@@ -48,7 +48,7 @@ Die Polygone haben zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die a
 Sicher fragt man sich jetzt: "Wieso gibt es eine unsichtbare Seite?" Ganz einfache Grundregel: 
 
 Wieso etwas zeichnen/berechnen was man nicht braucht?
-{: .notice-info}
+<!--{: .notice-info}-->
 
 Polygone werden bei vielen Objekten nur für die Außenhülle berechnet, nicht das innere (sieht man ja eh nicht). Falls ein Polygon "falsch gepolt" wäre, also die Normale nach innen zeigen würde, fällt das sofort auf. An der Stelle wäre nämlich ein Loch und man kann dort durch das Objekt durchsehen. Natürlich ist das bei Glas oder anderen transparenten Gegenständen anders, im Regelfall aber spart man sich dadurch eine Menge Rechenleistung. Das leuchtet sicher noch mehr ein wenn man einen Schritt weiter geht.
 
@@ -61,7 +61,7 @@ Polygone werden bei vielen Objekten nur für die Außenhülle berechnet, nicht d
 Wenn man mehrere Polygone verbindet, entsteht ein Netz - auch **Mesh** genannt. Das stellt die Basis des Modells dar. Natürlich muss man nicht händisch all diese Polygone verbinden. Man kann relativ schnell aus Formen wie Würfeln, Kugeln, Ringe oder sonstigen Grundstrukturen einfache Formen erstellen. 
 
 Es gibt eine Vielzahl von Techniken und Möglichkeiten wie man von Grundformen zu Modellen kommt. Je nach Modell beginnt man auf eine andere Weise.
-{: .notice-info}
+<!--{: .notice-info}-->
 
 
 ## Erstellen eines Meshes
@@ -77,7 +77,7 @@ Es gibt eine Vielzahl von Techniken und Möglichkeiten wie man von Grundformen z
 Bevor man ein Modell erstellt sollte man sich immer im klaren sein wie detailliert es sein muss. Bin ich Befehlshaber mittelalterlicher Truppen in einem Strategiespiel oder befreie ich als Ritter die gefangene Prinzessin hoch oben im Turm nachdem ich mich durch Horden von Gegnern gemetzelt hab? Ja nachdem wie genau der Betrachter das Modell sehen kann, können Details ausgelassen und Polygone gespart werden. Denn gerade darauf kommt es an. 
 
 So wenig Polygone wie möglich, so viele wie nötig. 
-{: .notice-info}
+<!--{: .notice-info}-->
 
 Es reichen vielleicht sogar schon sehr grobe Strukturen. In diesem Fall ist in das Fenster nur ein kleines Loch mit einem Steinbogen drum herum. Durch den Schatten und die Perspektive fällt das auch gar nicht auf.
 
