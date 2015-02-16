@@ -31,7 +31,7 @@ Als aller erstes schauen wir uns an woraus so ein Modell besteht.
 
 ## **Die Grundstruktur**: Aus was bestehen 3D-Modelle?
 
-Meist[^footnote] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - aufgebaut. Die drei Ecken bzw. **Vertices** bilden mit ihren Kanten ein Polygon. Je mehr davon desto detaillierter die Form. Das ist der Grundbaustein eines jeden Modells.
+Meist[^footnote] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - aufgebaut. Die drei Ecken bzw. **Vertices** bilden mit ihren Kanten ein Polygon. Je mehr davon, desto detaillierter ist die Form. Das ist der Grundbaustein eines jeden Modells.
 <!--{: .notice-info}-->
 
 [^footnote]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
@@ -43,7 +43,8 @@ Meist[^footnote] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - a
 	</figcaption>
 </figure>
 
-Die Polygone haben zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die andere nicht. Je nachdem wie die interne Reihenfolge der Vertices festgelegt ist (im Uhrzeigersinn oder gegen den Uhrzeigersinn) kann man das Polygon sehen oder nicht. Das Lot auf der Fläche des Polygons, die **Normale** der Fläche, zeigt dabei die Richtung, in die das Polygon "zeigt". Bedeutet: Aus dieser Richtung kann man das Polygon also sehen.
+Jedes Polygon hat zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die andere nicht. Je nachdem wie die interne Reihenfolge der Vertices festgelegt ist (im Uhrzeigersinn oder gegen den Uhrzeigersinn) kann man das Polygon sehen oder nicht. Davon bekommt man selten etwas mit, deswegen kann man das im Zweifelsfall einfach umdrehen. Das Lot auf der Fläche des Polygons, die **Normale** der Fläche, deutet die Richtung an, in die das Polygon "zeigt". Bedeutet: Aus dieser Richtung kann man das Polygon sehen.
+
 Sicher fragt man sich jetzt: "Wieso gibt es eine unsichtbare Seite?" Ganz einfache Grundregel: 
 
 **Wieso etwas zeichnen das man nicht sehen kann?**
@@ -57,7 +58,7 @@ Polygone werden bei vielen Objekten nur für die Außenhülle berechnet, nicht d
 	</figcaption>
 </figure>
 
-Wenn man mehrere Polygone verbindet, entsteht ein Netz - auch **Mesh** genannt. Das stellt die Basis des Modells dar. Natürlich muss man nicht händisch all diese Polygone verbinden. Man kann relativ schnell aus Formen wie Würfeln, Kugeln, Ringe oder sonstigen Grundstrukturen einfache Formen erstellen. 
+Wenn man mehrere Polygone verbindet, entsteht ein Netz - auch **Mesh** genannt. Das stellt die Basis des Modells dar. Natürlich muss man nicht händisch all diese Polygone verbinden. Man kann relativ schnell aus Formen wie Würfeln, Kugeln, Ringe oder sonstigen Grundstrukturen einfache Formen erstellen.
 
 Es gibt eine Vielzahl von Techniken und Möglichkeiten wie man von Grundformen zu Modellen kommt. Je nach Modell beginnt man auf eine andere Weise.
 <!--{: .notice-info}-->
@@ -73,12 +74,16 @@ Es gibt eine Vielzahl von Techniken und Möglichkeiten wie man von Grundformen z
 </figure>
 
 
-Bevor man ein Modell erstellt sollte man sich immer im klaren sein wie detailliert es sein muss. Bin ich Befehlshaber mittelalterlicher Truppen in einem Strategiespiel oder befreie ich als Ritter die gefangene Prinzessin hoch oben im Turm nachdem ich mich durch Horden von Gegnern gemetzelt hab? Ja nachdem wie genau der Betrachter das Modell sehen kann, können Details ausgelassen und Polygone gespart werden. Denn gerade darauf kommt es an. 
+Bevor man ein Modell erstellt, sollte man sich immer im klaren sein wie detailliert es sein muss. Bin ich Befehlshaber mittelalterlicher Truppen in einem Strategiespiel oder befreie ich als Ritter die gefangene Prinzessin hoch oben im Turm nachdem ich mich durch Horden von Gegnern gemetzelt hab? Ja nachdem wie weit entfernt der Betrachter das Modell sieht, können Details ausgelassen und Polygone gespart werden. Je weniger Polygone und Effekte gezeichnet werden müssen, desto flüssiger läuft die Anwendung.
 
-**So wenig Polygone wie möglich, so viele wie nötig.**
+Leitspruch: **So wenig Polygone wie möglich, so viele wie nötig.**
 <!--{: .notice-info}-->
 
-Es reichen vielleicht sogar schon sehr grobe Strukturen. In diesem Fall ist in das Fenster nur ein kleines Loch mit einem Steinbogen drum herum. Durch den Schatten und die Perspektive fällt das auch gar nicht auf.
+Es reichen vielleicht sogar schon sehr grobe Strukturen. In diesem Fall ist das Fenster nur ein kleines Loch im Turm mit einem Steinbogen drum herum. Durch den Schatten und die Perspektive fällt es dann auch gar nicht auf, dass der Turm gar kein Innenleben hat. 
+
+## Die grobe Form
+
+Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und durch die **Lathe**-Funktion (Drehverfahren) einen Rotationskörper daraus erstellt. Das klingt jetzt erst einmal kryptisch, wird aber sicher durch eine kleine Erkärung und der Animation deutlich.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline_lathe.gif">
@@ -87,9 +92,19 @@ Es reichen vielleicht sogar schon sehr grobe Strukturen. In diesem Fall ist in d
 	</figcaption>
 </figure>
 
-Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und durch die **Lathe**-Funktion (Drehverfahren) einen Rotationskörper daraus erstellt. Ein Spline ist ein Konstrukt aus Linien, Kurven und Ankerpunkten. Damit kann man grobe Umrisse und Formen zweidimensional vorzeichnen. Die Lathe-Funktion erstellt dann ein Mesh durch Rotation um eine beliebige Achse im Raum.
+Ein Spline ist ein Konstrukt aus Linien, Kurven und Ankerpunkten. Damit kann man grobe Umrisse und Formen zweidimensional vorzeichnen. Es reicht dabei nur die eine Hälfte der Form damit zu zeichnen. Die Lathe-Funktion erstellt dann ein Mesh durch Rotation um eine beliebige Achse im Raum. Dabei kann man Detailgrad, Richtung und Rotationswinkel angeben. Bei unserem Turm sind somit 36 Seiten bei vollen 360° entstanden. Für den ersten Schritt ist das völlig ausreichend.
 
-Sobald die grobe Form festliegt geht es an die Details. Noch fehlen die Zinnen und das Fenster des Turms. Mit der **Extrude**-Funktion lassen sich Polygone "herausziehen" oder "hereinschieben". Eine sehr praktische Möglichkeit um mehr Details zu erzeugen. 
+## Verfeinerung
+
+Sobald die grobe Form festliegt geht es an die Details. Es gibt unzählige Techniken und Methoden um aus der groben Form ein detailliertes Modell zu erstellen. Da können gut und gerne ein paar Wochen ins Land gehen. Es gibt Ausbildungsberufe und sogar ganze Studiengänge über dieses Thema. Am einfachsten ist es aber das nach und nach in Projekten oder Übungen zu lernen.
+
+**Aber: Je mehr Erfahrung desto schneller versteht man welche Schraube man wann drehen muss.**
+
+Hier in dem Turm-Beispiel zeig ich ein paar hilfreiche Tricks:
+
+### Die Zinnen
+
+Noch fehlen die Zinnen und das Fenster des Turms. Mit der **Extrude**-Funktion lassen sich Polygone "herausziehen" oder "hereinschieben". Eine sehr praktische Möglichkeit um mehr Details zu erzeugen. 
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/extrude.gif">
@@ -98,16 +113,20 @@ Sobald die grobe Form festliegt geht es an die Details. Noch fehlen die Zinnen u
 	</figcaption>
 </figure>
 
-Das Fenster wird schon ein wenig kniffliger. Man könnte jetzt mit händischer Kleinstarbeit Polygone schneiden und Vertices herumschieben, Flächen per Extrude hereinschieben und anpassen und und und. Ein wenig schneller geht es, wenn man das Fenster "herausstanzt". Dazu baut man sich einfach eine Art Stempel in Form eines Fensters.
+An der Oberseite des Turms wurden ein paar der Polygone "herausgezogen". Es wurden dabei zusätzliche Polygone erzeugt. Die stellen unsere Zinnen dar.
+
+### Das Fenster
+
+Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetzt mit händischer Kleinstarbeit Polygone schneiden und Vertices herumschieben (ziemlich umständlich), Flächen per Extrude hereinschieben und anpassen und und und... Ein wenig schneller geht es, wenn man das Fenster "herausstanzt". Dazu baut man sich einfach eine Art Stempel in Form eines Fensters.
 
 <figure style="text-align: center">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_B.jpg">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_B.png">
 	<figcaption>
 		Stempel für das "Ausstechen" eines Fensters in den Turm.
 	</figcaption>
 </figure>
 
-In Kombination einer **Boolschen**-Funktion (ähnlich der mathematischen Mengenlehre) kann man entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom vorherigen Mesh subtrahieren. Wirklich sehr praktisch!
+Nun brauchen wir nur noch über eine **boolsche** Funktion das Fenster aus dem Turm stechen. Mit einer boolschen Funktion (ähnlich der mathematischen Mengenlehre) kann man entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom Turm subtrahieren.
 
 <figure class="third">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
@@ -116,8 +135,14 @@ In Kombination einer **Boolschen**-Funktion (ähnlich der mathematischen Mengenl
 	<figcaption>Links: Kombination, <br/>Mitte: Schnittmenge <br/>Subtraktion (A-B)</figcaption>
 </figure>
 
+Gerade bei komplexeren Objekten spart man sich einen Haufen Arbeit. Wirklich sehr praktisch!
+
 Damit wäre die Grundform unseres Turms fertig!
 
+<figure class="third">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
+	<figcaption>Fertige Form des Turms</figcaption>
+</figure>
 <!---
 ## **Texturen**: Die Wandfarbe der Modelle?
 
