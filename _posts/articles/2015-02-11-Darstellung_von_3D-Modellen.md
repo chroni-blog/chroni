@@ -46,7 +46,7 @@ Meist[^footnote] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - a
 Die Polygone haben zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die andere nicht. Je nachdem wie die interne Reihenfolge der Vertices festgelegt ist (im Uhrzeigersinn oder gegen den Uhrzeigersinn) kann man das Polygon sehen oder nicht. Das Lot auf der Fläche des Polygons, die **Normale** der Fläche, zeigt dabei die Richtung, in die das Polygon "zeigt". Bedeutet: Aus dieser Richtung kann man das Polygon also sehen.
 Sicher fragt man sich jetzt: "Wieso gibt es eine unsichtbare Seite?" Ganz einfache Grundregel: 
 
-**Wieso etwas zeichnen/berechnen was man nicht braucht?**
+**Wieso etwas zeichnen das man nicht sehen kann?**
 <!--{: .notice-info}-->
 
 Polygone werden bei vielen Objekten nur für die Außenhülle berechnet, nicht das innere (sieht man ja eh nicht). Falls ein Polygon "falsch gepolt" wäre, also die Normale nach innen zeigen würde, fällt das sofort auf. An der Stelle wäre nämlich ein Loch und man kann dort durch das Objekt durchsehen. Natürlich ist das bei Glas oder anderen transparenten Gegenständen anders, im Regelfall aber spart man sich dadurch eine Menge Rechenleistung. Das leuchtet sicher noch mehr ein wenn man einen Schritt weiter geht.
@@ -91,7 +91,30 @@ Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und d
 
 Sobald die grobe Form festliegt geht es an die Details. Noch fehlen die Zinnen und das Fenster des Turms. Mit der **Extrude**-Funktion lassen sich Polygone "herausziehen" oder "hereinschieben". Eine sehr praktische Möglichkeit um mehr Details zu erzeugen. 
 
-Das Fenster wird schon ein wenig kniffliger. Man könnte jetzt mit händischer Kleinstarbeit Polygone schneiden und Vertices herumschieben, Flächen per Extrude hereinschieben und anpassen und und und. Ein wenig schneller geht es, wenn man das Fenster "herausstanzt". Dazu baut man sich einfach eine Art Stempel in Form eines Fensters. In Kombination einer **Boolschen**-Funktion (ähnlich der mathematischen Mengenlehre) kann man entweder die Schnittmenge zweier Meshes, die Kombination oder die Subtraktion beider Modelle erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom vorherigen Mesh subtrahieren. Wirklich sehr praktisch!
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/extrude.gif">
+	<figcaption>
+		Durch die Extrude-Funktion kann man Polygone "herausziehen". Der Turm bekommt somit seine Zinnen.
+	</figcaption>
+</figure>
+
+Das Fenster wird schon ein wenig kniffliger. Man könnte jetzt mit händischer Kleinstarbeit Polygone schneiden und Vertices herumschieben, Flächen per Extrude hereinschieben und anpassen und und und. Ein wenig schneller geht es, wenn man das Fenster "herausstanzt". Dazu baut man sich einfach eine Art Stempel in Form eines Fensters.
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_B.jpg">
+	<figcaption>
+		Stempel für das "Ausstechen" eines Fensters in den Turm.
+	</figcaption>
+</figure>
+
+In Kombination einer **Boolschen**-Funktion (ähnlich der mathematischen Mengenlehre) kann man entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom vorherigen Mesh subtrahieren. Wirklich sehr praktisch!
+
+<figure class="third">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
+	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
+	<figcaption>Links: Kombination, <br/>Mitte: Schnittmenge <br/>Subtraktion (A-B)</figcaption>
+</figure>
 
 Damit wäre die Grundform unseres Turms fertig!
 
