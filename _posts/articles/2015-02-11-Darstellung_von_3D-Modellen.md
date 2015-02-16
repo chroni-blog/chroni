@@ -132,7 +132,7 @@ Nun brauchen wir nur noch über eine **boolsche** Funktion das Fenster aus dem T
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
-	<figcaption>Links: Kombination, <br/>Mitte: Schnittmenge <br/>Subtraktion (A-B)</figcaption>
+	<figcaption>Links: Kombination <br/>Mitte: Schnittmenge <br/>Rechts: Subtraktion (A-B)</figcaption>
 </figure>
 
 Gerade bei komplexeren Objekten spart man sich einen Haufen Arbeit. Wirklich sehr praktisch!
