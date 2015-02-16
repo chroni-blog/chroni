@@ -15,10 +15,10 @@ image:
 
 Computergrafik verfolgt uns in jedem Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm. Dabei sind viele der dort sichtbaren Objekte von einem Designer am Rechner erstellt worden. Aber wie macht man sowas und wie sieht das aus?
 
-Um 3D Modelle zu erstellen gibt es eine Vielzahl von Tools[^footnote]. Unterschiede gibt es in den Grundfunktionen fast gar nicht. Meist werde ich hier über 3DsMax schreiben, weil ich das als Student kostenlos bekomme und es eins der größten und bekanntesten Tools ist.
+Um 3D Modelle zu erstellen gibt es eine Vielzahl von Tools[^tools]. Unterschiede gibt es in den Grundfunktionen fast gar nicht. Meist werde ich hier über 3DsMax schreiben, weil ich das als Student kostenlos bekomme und es eins der größten und bekanntesten Tools ist.
 Trotzdem bleib ich dabei ganz allgemein, um mich nicht in Detailfunktionen zu verfangen.
 
-[^footnote]: Hier die drei bekanntesten: 3DsMax/Maya von Autodesk, Cinema 4D von Maxon und Blender.
+[^tools]: Hier die drei bekanntesten: 3DsMax/Maya von Autodesk, Cinema 4D von Maxon und Blender.
 
 Als aller erstes schauen wir uns an woraus so ein Modell besteht.
 
@@ -31,10 +31,10 @@ Als aller erstes schauen wir uns an woraus so ein Modell besteht.
 
 ## **Die Grundstruktur**: Aus was bestehen 3D-Modelle?
 
-Meist[^footnote] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - aufgebaut. Die drei Ecken bzw. **Vertices** bilden mit ihren Kanten ein Polygon. Je mehr davon, desto detaillierter ist die Form. Das ist der Grundbaustein eines jeden Modells.
+Meist[^polygonbasiert] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen** - aufgebaut. Die drei Ecken bzw. **Vertices** bilden mit ihren Kanten ein Polygon. Je mehr davon, desto detaillierter ist die Form. Das ist der Grundbaustein eines jeden Modells.
 <!--{: .notice-info}-->
 
-[^footnote]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
+[^polygonbasiert]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon.gif">
@@ -88,7 +88,7 @@ Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und d
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline_lathe.gif">
 	<figcaption>
-		Ein Rotationskörper aus einem Spline und der Lathe Funktion (Drehverfahren)
+		Ein Rotationskörper aus einem Spline und der Lathe Funktion (Drehverfahren). Es entstehen 36 Seiten mit einer vollen Umdrehung.
 	</figcaption>
 </figure>
 
@@ -128,21 +128,17 @@ Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetz
 
 Nun brauchen wir nur noch über eine **boolsche** Funktion das Fenster aus dem Turm stechen. Mit einer boolschen Funktion (ähnlich der mathematischen Mengenlehre) kann man entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom Turm subtrahieren.
 
-<figure class="third">
+<figure class="third" style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
-	<figcaption>Links: Kombination <br/>Mitte: Schnittmenge <br/>Rechts: Subtraktion (A-B)</figcaption>
+	<figcaption>Boolsche Funktion mit Turm (Objekt A) und Fensterstempel (Objekt B) <br/> Links: Kombination <br/>Mitte: Schnittmenge <br/>Rechts: Subtraktion (A-B)</figcaption>
 </figure>
 
 Gerade bei komplexeren Objekten spart man sich einen Haufen Arbeit. Wirklich sehr praktisch!
 
 Damit wäre die Grundform unseres Turms fertig!
 
-<figure class="third">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
-	<figcaption>Fertige Form des Turms</figcaption>
-</figure>
 <!---
 ## **Texturen**: Die Wandfarbe der Modelle?
 
