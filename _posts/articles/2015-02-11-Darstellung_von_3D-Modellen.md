@@ -23,7 +23,7 @@ Trotzdem bleib ich dabei ganz allgemein, um mich nicht in Detailfunktionen zu ve
 Als aller erstes schauen wir uns an woraus so ein Modell besteht.
 
 <figure>
-	<a src="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg">
+	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg">
 		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg" />
 	</a>
 	<figcaption>
@@ -71,10 +71,10 @@ Es gibt eine Vielzahl von Techniken und Möglichkeiten wie man von Grundformen z
 
 ## Erstellen eines Meshes
 <figure class="half" style="text-align: center">
-	<a src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_below.jpg">
+	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_below.jpg">
 		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_below.jpg" />
 	</a>
-	<a src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_top.jpg">
+	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_top.jpg">
 		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_top.jpg" />
 	</a>
 	<figcaption>
@@ -96,7 +96,7 @@ Gehen wir zum Handwerk über. In jeder mir bekannten Software die sich mit der M
 
 Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und durch die **Lathe**-Funktion (Drehverfahren) einen Rotationskörper daraus erstellt. Das klingt jetzt erst einmal kryptisch, wird aber sicher durch eine kleine Erkärung und der Animation deutlich.
 
-<figure class="half" style="text-align: center">
+<figure class="forth" style="text-align: center">
 	<!-- Animation für Spline -->
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline.gif">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline_lathe.gif">
@@ -148,13 +148,13 @@ Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetz
 Nun brauchen wir nur noch über eine **boolsche** Funktion das Fenster aus dem Turm stechen. Mit einer boolschen Funktion (ähnlich der mathematischen Mengenlehre) kann man entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom Turm subtrahieren.
 
 <figure class="third" style="text-align: center">
-	<a src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
+	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
 		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
 	</a>
-	<a src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
+	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
 		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
 	</a>
-	<a src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
+	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
 		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
 	</a>
 	<figcaption>Boolsche Funktion mit Turm (Objekt A) und Fensterstempel (Objekt B) <br/> Links: Kombination <br/>Mitte: Schnittmenge <br/>Rechts: Subtraktion (A-B)</figcaption>
