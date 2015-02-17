@@ -120,7 +120,7 @@ Hier am Turm-Beispiel zeig ich ein paar hilfreiche Tricks:
 
 Noch fehlen die Zinnen und das Fenster des Turms. Um diese zu erzeugen gibt es zwei nützliche Funktionen
 
-<figure style="text-align: center">
+<figure class="half" style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/extrude.gif">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/chamfer.gif">
 	<figcaption>
