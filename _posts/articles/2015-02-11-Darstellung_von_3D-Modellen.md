@@ -13,10 +13,10 @@ image:
   teaser: Darstellung_von_3D_Modellen/Vorschau.jpg
 ---
 
-Computergrafik verfolgt uns in jedem Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm. Dabei sind viele der dort sichtbaren Objekte von einem Designer am Rechner erstellt worden. Aber wie macht man sowas und wie sieht das aus?
+Computergrafik verfolgt uns in jeden Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm. Dabei sind viele der dort sichtbaren Objekte von einem Designer am Rechner erstellt worden. Aber wie macht man so was und was steckt dahinter?
 
-Um 3D Modelle zu erstellen gibt es eine Vielzahl von Tools[^tools]. Unterschiede gibt es in den Grundfunktionen fast gar nicht. Meist werde ich hier über 3DsMax schreiben, weil ich das als Student kostenlos bekomme und es eins der größten und bekanntesten Tools ist.
-Trotzdem bleib ich dabei ganz allgemein, um mich nicht in Detailfunktionen zu verfangen.
+Um 3D Modelle zu erstellen gibt es eine Vielzahl von Tools[^tools]. Unterschiede gibt es in deren Grundfunktionen fast gar nicht. Meist werde ich hier über 3DsMax schreiben, weil ich das als Student kostenlos bekomme und es eins der größten und bekanntesten Tools ist.
+Trotzdem bleib ich dabei ganz allgemein und bei der Basis, um mich nicht in Detailfunktionen zu verfangen.
 
 [^tools]: Hier die drei bekanntesten: 3DsMax/Maya von Autodesk, Cinema 4D von Maxon und Blender.
 
@@ -46,7 +46,7 @@ Meist[^polygonbasiert] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen
 	</figcaption>
 </figure>
 
-Jedes Polygon hat zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die andere nicht. Je nachdem wie die interne Reihenfolge der Vertices festgelegt ist (im Uhrzeigersinn oder gegen den Uhrzeigersinn) kann man das Polygon sehen oder nicht. Davon bekommt man selten etwas mit, deswegen kann man das im Zweifelsfall in der Anwendung einfach umdrehen. 
+Jedes Polygon hat zwei unterschiedliche Seiten. Eine Seite ist sichtbar - die andere nicht. Je nachdem wie die interne Reihenfolge der Vertices festgelegt ist (im Uhrzeigersinn oder gegen den Uhrzeigersinn) kann man das Polygon sehen oder eben nicht. Von dieser Reihenfolge bekommt man selten etwas mit, deswegen kann man das Polygon im Zweifelsfall in der Anwendung einfach umdrehen. 
 Das Lot auf der Fläche des Polygons, die **Normale** der Fläche, deutet die Richtung an, in die das Polygon "zeigt". Bedeutet: Aus dieser Richtung kann man das Polygon sehen.
 
 Sicher fragt man sich jetzt: "Wieso gibt es eine unsichtbare Seite?" Ganz einfache Grundregel: 
@@ -54,8 +54,8 @@ Sicher fragt man sich jetzt: "Wieso gibt es eine unsichtbare Seite?" Ganz einfac
 **Wieso etwas zeichnen das man nicht sehen kann?**
 <!--{: .notice-info}-->
 
-Polygone werden bei vielen Objekten nur für die Außenhülle erstellt, nicht für das Innere (sieht man ja eh nicht). Falls ein Polygon "falsch gepolt" wäre, also die Normale nach innen zeigen würde, fällt das sofort auf. An der Stelle wäre nämlich ein Loch und man könnte dort durch das Objekt durchsehen.
-Ungewollt sieht das sehr unschön und fehlerhaft aus. Natürlich ist das bei Glas oder anderen transparenten Gegenständen anders, im Regelfall aber spart man sich dadurch eine Menge Rechenleistung. Das leuchtet sicher noch mehr ein wenn man einen Schritt weiter geht.
+Polygone werden bei vielen Objekten nur für die Außenhülle erstellt, nicht für das Innere (sieht man ja eh nicht). Falls ein Polygon "falsch gepolt" wäre, also die Normale nach innen zeigen würde, fällt das sofort auf. An der Stelle wäre nämlich ein Loch und man könnte dort durch das Objekt durchsehen. Ungewollt sieht das sehr unschön und fehlerhaft aus.
+Gerade bei aufwändigen Grafikeffekten wie Beleuchtung und Schatten bedeutet eine geringe Polygonanzahl weniger Rechenaufwand. Deshalb ist es wichtig keine Polygone zu erstellen, die man nicht sehen kann. Das leuchtet sicher noch mehr ein wenn man einen Schritt weiter geht.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/hemisphere.gif" />
@@ -110,7 +110,7 @@ Ein Spline ist ein Konstrukt aus Linien, Kurven und Ankerpunkten. Damit kann man
 
 ## Verfeinerung
 
-Sobald die grobe Form festliegt geht es an die Details. Es gibt unzählige Techniken und Methoden um aus der groben Form ein detailliertes Modell zu erstellen. Da können gut und gerne ein paar Wochen ins Land gehen. Es gibt Ausbildungsberufe und sogar ganze Studiengänge über das Thema Modellierung und 3D-Design. Am einfachsten ist es wie so oft das nach und nach in Projekten oder Übungen zu lernen.
+Sobald die grobe Form festliegt geht es an die Details. Es gibt unzählige Techniken und Methoden um aus der groben Form ein detailliertes Modell zu erstellen. Da können gut und gerne ein paar Stunden ins Land gehen um die richtige Methode zu finden. Es gibt Ausbildungsberufe und sogar ganze Studiengänge über das Thema Modellierung und 3D-Design. Am einfachsten ist es wie so oft das nach und nach in Projekten oder Übungen zu lernen und sich Tipps aus Foren oder Youtube-Videos zu holen.
 
 **Je mehr Erfahrung desto schneller versteht man, wann man was am besten macht.**
 
@@ -118,7 +118,7 @@ Hier am Turm-Beispiel zeig ich ein paar hilfreiche Tricks:
 
 ##### Die Zinnen
 
-Noch fehlen die Zinnen und das Fenster des Turms. Um diese zu erzeugen gibt es zwei nützliche Funktionen
+Noch fehlen die Zinnen und das Fenster des Turms. Um diese zu erzeugen gibt es zwei nützliche Funktionen.
 
 <figure class="half" style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/extrude.gif">
@@ -129,14 +129,14 @@ Noch fehlen die Zinnen und das Fenster des Turms. Um diese zu erzeugen gibt es z
 	</figcaption>
 </figure>
 
-Mit der **Extrude**-Funktion lassen sich Polygone "herausziehen" oder "hereinschieben". Eine sehr praktische Möglichkeit um mehr Details zu erzeugen. 
+Mit der **Extrude**-Funktion lassen sich Polygone "herausziehen" oder "hineinschieben". Eine sehr praktische Möglichkeit um mehr Details zu erzeugen. 
 Wenn man die Kanten noch ein wenig abrunden möchte, hilft einem die **Chamfer**-Funktion weiter. Damit werden an den Kanten weitere Polygone erzeugt. 
 
 An der Oberseite des Turms werden ein paar der Polygone ausgewählt und "herausgezogen". Rundet man diese noch ein wenig ab, sind unsere Zinnen auch schon fertig. So einfach ist das!
 
 ##### Das Fenster
 
-Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetzt mit händischer Kleinstarbeit Polygone schneiden und Vertices herumschieben (ziemlich umständlich), Flächen per Extrude hereinschieben und anpassen und und und... Ein wenig schneller geht es, wenn man das Fenster "herausstanzt". Dazu baut man sich einfach eine Art Stempel in Form eines Fensters.
+Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetzt mit händischer Kleinstarbeit Polygone schneiden und Vertices herumschieben (ziemlich umständlich), Flächen per Extrude hineinschieben und und und... Ein wenig schneller geht es, wenn man das Fenster "herausstanzt". Dazu baut man sich einfach eine Art Stempel in Form eines Fensters.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_B.png">
@@ -145,7 +145,7 @@ Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetz
 	</figcaption>
 </figure>
 
-Nun brauchen wir nur noch über eine **boolsche** Funktion das Fenster aus dem Turm stechen. Mit einer boolschen Funktion (ähnlich der mathematischen Mengenlehre) kann man entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom Turm subtrahieren.
+Nun brauchen wir nur noch über eine **boolsche** Funktion das Fenster aus dem Turm stechen. Mit einer boolschen Funktion (ähnlich der mathematischen Mengenlehre) kann man sich entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom Turm subtrahieren.
 
 <figure class="third" style="text-align: center">
 	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
