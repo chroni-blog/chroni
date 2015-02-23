@@ -13,14 +13,14 @@ image:
   teaser: Darstellung_von_3D_Modellen/Vorschau.jpg
 ---
 
-Computergrafik verfolgt uns in jeden Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm. Dabei sind viele der dort sichtbaren Objekte von einem Designer am Rechner erstellt worden. Aber wie macht man so was und was steckt dahinter?
+Computergrafik verfolgt uns in jedem Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm. Dabei sind viele der dort sichtbaren Objekte von einem Designer am Rechner erstellt worden. Aber wie macht man so was und was steckt dahinter?
 
 Um 3D Modelle zu erstellen gibt es eine Vielzahl von Tools[^tools]. Unterschiede gibt es in deren Grundfunktionen fast gar nicht. Meist werde ich hier über 3DsMax schreiben, weil ich das als Student kostenlos bekomme und es eins der größten und bekanntesten Tools ist.
 Trotzdem bleib ich dabei ganz allgemein und bei der Basis, um mich nicht in Detailfunktionen zu verfangen.
 
 [^tools]: Hier die drei bekanntesten: 3DsMax/Maya von Autodesk, Cinema 4D von Maxon und Blender.
 
-Als aller erstes schauen wir uns an woraus so ein Modell besteht.
+Als erstes schauen wir uns an woraus so ein Modell besteht.
 
 <figure>
 	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg">
