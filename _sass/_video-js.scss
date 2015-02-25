@@ -1,0 +1,865 @@
+//colors
+$color_celeste_approx: #cccccc;
+$white: #ffffff;
+$color_black_pearl_approx: #07141e;
+$color_black_pearl_70_approx: rgba(7, 20, 30, 0.7);
+$black_50: rgba(0, 0, 0, 0.5);
+$color_danube_approx: #66a8cc;
+$color_daintree_50_approx: rgba(7, 40, 50, 0.5);
+$color_storm_dust_approx: #646464;
+$white_20: rgba(255, 255, 255, 0.2);
+$color_boulder_approx: #787878;
+$white_10: rgba(255, 255, 255, 0.1);
+$color_cape_cod_approx: #3b4249;
+$white_25: rgba(255, 255, 255, 0.25);
+$color_fuscous_gray_approx: #505050;
+$mine_shaft_75: rgba(50, 50, 50, 0.75);
+$black: #000;
+$sandy_brown: #f4a460;
+$color_woodsmoke_approx: #111;
+$white_75: rgba(255, 255, 255, 0.75);
+$color_mine_shaft_approx: #333;
+
+//fonts
+$font_0: VideoJS;
+$font_1: Arial;
+$font_2: sans-serif;
+$font_3: Helvetica;
+
+//data-uris
+$data_uri_0: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC";
+$data_uri_1: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC";
+
+//urls
+$url_0: url("font/vjs.eot");
+$url_1: url("font/vjs.eot?#iefix");
+$url_2: url("font/vjs.woff");
+$url_3: url("font/vjs.ttf");
+$url_4: url("font/vjs.svg#icomoon");
+
+//@extend-elements
+//original selectors
+//.vjs-default-skin .vjs-progress-holder .vjs-play-progress, .vjs-default-skin .vjs-progress-holder .vjs-load-progress, .vjs-default-skin .vjs-progress-holder .vjs-load-progress div
+%extend_1 {
+  position: absolute;
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  left: 0;
+  top: 0;
+}
+
+//original selectors
+//.vjs-default-skin:hover .vjs-big-play-button, .vjs-default-skin .vjs-big-play-button:focus
+%extend_2 {
+  outline: 0;
+  border-color: $white;
+  background-color: $color_fuscous_gray_approx;
+  background-color: $mine_shaft_75;
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 0 3em $white;
+  //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all 0s;
+}
+
+//original selectors
+//.vjs-default-skin .vjs-menu-button ul li:focus, .vjs-default-skin .vjs-menu-button ul li:hover, .vjs-default-skin .vjs-menu-button ul li.vjs-selected:focus, .vjs-default-skin .vjs-menu-button ul li.vjs-selected:hover
+%extend_3 {
+  outline: 0;
+  color: $color_woodsmoke_approx;
+  background-color: $white;
+  background-color: $white_75;
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 0 1em $white;
+}
+
+
+.vjs-default-skin {
+  color: $color_celeste_approx;
+  .vjs-slider-handle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    &:before {
+      content: "\e009";
+      font-family: $font_0;
+      font-size: 1em;
+      line-height: 1;
+      text-align: center;
+      //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      text-shadow: 0 0 1em $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: rotate(-45deg);
+    }
+  }
+  .vjs-control-bar {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.0em;
+    background-color: $color_black_pearl_approx;
+    background-color: $color_black_pearl_70_approx;
+  }
+  &.vjs-has-started {
+    .vjs-control-bar {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: visibility 0.1s, opacity 0.1s;
+    }
+    .vjs-big-play-button {
+      display: none;
+    }
+  }
+  &.vjs-controls-disabled {
+    .vjs-control-bar {
+      display: none;
+    }
+    .vjs-big-play-button {
+      display: none;
+    }
+  }
+  &.vjs-using-native-controls {
+    .vjs-control-bar {
+      display: none;
+    }
+    .vjs-big-play-button {
+      display: none;
+    }
+  }
+  .vjs-control {
+    outline: none;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 3.0em;
+    width: 4em;
+    &:before {
+      font-family: $font_0;
+      font-size: 1.5em;
+      line-height: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      text-shadow: 1px 1px 1px $black_50;
+    }
+    &:focus {
+    }
+  }
+  .vjs-control-text {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .vjs-play-control {
+    width: 5em;
+    cursor: pointer;
+    &:before {
+      content: "\e001";
+    }
+  }
+  .vjs-playback-rate {
+    .vjs-playback-rate-value {
+      font-size: 1.5em;
+      line-height: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      text-shadow: 1px 1px 1px $black_50;
+    }
+    &.vjs-menu-button .vjs-menu .vjs-menu-content {
+      width: 4em;
+      left: -2em;
+      list-style: none;
+    }
+  }
+  .vjs-mute-control {
+    cursor: pointer;
+    float: right;
+    &:before {
+      content: "\e006";
+    }
+    &.vjs-vol-0:before {
+      content: "\e003";
+    }
+    &.vjs-vol-1:before {
+      content: "\e004";
+    }
+    &.vjs-vol-2:before {
+      content: "\e005";
+    }
+  }
+  .vjs-volume-menu-button {
+    cursor: pointer;
+    float: right;
+    &:before {
+      content: "\e006";
+    }
+    .vjs-menu {
+      display: block;
+      width: 0;
+      height: 0;
+      border-top-color: transparent;
+      .vjs-menu-content {
+        height: 0;
+        width: 0;
+      }
+      &.vjs-lock-showing {
+        border-top-color: $color_daintree_50_approx;
+        .vjs-menu-content {
+          height: 2.9em;
+          width: 10em;
+        }
+      }
+    }
+    &.vjs-vol-0:before {
+      content: "\e003";
+    }
+    &.vjs-vol-1:before {
+      content: "\e004";
+    }
+    &.vjs-vol-2:before {
+      content: "\e005";
+    }
+    &:hover .vjs-menu {
+      border-top-color: $color_daintree_50_approx;
+      .vjs-menu-content {
+        height: 2.9em;
+        width: 10em;
+      }
+    }
+  }
+  .vjs-volume-control {
+    width: 5em;
+    float: right;
+  }
+  .vjs-volume-bar {
+    width: 5em;
+    height: 0.6em;
+    margin: 1.1em auto 0;
+    .vjs-volume-handle {
+      width: 0.5em;
+      height: 0.5em;
+      left: 4.5em;
+    }
+  }
+  .vjs-volume-level {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5em;
+    width: 100%;
+    background: $color_danube_approx url($data_uri_0) -50% 0 repeat;
+  }
+  .vjs-progress-control {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+    font-size: 0.3em;
+    height: 1em;
+    top: -1em;
+    //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all 0.4s;
+  }
+  &:hover {
+    .vjs-progress-control {
+      font-size: .9em;
+      //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all 0.2s;
+    }
+    .vjs-big-play-button {
+      @extend %extend_2;
+    }
+  }
+  .vjs-progress-holder {
+    height: 100%;
+    .vjs-play-progress {
+      @extend %extend_1;
+    }
+    .vjs-load-progress {
+      @extend %extend_1;
+      div {
+        @extend %extend_1;
+      }
+    }
+  }
+  .vjs-play-progress {
+    background: $color_danube_approx url($data_uri_0) -50% 0 repeat;
+  }
+  .vjs-load-progress {
+    background: $color_storm_dust_approx;
+    background: $white_20;
+    div {
+      background: $color_boulder_approx;
+      background: $white_10;
+    }
+  }
+  .vjs-seek-handle {
+    width: 1.5em;
+    height: 100%;
+    &:before {
+      padding-top: 0.1em;
+    }
+  }
+  &.vjs-live {
+    .vjs-time-controls {
+      display: none;
+    }
+    .vjs-time-divider {
+      display: none;
+    }
+    .vjs-progress-control {
+      display: none;
+    }
+    .vjs-live-display {
+      display: block;
+    }
+  }
+  .vjs-live-display {
+    display: none;
+    font-size: 1em;
+    line-height: 3em;
+  }
+  .vjs-time-controls {
+    font-size: 1em;
+    line-height: 3em;
+  }
+  .vjs-current-time {
+    float: left;
+  }
+  .vjs-duration {
+    float: left;
+  }
+  .vjs-remaining-time {
+    display: none;
+    float: left;
+  }
+  .vjs-fullscreen-control {
+    width: 3.8em;
+    cursor: pointer;
+    float: right;
+    &:before {
+      content: "\e000";
+    }
+  }
+  .vjs-big-play-button {
+    left: 0.5em;
+    top: 0.5em;
+    font-size: 3em;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    width: 4em;
+    height: 2.6em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 1;
+    background-color: $color_black_pearl_approx;
+    background-color: $color_black_pearl_70_approx;
+    border: 0.1em solid $color_cape_cod_approx;
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 0.8em;
+    //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 0 1em $white_25;
+    //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all 0.4s;
+    &:focus {
+      @extend %extend_2;
+    }
+    &:before {
+      content: "\e001";
+      font-family: $font_0;
+      line-height: 2.6em;
+      //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      text-shadow: 0.05em 0.05em 0.1em $black;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .vjs-menu-button {
+    float: right;
+    cursor: pointer;
+    .vjs-menu .vjs-menu-content {
+      display: block;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      width: 10em;
+      bottom: 1.5em;
+      max-height: 15em;
+      overflow: auto;
+      left: -5em;
+      background-color: $color_black_pearl_approx;
+      background-color: $color_black_pearl_70_approx;
+      //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      box-shadow: -0.2em -0.2em 0.3em $white_20;
+    }
+    &:hover .vjs-control-content .vjs-menu {
+      display: block;
+    }
+    ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0.3em 0 0.3em 0;
+      line-height: 1.4em;
+      font-size: 1.2em;
+      text-align: center;
+      text-transform: lowercase;
+      &.vjs-selected {
+        background-color: $black;
+        &:focus {
+          @extend %extend_3;
+        }
+        &:hover {
+          @extend %extend_3;
+        }
+      }
+      &:focus {
+        @extend %extend_3;
+      }
+      &:hover {
+        @extend %extend_3;
+      }
+      &.vjs-menu-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 2em;
+        padding: 0;
+        margin: 0 0 0.3em 0;
+        font-weight: bold;
+        cursor: default;
+      }
+    }
+  }
+  .vjs-menu {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin-bottom: 3em;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-top: 1.55em solid $black;
+    border-top-color: $color_daintree_50_approx;
+  }
+  .vjs-captions-button {
+    &:before {
+      content: "\e008";
+    }
+    &:focus .vjs-control-content:before {
+      //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      box-shadow: 0 0 1em $white;
+    }
+    &:hover .vjs-control-content:before {
+      //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      box-shadow: 0 0 1em $white;
+    }
+  }
+  .vjs-chapters-button {
+    &:before {
+      content: "\e00c";
+    }
+    &.vjs-menu-button .vjs-menu .vjs-menu-content {
+      width: 24em;
+      left: -12em;
+    }
+  }
+  .vjs-slider:focus {
+    //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 0 2em $white;
+  }
+  &.vjs-error .vjs-control-bar {
+    display: none;
+  }
+  .vjs-control:focus:before {
+    //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 0 1em $white;
+  }
+  .vjs-control:hover:before {
+    //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 0 1em $white;
+  }
+  &.vjs-playing .vjs-play-control:before {
+    content: "\e002";
+  }
+  .vjs-volume-handle:before {
+    font-size: 0.9em;
+    top: -0.2em;
+    left: -0.2em;
+    width: 1em;
+    height: 1em;
+  }
+  &.vjs-fullscreen .vjs-fullscreen-control:before {
+    content: "\e00b";
+  }
+  &.vjs-big-play-centered .vjs-big-play-button {
+    left: 50%;
+    margin-left: -2.1em;
+    top: 50%;
+    margin-top: -1.4000000000000001em;
+  }
+  .vjs-loading-spinner:before {
+    content: "\e01e";
+    font-family: $font_0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 0 0.1em $black;
+  }
+  .vjs-control-content .vjs-menu.vjs-lock-showing {
+    display: block;
+  }
+  &.vjs-scrubbing .vjs-menu-button:hover .vjs-control-content .vjs-menu {
+    display: none;
+  }
+  .vjs-subtitles-button:before {
+    content: "\e00c";
+  }
+}
+@font-face {
+  font-family: $font_0;
+  src: $url_0;
+  src: $url_1 format('embedded-opentype'), $url_2 format('woff'), $url_3 format('truetype'), $url_4 format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@media \0screen {
+  .vjs-default-skin.vjs-user-inactive.vjs-playing .vjs-control-bar :before {
+    content: "";
+  }
+}
+.vjs-time-divider {
+  float: left;
+  line-height: 3em;
+}
+.vjs-error {
+  .vjs-big-play-button {
+    display: none;
+  }
+  .vjs-error-display {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &:before {
+      content: 'X';
+      font-family: $font_1;
+      font-size: 4em;
+      color: $color_storm_dust_approx;
+      line-height: 1;
+      //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      text-shadow: 0.05em 0.05em 0.1em $black;
+      text-align: center;
+      vertical-align: middle;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -0.5em;
+      width: 100%;
+    }
+  }
+  .vjs-loading-spinner {
+    display: none;
+    animation: none;
+  }
+}
+.vjs-error-display {
+  display: none;
+  div {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    left: 0;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 3px;
+    background: $black;
+    background: $black_50;
+  }
+  a {
+    color: #F4A460;
+    &:visited {
+      color: #F4A460;
+    }
+  }
+}
+.vjs-loading-spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4em;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  margin-left: -0.5em;
+  margin-top: -0.5em;
+  opacity: 0.75;
+}
+@-moz-keyframes spin {
+  0% {
+  }
+  100% {
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+  }
+  100% {
+  }
+}
+@-o-keyframes spin {
+  0% {
+  }
+  100% {
+  }
+}
+@keyframes spin {
+  0% {
+    //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(0deg);
+  }
+  100% {
+    //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(359deg);
+  }
+}
+.video-js {
+  background-color: $black;
+  position: relative;
+  padding: 0;
+  font-size: 10px;
+  vertical-align: middle;
+  font-weight: normal;
+  font-style: normal;
+  font-family: $font_1, $font_2;
+  //Instead of the line below you could use @includeuser-select($select)
+  user-select: none;
+  .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &:-moz-full-screen {
+    position: absolute;
+  }
+  &.vjs-fullscreen {
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+    _position: absolute;
+  }
+  &:-webkit-full-screen {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .vjs-text-track-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 3em;
+    right: 0;
+    pointer-events: none;
+  }
+  &.vjs-has-started .vjs-poster {
+    display: none;
+  }
+  &.vjs-controls-disabled .vjs-poster {
+    display: none;
+  }
+  &.vjs-using-native-controls .vjs-poster {
+    display: none;
+  }
+}
+.vjs-poster {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  img {
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+}
+.vjs-caption-settings {
+  position: relative;
+  top: 1em;
+  background-color: $black;
+  opacity: 0.75;
+  color: #FFF;
+  margin: 0 auto;
+  padding: 0.5em;
+  height: 15em;
+  font-family: $font_1, $font_3, $font_2;
+  font-size: 12px;
+  width: 40em;
+  .vjs-tracksettings {
+    top: 0;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    position: absolute;
+    overflow: auto;
+  }
+  .vjs-tracksettings-colors {
+    float: left;
+    &:after {
+      clear: both;
+    }
+  }
+  .vjs-tracksettings-font {
+    float: left;
+    &:after {
+      clear: both;
+    }
+  }
+  .vjs-tracksettings-controls {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    &:after {
+      clear: both;
+    }
+  }
+  .vjs-tracksetting {
+    margin: 5px;
+    padding: 3px;
+    min-height: 40px;
+    label {
+      display: block;
+      width: 100px;
+      margin-bottom: 5px;
+    }
+    span {
+      display: inline;
+      margin-left: 5px;
+    }
+    > div {
+      margin-bottom: 5px;
+      min-height: 20px;
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        min-height: 0;
+      }
+    }
+  }
+  input[type="button"] {
+    width: 40px;
+    height: 40px;
+  }
+  label > input {
+    margin-right: 10px;
+  }
+}
+.vjs-hidden {
+  display: none !important;
+}
+.vjs-lock-showing {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
+}
+.vjs-no-js {
+  padding: 2em;
+  color: $color_celeste_approx;
+  background-color: $color_mine_shaft_approx;
+  font-size: 1.8em;
+  font-family: $font_1, $font_2;
+  text-align: center;
+  width: 30em;
+  height: 15em;
+  margin: 0 auto;
+  a {
+    color: #F4A460;
+    &:visited {
+      color: #F4A460;
+    }
+  }
+}
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: visibility 1s, opacity 1s;
+}
+.vjs-audio.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+  opacity: 1;
+  visibility: visible;
+}
+.vjs-waiting .vjs-loading-spinner {
+  display: block;
+  animation: spin 1.5s infinite linear;
+}
+.vjs-seeking .vjs-loading-spinner {
+  display: block;
+  animation: spin 1.5s infinite linear;
+}
+body.vjs-full-window {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+.video-js.vjs-fullscreen.vjs-user-inactive {
+  cursor: none;
+}
+.video-js.vjs-audio.vjs-has-started .vjs-poster {
+  display: block;
+}
