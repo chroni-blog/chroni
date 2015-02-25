@@ -15,7 +15,7 @@ image:
 Hier ein kleiner Test eines eingebetteten Videos
 
 <video width="640" height="480" controls>
-  <source src="{{ site.url }}/videos/videos_komprimieren/dragon_640x480_compressed_RF10.mp4" type="video/mp4">
+  <source src="{{ site.url }}/videos/videos_komprimieren/dragon_640x480_compressed_RF18.mp4" type="video/mp4">
   Your browser does not support the video tag or mp4 files.
 </video>
 
