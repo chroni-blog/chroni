@@ -12,21 +12,14 @@ image:
   teaser:
 ---
 
-Hier ein kleiner Test von video.js
+Hier ein kleiner Test eines eingebetteten Videos
 
-
-<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="640" height="264"
-      poster="http://video-js.zencoder.com/oceans-clip.png"
-      data-setup='{"children": { "controlBar": { 
-          "children": { "muteToggle": false,  "volumeControl": false,  "captionsButton": false, "subtitlesButton": false} } } 
-      }'>
-    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+<video width="320" height="240" controls>
+  <source src="{{ site.url }}/images/videos_komprimieren/dragon_640x480_compressed_RF10.mp4" type="video/mp4">
+  Your browser does not support the video tag or mp4 files.
 </video>
 
-
+Das Modell des Drachen ist aus dem <a href"http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository der <a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
 ## Komprimieren:
 	Handbrake - Einstellungen
