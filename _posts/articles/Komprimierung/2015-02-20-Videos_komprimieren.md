@@ -5,7 +5,7 @@ date: 2015-02-25
 author: Christian
 categories: articles
 excerpt: "Wie komprimiert man am besten Videos?"
-tags: [video]
+tags: [komprimieren, video]
 toc: true
 comments: true
 image:

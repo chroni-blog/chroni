@@ -4,8 +4,8 @@ title: "Bilder komprimieren"
 date: 2015-02-25
 author: Christian
 categories: articles
-excerpt: "Wie komprimiert man am besten Bilder?"
-tags: [video]
+excerpt: "Was ist Komprimierung? Wie mache ich das mit Bildern?"
+tags: [komprimieren, bilder]
 toc: true
 comments: true
 image:
@@ -28,7 +28,7 @@ Rechnen wir doch kurz mal durch:
 	</figcaption>
 </figure>
 
-Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist ja noch überschaubar. Jeder Farbwert aus einer Kombination von rot, blau und grün besteht (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 ( 8 Bit bzw. 1 Byte ) Abstufungen haben. Damit kommen wir auf 256 * 256 * 256 ( also 3 Byte ) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte. 
+Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist ja noch überschaubar. Jeder Farbwert aus einer Kombination von rot, blau und grün besteht (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Damit kommen wir auf 256 * 256 * 256 (also 3 Byte) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte. 
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
@@ -36,40 +36,44 @@ Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pi
 
 Unkomprimiert kommen wir also bei 243200 Pixeln auf 729600 B = 712,5 kB. Alles noch im grünen Bereich?!
 
-## Auflösungen und Megapixel
+## Auflösungen, Megapixel und *-HD
 
-Aktuelle Kameras unter 100€ schaffen locker 16 bis 20 Megapixel. Das bedeutet, dass die Kameras Bilder mit einer Auflösung von 4992 × 3328 Pixel erzeugen kann.
+Aktuelle Kameras unter 100€ schaffen locker 16 bis 20 Megapixel. Das bedeutet, dass die Kameras Bilder mit einer Auflösung von 4992 × 3328 Pixel und mehr erzeugen kann. Wie sieht das im Vergleich zu gängigen Auflösungen im Standardgebrauch aus?
 
 Eine kleine Tabelle dazu:
 
-| MegaPixel | Auflösung	(Breite x Höhe) 	| Seitenverhältnis 	| Dateigröße | Größenfaktor |
-|:----------|:-----------------------------:|:-----------------:|:----------:|-------------:|
-|  0,3 MP   | 640  x 380					| 4:3 				|  0,70 MB	 |  1,00   		|
-|  0,8 MP   | 1024 x 768   					| 4:3   			|  2,25 MB 	 |  3,21	    |
-|  0,9 MP   | 1280 x 720 (HDTV, 720p)		| 4:3				|  2,64 MB	 |  3,77		| 
-|  2,0 MP   | 1600 x 1200					| 4:3				|  5,49 MB   |  7,08	    | 
-|  2,1 MP   | 1920 x 1080 (Full HD, 1080p)	| 16:9				|  6,11 MB   |  8,73	    | 
-|  3,3 MP   | 2080 × 1560					| 4:3				|  9,28 MB   | 13,26		|
-|  8,3 MP   | 3840 × 2160 (UHD)				| 16:9				| 23,73 MB   | 33,90		|
-|  9,4 MP   | 4096 × 2304 (4K)				| 16:9 				| 27,00 MB	 | 38,57		|
-| 12,0 MP   | 4048 × 3040					| 4:3				| 35,21 MB   | 50,30	    |
-| 16,7 MP   | 4992 × 3328					| 3:2				| 47,53 MB   | 67,90	    |
-| 22,0 MP	| 5344 × 4008					| 4:3				| 61,28 MB	 | 87,54		|
+| MegaPixel | Auflösung	(Breite x Höhe) 	| Seitenverhältnis 	| Dateigröße [^dateigroesse] |
+|----------:|------------------------------:|:-----------------:|---------------------------:|
+|  0,3 MP   | 640  x 380					| 4:3 				|  0,70 MB					 |
+|  0,8 MP   | 1024 x 768   					| 4:3   			|  2,25 MB					 |
+|  0,9 MP   | 1280 x 720 (HDTV, 720p)		| 4:3				|  2,64 MB					 |
+|  2,0 MP   | 1600 x 1200					| 4:3				|  5,49 MB					 |
+|  2,1 MP   | 1920 x 1080 (Full HD, 1080p)	| 16:9				|  6,11 MB					 |
+|  3,3 MP   | 2080 × 1560					| 4:3				|  9,28 MB					 |
+|  8,3 MP   | 3840 × 2160 (UHD)				| 16:9				| 23,73 MB					 |
+|  9,4 MP   | 4096 × 2304 (4K)				| 16:9 				| 27,00 MB					 |
+| 12,0 MP   | 4048 × 3040					| 4:3				| 35,21 MB					 |
+| 16,7 MP   | 4992 × 3328					| 3:2				| 47,53 MB					 |
+| 22,0 MP	| 5344 × 4008					| 4:3				| 61,28 MB					 |
 
-Näheres zu Megapixel siehe unter <a href="http://de.wikipedia.org/wiki/Bildaufl%C3%B6sungen_in_der_Digitalfotografie">Bildauflösung in der Digitalfotografie</a>.
+[^dateigroesse]: Bei 24 Bit pro Pixel und ohne Komprimierung.
+
+Näheres zu Megapixel siehe auf Wikipedia unter <a href="http://de.wikipedia.org/wiki/Bildaufl%C3%B6sungen_in_der_Digitalfotografie">Bildauflösung in der Digitalfotografie</a>.
 
 Anhand der Tabelle erkennt man gut, dass bei doppelter Auflösung (z.B. ungefähr bei 2080 x 1560 <-> 4048 x 3040) die Megapixel (Pixelanzahl) und die Dateigröße um das 4-fache steigt.
 Mit dem Thema ob und wieso es so viel Megapixel gibt und ob das gut oder schlecht ist soll hier nicht das Thema sein. Jedoch kurz mal zum Nachdenken: 
 
-** Welcher Monitor/Fernseher kann mir das darstellen? Möchte ich aus jedem Foto ein Plakat machen? **
+**Welcher Monitor/Fernseher kann mir das darstellen? Möchte ich aus jedem Foto ein Plakat machen?**
 
-Die derzeitige Standardauflösung 1920 x 1080 hat gerade mal 2 Megapixel. In Zukunft soll UHD bzw. 4K kommen und standardisiert werden. Selbst das kommt nicht einmal annähernd an 22 MP heran.
+Die derzeitige Standardauflösung 1920 x 1080 hat gerade mal 2 Megapixel. In Zukunft soll UHD bzw. 4K kommen und standardisiert werden. Selbst das kommt nicht einmal annähernd an 22 MP heran. Wozu also diese Unmengen an Megapixel? Das weiß nur der zahlungsfreudige Konsument...
 
 ## Komprimierungsarten bei Bildern
 
+Bei einer größeren Menge von Fotos (z.B. die alljährigen Urlaubsbilder) wird eine Komprimierung unabdingbar. Die meisten Kameras machen das alles ohne das man etwas davon merkt. Automatisch kommen da JPG-Bilder raus und man muss sich um nichts mehr Gedanken machen... Richtig? 
+
 ### Verlustfreie Komprimierung
 
-Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die verlustfreie Komprimierung. Man spart sich also Speicherplatz und behält aber komplett die Qualität. Bei Bildern nimmt man einfach das Grafikformat PNG. Das vorher genannte Bild des Drachen von 712,5 kB reduziert sich damit auf 191 kB. Ohne Verlust!
+Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die verlustfreie Komprimierung. Man spart sich also Speicherplatz und behält aber komplett die Qualität. Bei Bildern nimmt man einfach das **Grafikformat PNG**. Das vorher genannte Bild des Drachen von **712,5 kB reduziert sich damit auf 191 kB**. Ohne Verlust!
 
 ### Verlustbehaftete Komprimierung
 
@@ -93,6 +97,8 @@ Reduziert man die Qualität jedoch weiter, fällt das erst mal gar nicht wirklic
 Hierzu eine kleine Tabelle:
 
 #### Komprimierung des Drachenbildes
+
+Das Bild hat weiterhin eine Auflösung von 640 x 380 Pixel und 24 Bit Farbtiefe.
 
 | Komprimierung | Qualität 		| Dateigröße | Größe in % |
 |:--------------|:-------------:|:----------:|-----------:|
@@ -125,3 +131,5 @@ Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 5
 		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon_25.jpg" />
 	</a>
 </figure>
+
+Wie man an Tabelle und Bilder sieht, ist Komprimierung ein sehr wichtiges Thema. Gerade bei einer großen Menge von Bildern macht sich Komprimierung am übrigen Speicherplatz deutlich. Das gilt natürlich auch für Filme und Videos, was ich im nächsten Artikel behandeln werde.
