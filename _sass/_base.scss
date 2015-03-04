@@ -230,6 +230,19 @@ figure {
 			}
 		}
 	}
+	&.fourth {
+		@include outer-container;
+		@include media($medium) {
+			a,
+			> img {
+				@include span-columns(3);
+				@include omega(4n);
+			}
+			figcaption {
+				clear: left;
+			}
+		}
+	}
 }
 
 // Fix IE9 SVG bug
