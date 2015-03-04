@@ -40,7 +40,11 @@ Unkomprimiert kommen wir also bei 243200 Pixeln auf 729600 B = 712,5 kB. Alles n
 	Your browser does not support the video tag or mp4 files.
 </video>
 
-Nun betrachten wir eine Kamerafahrt um den Drachen herum. Diese ist 10 Sekunden lang und spielt 30 Bilder pro Sekunde (FPS[^fps]) ab. 300 Bilder also insgesamt. Damit kommen wir auf 208 MB für das Video. Ab jetzt sollte einem langsam klar werden, dass das bei einem kompletten Film so nicht weitergehen kann. **Ein Film mit einer Länge von 120 Minuten hätte dann ca. 146 GB**. Damit wäre die externe Festplatte ziemlich schnell voll... Mit einem Film einer Auflösung von 640x380.
+Nun betrachten wir eine Kamerafahrt um den Drachen herum. Diese ist 10 Sekunden lang und spielt 30 Bilder pro Sekunde (FPS[^fps]) ab. 300 Bilder also insgesamt. Damit kommen wir auf 208 MB für das Video. Ab jetzt sollte einem langsam klar werden, dass das bei einem kompletten Film so nicht weitergehen kann. 
+
+**Ein Film mit einer Länge von 120 Minuten hätte dann ca. 146 GB**. 
+
+Damit wäre die externe Festplatte ziemlich schnell voll... Mit einem Film einer Auflösung von 640x380.
 
 [^fps]:Frames per second
 
@@ -82,7 +86,7 @@ Hierzu eine kleine Tabelle:
 | JPEG   		| 25%   		| 9,33 kB    |
 
 Zum direkten Vergleich die JPEG Bilder mit 75%, 50% und 25% nebeneinander.
-<figure class="fourth" style="text-align: center">
+<figure class="third" style="text-align: center">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_75.jpg">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_75.jpg" />
 	</a>
