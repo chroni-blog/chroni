@@ -235,7 +235,7 @@ figure {
 		@include media($medium) {
 			a,
 			> img {
-				@include span-columns(2);
+				@include span-columns(3);
 				@include omega(4n);
 			}
 			figcaption {
