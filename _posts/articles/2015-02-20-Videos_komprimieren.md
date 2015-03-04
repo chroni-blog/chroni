@@ -82,7 +82,7 @@ Hierzu eine kleine Tabelle:
 | JPEG   		| 25%   		| 9,33 kB    |
 
 Zum direkten Vergleich die JPEG Bilder nebeneinander.
-<figure class="forth">
+<figure class="fourth" style="text-align: center">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_95.jpg">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_95.jpg" />
 	</a>
