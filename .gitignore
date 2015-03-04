@@ -6,3 +6,14 @@ codekit-config.json
 node_modules
 _asset_bundler_cache
 .sass-cache
+/images/Darstellung_von_3D_Modellen/spline_lathe
+/images/Darstellung_von_3D_Modellen/boolean
+/images/Darstellung_von_3D_Modellen/Chamfer
+/images/Darstellung_von_3D_Modellen/extrude
+/images/Darstellung_von_3D_Modellen/hemisphere
+/images/Darstellung_von_3D_Modellen/pics
+/images/Darstellung_von_3D_Modellen/Spline
+/videos/videos_komprimieren/Dragon_movie_brighter
+/videos/videos_komprimieren/Dragon_movie
+/videos/videos_komprimieren/Dragon_movie_60fps
+/videos/videos_komprimieren/Dragon_movie_1080p
