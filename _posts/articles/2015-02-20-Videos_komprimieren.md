@@ -20,22 +20,22 @@ Rechnen wir doch kurz mal durch:
 
 ## Rechenbeispiel:
 
-<figure>
-	<a href="{{ site.url }}/images/Videos_komprimieren/dragon.png">
-		<img src="{{ site.url }}/images/Videos_komprimieren/dragon.png" />
-	</a>
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/Videos_komprimieren/dragon.png" />
 	<figcaption>
 		Ein chinesischer Drache. 640x380 Pixel mit 256 Farben pro Kanal (Rot, Grün, Blau).
 	</figcaption>
 </figure>
 
-Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist ja noch überschaubar. Da jeder Farbwert aus einer Kombination von rot, blau und grün besteht (RGB) und hier jeweils 256 ( 8 Bit bzw. 1 Byte ) Abstufungen haben kann, kommen wir auf 256 * 256 * 256 ( also 3 Byte ) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte. Pro Pixel muss also 3 Byte gespeichert werden.
+Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist ja noch überschaubar. Jeder Farbwert aus einer Kombination von rot, blau und grün besteht (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 ( 8 Bit bzw. 1 Byte ) Abstufungen haben. Damit kommen wir auf 256 * 256 * 256 ( also 3 Byte ) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte. 
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
-Unkomprimiert kommen wir also auf 729600 B = 712,5 kB. Alles noch im grünen Bereich. Aber es geht weiter:
+**Pro Pixel muss also 3 Byte bei einem Bild mit 24 Bit Farbtiefe gespeichert werden**.
 
-<video width="640" height="380" controls>
+Unkomprimiert kommen wir also bei 243200 Pixeln auf 729600 B = 712,5 kB. Alles noch im grünen Bereich. Aber es geht weiter:
+
+<video width="640" height="380" controls style="text-align: center">
 	<source src="{{ site.url }}/videos/videos_komprimieren/dragon_640x480_compressed_RF18.mp4" type="video/mp4">
 	Your browser does not support the video tag or mp4 files.
 </video>
@@ -55,7 +55,7 @@ Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die
 Kann man auch minimal auf Qualität verzichten (z.B. bei Fotos) ist JPEG die bekannteste Möglichkeit.
 Praktisch ist, dass man bei JPG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätseinbußen, ist der Unterschied nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% von dem PNG-Bild ).
 
-<figure>
+<figure class="half">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon.png">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon.png" />
 	</a>
@@ -82,7 +82,7 @@ Hierzu eine kleine Tabelle:
 | JPEG   		| 25%   		| 9,33 kB    |
 
 Zum direkten Vergleich die JPEG Bilder nebeneinander.
-<figure>
+<figure class="forth">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_95.jpg">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_95.jpg" />
 	</a>
