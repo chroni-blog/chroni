@@ -97,10 +97,7 @@ Zum direkten Vergleich die JPEG Bilder nebeneinander.
 	</a>
 	<figcaption>
 		Von links nach rechts: <br/>
-		JPEG 95%, <br/>
-		JPEG 75%, <br/>
-		JPEG 50%, <br/>
-		JPEG 25%
+		JPEG 95%, JPEG 75%, JPEG 50%, JPEG 25%
 	</figcaption>
 </figure>
 
