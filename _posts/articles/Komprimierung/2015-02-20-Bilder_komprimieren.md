@@ -43,7 +43,7 @@ Aktuelle Kameras unter 100€ schaffen locker 16 bis 20 Megapixel. Das bedeutet,
 Eine kleine Tabelle dazu:
 
 | MegaPixel | Auflösung	(Breite x Höhe) 	| Seitenverhältnis 	| Dateigröße [^dateigroesse] |
-|----------:|------------------------------:|:-----------------:|---------------------------:|
+|----------:|:------------------------------|:-----------------:|---------------------------:|
 |  0,3 MP   | 640  x 380					| 4:3 				|  0,70 MB					 |
 |  0,8 MP   | 1024 x 768   					| 4:3   			|  2,25 MB					 |
 |  0,9 MP   | 1280 x 720 (HDTV, 720p)		| 4:3				|  2,64 MB					 |
@@ -77,8 +77,7 @@ Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die
 
 ### Verlustbehaftete Komprimierung
 
-Kann man auf perfekte Qualität verzichten (z.B. bei Fotos, da diese sowieso geringes Rauschen haben) ist JPEG die bekannteste Möglichkeit.
-Praktisch ist, dass man bei JPG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätseinbußen, ist der Unterschied nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% von dem PNG-Bild ).
+Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qualität verzichten und geringe Verluste akzeptieren. **Deswegen ist bei Fotos JPEG das bekannteste und meistgenutzte Grafikformat.** Praktisch ist, dass man bei JPEG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätseinbußen, ist der Unterschied nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% des PNG-Bilds ).
 
 <figure class="half">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon.png">
