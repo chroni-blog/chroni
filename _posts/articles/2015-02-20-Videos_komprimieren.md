@@ -86,6 +86,7 @@ Hierzu eine kleine Tabelle:
 | JPEG   		| 25%   		| 9,33 kB    |
 
 Zum direkten Vergleich die JPEG Bilder mit 75%, 50% und 25% nebeneinander.
+
 <figure class="third" style="text-align: center">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_75.jpg">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_75.jpg" />
@@ -97,7 +98,7 @@ Zum direkten Vergleich die JPEG Bilder mit 75%, 50% und 25% nebeneinander.
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_25.jpg" />
 	</a>
 	<figcaption>
-		Von links nach rechts: <br/>
+		Von links nach rechts:
 		JPEG 75%, JPEG 50%, JPEG 25%
 	</figcaption>
 </figure>
