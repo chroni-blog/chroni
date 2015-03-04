@@ -77,7 +77,7 @@ Hierzu eine kleine Tabelle:
 |:--------------|:-------------:|-----------:|
 | PNG   		| verlustfrei   | 191 kB   	 |
 | JPEG  		| 95% 		  	| 63,2 kB    |
-| JPEG   		| 70%   		| 17,3 kB    |
+| JPEG   		| 75%   		| 17,3 kB    |
 | JPEG   		| 50%   		| 12,7 kB    |
 | JPEG   		| 25%   		| 9,33 kB    |
 
@@ -86,8 +86,8 @@ Zum direkten Vergleich die JPEG Bilder nebeneinander.
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_95.jpg">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_95.jpg" />
 	</a>
-	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_70.jpg">
-		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_70.jpg" />
+	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_75.jpg">
+		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_75.jpg" />
 	</a>
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_50.jpg">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_50.jpg" />
@@ -98,7 +98,7 @@ Zum direkten Vergleich die JPEG Bilder nebeneinander.
 	<figcaption>
 		Von links nach rechts: <br/>
 		JPEG 95%, <br/>
-		JPEG 70%, <br/>
+		JPEG 75%, <br/>
 		JPEG 50%, <br/>
 		JPEG 25%
 	</figcaption>
