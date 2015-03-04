@@ -85,7 +85,17 @@ Hierzu eine kleine Tabelle:
 | JPEG   		| 50%   		| 12,7 kB    |
 | JPEG   		| 25%   		| 9,33 kB    |
 
-Zum direkten Vergleich die JPEG Bilder mit 75%, 50% und 25% nebeneinander.
+Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 50% und 25% nebeneinander.
+<figure class="fourth" style="text-align: center">
+	<img src="{{ site.url }}/images/Videos_komprimieren/dragon_mouth_95.png" />
+	<img src="{{ site.url }}/images/Videos_komprimieren/dragon_mouth_75.png" />
+	<img src="{{ site.url }}/images/Videos_komprimieren/dragon_mouth_50.png" />
+	<img src="{{ site.url }}/images/Videos_komprimieren/dragon_mouth_25.png" />
+	<figcaption>
+		Von links nach rechts:
+		JPEG 75%, JPEG 50%, JPEG 25%
+	</figcaption>
+</figure>
 
 <figure class="fourth" style="text-align: center">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_95.jpg">
