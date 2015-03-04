@@ -77,13 +77,14 @@ Hierzu eine kleine Tabelle:
 
 #### Komprimierung des Drachenbildes
 
-| Komprimierung | Qualität 		| Dateigröße |
-|:--------------|:-------------:|-----------:|
-| PNG   		| verlustfrei   | 191 kB   	 |
-| JPEG  		| 95% 		  	| 63,2 kB    |
-| JPEG   		| 75%   		| 17,3 kB    |
-| JPEG   		| 50%   		| 12,7 kB    |
-| JPEG   		| 25%   		| 9,33 kB    |
+| Komprimierung | Qualität 		| Dateigröße | Größe in % |
+|:--------------|:-------------:|:----------:|-----------:|
+| keine (BMP)	| original  	| 712,5 kB	 | 100,0      |
+| PNG   		| verlustfrei   | 191,0 kB 	 | 26,8		  |
+| JPEG  		| 95% 		  	| 63,2 kB    | 8,8		  | 
+| JPEG   		| 75%   		| 17,3 kB    | 2,4		  |
+| JPEG   		| 50%   		| 12,7 kB    | 1,8		  |
+| JPEG   		| 25%   		| 9,3 kB     | 1,3 		  |
 
 Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 50% und 25% nebeneinander.
 <figure class="fourth" style="text-align: center">
@@ -91,10 +92,6 @@ Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 5
 	<img src="{{ site.url }}/images/Videos_komprimieren/dragon_mouth_75.png" />
 	<img src="{{ site.url }}/images/Videos_komprimieren/dragon_mouth_50.png" />
 	<img src="{{ site.url }}/images/Videos_komprimieren/dragon_mouth_25.png" />
-	<figcaption>
-		Von links nach rechts:
-		JPEG 75%, JPEG 50%, JPEG 25%
-	</figcaption>
 </figure>
 
 <figure class="fourth" style="text-align: center">
@@ -110,10 +107,6 @@ Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 5
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon_25.jpg">
 		<img src="{{ site.url }}/images/Videos_komprimieren/dragon_25.jpg" />
 	</a>
-	<figcaption>
-		Von links nach rechts:
-		JPEG 75%, JPEG 50%, JPEG 25%
-	</figcaption>
 </figure>
 
 
