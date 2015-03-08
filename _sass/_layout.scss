@@ -14,10 +14,6 @@
 	}
 }
 .site-title {
-	@include row;
-	@include media($large) {
-		@include span-columns(4);
-	}
 	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
 	height: $masthead-height;
 	text-decoration: none;
@@ -27,6 +23,8 @@
 	@include font-size(20,no);
 	line-height: .5 * $masthead-height; // half the height to center vertically
 	text-transform: uppercase;
+	float: left;
+	margin-right: 2.35765%;
 }
 
 .site-logo {
