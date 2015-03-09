@@ -32,13 +32,13 @@ Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pi
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
-**Pro Pixel muss also 3 Byte bei einem Bild mit 24 Bit Farbtiefe gespeichert werden**.
+**Pro Pixel muss also normalerweise 3 Byte (24 Bit Farbtiefe) bei einem Farbbild gespeichert werden**.
 
-Unkomprimiert kommen wir also bei 243200 Pixeln auf 729600 B = 712,5 kB. Alles noch im grünen Bereich?!
+Unkomprimiert kommen wir also bei 243200 Pixeln (640 x 380) auf 729600 B = 712,5 kB. Alles noch im grünen Bereich?!
 
 ## Auflösungen, Megapixel und *-HD
 
-Aktuelle Kameras unter 100€ schaffen locker 16 bis 20 Megapixel. Das bedeutet, dass die Kameras Bilder mit einer Auflösung von 4992 × 3328 Pixel und mehr erzeugen kann. Wie sieht das im Vergleich zu gängigen Auflösungen im Standardgebrauch aus?
+Aktuelle Kameras unter 100€ schaffen locker 16 bis 20 Megapixel. Das bedeutet, dass die Kameras Bilder mit einer Auflösung von 4992 × 3328 Pixel und mehr erzeugen können. Wie sieht das im Vergleich zu gängigen Auflösungen im Standardgebrauch aus?
 
 Eine kleine Tabelle dazu:
 
@@ -61,11 +61,14 @@ Eine kleine Tabelle dazu:
 Näheres zu Megapixel siehe auf Wikipedia unter <a href="http://de.wikipedia.org/wiki/Bildaufl%C3%B6sungen_in_der_Digitalfotografie">Bildauflösung in der Digitalfotografie</a>.
 
 Anhand der Tabelle erkennt man gut, dass bei doppelter Auflösung (z.B. ungefähr bei 2080 x 1560 <-> 4048 x 3040) die Megapixel (Pixelanzahl) und die Dateigröße um das 4-fache steigt.
-Mit dem Thema ob und wieso es so viel Megapixel gibt und ob das gut oder schlecht ist soll hier nicht das Thema sein. Jedoch kurz mal zum Nachdenken: 
+Mit dem Thema ob und wieso es so viel Megapixel gibt und ob das gut oder schlecht ist werden wir uns hier aber nicht befassen. Jedoch kurz mal zum Nachdenken: 
 
-**Welcher Monitor/Fernseher kann mir das darstellen? Möchte ich aus jedem Foto ein Plakat machen?**
+**Welcher Monitor/Fernseher kann mir das darstellen? Möchte ich aus jedem Foto ein Plakat machen oder kann ich mir da nicht ein wenig Speicher sparen?**
 
 Die derzeitige Standardauflösung 1920 x 1080 hat gerade mal 2 Megapixel. In Zukunft soll UHD bzw. 4K kommen und standardisiert werden. Selbst das kommt nicht einmal annähernd an 22 MP heran. Wozu also diese Unmengen an Megapixel? Das weiß nur der zahlungsfreudige Konsument...
+
+Tipp: Wer nicht jedes einzelne Bild seiner Sammlung Verkleinern will, kann das mit einem der vielen Tools aus dem Internet machen. Ein recht nettes Tool dazu wäre z.B. der <a href="https://imageresizer.codeplex.com/">Image Resizer</a> oder der <a href="http://www.faststone.org/FSResizerDetail.htm">FastStone Photo Resizer</a>. Probiert vorher ein wenig mit den Einstellungen herum! Achtung aber bei kostenlosen Online-Tools direkt im Browser! Eventuell gebt ihr dort eure Rechte ab und die Bilder werden vielleicht vom Anbieter. Unbedingt das Kleingedruckte lesen! Außerdem könnte das alles ganz schön lange dauern (muss ja erst hochgeladen werden).
+{: .notice-info}
 
 ## Komprimierungsarten bei Bildern
 
