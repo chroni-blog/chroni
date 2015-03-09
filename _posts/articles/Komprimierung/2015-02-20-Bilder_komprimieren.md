@@ -78,25 +78,7 @@ Bei einer größeren Menge von Fotos (z.B. die alljährigen Urlaubsbilder) wird 
 
 Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die verlustfreie Komprimierung. Man spart sich also Speicherplatz und behält aber komplett die Qualität. Die Pixel selbst werden also nicht verändert. Bei Bildern nimmt man einfach das **Grafikformat PNG**. Das vorher genannte Bild des Drachen von **712,5 kB reduziert sich damit auf 191 kB**. Ohne Verlust!
 
-<figure class="half">
-	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon.png">
-		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon.png" />
-	</a>
-	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon_95.jpg">
-		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon_95.jpg" />
-	</a>
-	<figcaption>
-		Links PNG mit 191 kB, rechts JPG 95% mit 36,2 kB.
-	</figcaption>
-</figure>
-
-Zusätzlich hat PNG optional einen Transparenzkanal. Die Transparenz kann bei PNG mit weiteren 8 Bit pro Pixel angegeben werden. Dieser Kanal wird auch oft Alpha Kanal genannt. Diese 256 Abstufungen der Transparenz sind wichtig um weiche Übergänge beschreiben zu können. Zuvor haben wir Bilder mit Pixeln betrachtet, die aus den Farben rot, blau und grün bestehen. Mit dem Transparenzkanal würde ein Pixel mit RGBA beschrieben werden und 32 statt 24 Bit benötigen. 
-
-### Verlustbehaftete Komprimierung
-
-Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qualität verzichten und geringe Verluste akzeptieren. **Deswegen ist bei Fotos JPEG das bekannteste und meistgenutzte Grafikformat.** Praktisch ist, dass man bei JPEG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätsverlust, ist der Unterschied mit bloßem Auge nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% des PNG-Bilds ).
-
-<figure class="half">
+<figure class="half" style="text-align: center">
 	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example2.png">
 		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example2.png" />
 	</a>
@@ -110,6 +92,24 @@ Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qu
 	</figcaption>
 </figure>
 
+
+Zusätzlich hat PNG optional einen Transparenzkanal. Die Transparenz kann bei PNG mit weiteren 8 Bit pro Pixel angegeben werden. Dieser Kanal wird auch oft Alpha Kanal genannt. Diese 256 Abstufungen der Transparenz sind wichtig um weiche Übergänge beschreiben zu können. Zuvor haben wir Bilder mit Pixeln betrachtet, die aus den Farben rot, blau und grün bestehen. Mit dem Transparenzkanal würde ein Pixel mit RGBA beschrieben werden und 32 statt 24 Bit benötigen. 
+
+### Verlustbehaftete Komprimierung
+
+Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qualität verzichten und geringe Verluste akzeptieren. **Deswegen ist bei Fotos JPEG das bekannteste und meistgenutzte Grafikformat.** Praktisch ist, dass man bei JPEG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätsverlust, ist der Unterschied mit bloßem Auge nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% des PNG-Bilds ).
+
+<figure class="half" style="text-align: center">
+	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon.png">
+		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon.png" />
+	</a>
+	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon_95.jpg">
+		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon_95.jpg" />
+	</a>
+	<figcaption>
+		Links PNG mit 191 kB, rechts JPG 95% mit 36,2 kB.
+	</figcaption>
+</figure>
 
 Reduziert man die Qualität jedoch weiter, fällt das erst mal gar nicht wirklich auf. Dazu ein paar Beispiele am Drachenbild.
 
