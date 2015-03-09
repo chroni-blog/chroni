@@ -67,7 +67,7 @@ Mit dem Thema ob und wieso es so viel Megapixel gibt und ob das gut oder schlech
 
 Die derzeitige Standardauflösung 1920 x 1080 hat gerade mal 2 Megapixel. In Zukunft soll UHD bzw. 4K kommen und standardisiert werden. Selbst das kommt nicht einmal annähernd an 22 MP heran. Wozu also diese Unmengen an Megapixel? Das weiß nur der zahlungsfreudige Konsument...
 
-Tipp: Wer nicht jedes einzelne Bild seiner Sammlung Verkleinern will, kann das mit einem der vielen Tools aus dem Internet machen. Ein recht nettes Tool dazu wäre z.B. der <a href="https://imageresizer.codeplex.com/">Image Resizer</a> oder der <a href="http://www.faststone.org/FSResizerDetail.htm">FastStone Photo Resizer</a>. Probiert vorher ein wenig mit den Einstellungen herum! Achtung aber bei kostenlosen Online-Tools direkt im Browser! Eventuell gebt ihr dort eure Rechte ab und die Bilder werden vielleicht vom Anbieter. Unbedingt das Kleingedruckte lesen! Außerdem könnte das alles ganz schön lange dauern (muss ja erst hochgeladen werden).
+**Tipp:** Wer nicht jedes einzelne Bild seiner Sammlung verkleinern will, kann das mit einem der vielen Tools aus dem Internet machen. Ein recht nettes Tool dazu wäre z.B. der <a href="https://imageresizer.codeplex.com/">Image Resizer</a> oder der <a href="http://www.faststone.org/FSResizerDetail.htm">FastStone Photo Resizer</a>. Probiert vorher ein wenig mit den Einstellungen herum! <br/> Achtung aber bei kostenlosen Online-Tools direkt im Browser! Eventuell gebt ihr dort eure Rechte ab und die Bilder werden vielleicht vom Anbieter. Unbedingt das Kleingedruckte lesen! Außerdem könnte das alles ganz schön lange dauern (muss ja erst hochgeladen werden).
 {: .notice-info}
 
 ## Komprimierungsarten bei Bildern
