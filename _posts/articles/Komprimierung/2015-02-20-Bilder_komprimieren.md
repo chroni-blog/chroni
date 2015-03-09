@@ -15,7 +15,7 @@ image:
 
 Verfügbarer Speicher wird Jahr für Jahr immer mehr und immer billiger. Vor 3 Jahren hat man sich noch über einen geschenkten USB-Stick mit 1GB gefreut. Geht man heute auf eine Computermesse, überlegt man schon bei 2GB ob es das überhaupt Wert ist dafür 5 Minuten in einer Schlange zu stehen. Zeitgleich wird das Internet immer schneller. Die Zugänge werden soweit es geht mit Glasfaserkabeln ausgestattet und die Preise sinken stetig.
 
-**"Ich will alles in Full-HD und gestochen scharf! Komprimierung macht mir die Qualität kaputt!"**
+**Muss man noch auf Speicherplatz achten? Können wir nicht langsam auf Komprimierung verzichten und hohe Qualität beibehalten?**
 
 Rechnen wir doch kurz mal durch:
 
@@ -28,7 +28,7 @@ Rechnen wir doch kurz mal durch:
 	</figcaption>
 </figure>
 
-Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist ja noch überschaubar. Jeder Farbwert aus einer Kombination von rot, blau und grün besteht (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Damit kommen wir auf 256 * 256 * 256 (also 3 Byte) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte. 
+Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist eine sehr überschaubare Größe. Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G**rün (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Damit kommen wir auf 256 x 256 x 256 (also 3 Byte) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte.
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
@@ -56,7 +56,7 @@ Eine kleine Tabelle dazu:
 | 16,7 MP   | 4992 × 3328					| 3:2				| 47,53 MB					 |
 | 22,0 MP	| 5344 × 4008					| 4:3				| 61,28 MB					 |
 
-[^dateigroesse]: Bei 24 Bit pro Pixel und ohne Komprimierung.
+[^dateigroesse]: Dateigröße bei 24 Bit pro Pixel und ohne Komprimierung.
 
 Näheres zu Megapixel siehe auf Wikipedia unter <a href="http://de.wikipedia.org/wiki/Bildaufl%C3%B6sungen_in_der_Digitalfotografie">Bildauflösung in der Digitalfotografie</a>.
 
@@ -73,11 +73,13 @@ Bei einer größeren Menge von Fotos (z.B. die alljährigen Urlaubsbilder) wird 
 
 ### Verlustfreie Komprimierung
 
-Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die verlustfreie Komprimierung. Man spart sich also Speicherplatz und behält aber komplett die Qualität. Bei Bildern nimmt man einfach das **Grafikformat PNG**. Das vorher genannte Bild des Drachen von **712,5 kB reduziert sich damit auf 191 kB**. Ohne Verlust!
+Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die verlustfreie Komprimierung. Man spart sich also Speicherplatz und behält aber komplett die Qualität. Die Pixel selbst werden also nicht verändert. Bei Bildern nimmt man einfach das **Grafikformat PNG**. Das vorher genannte Bild des Drachen von **712,5 kB reduziert sich damit auf 191 kB**. Ohne Verlust!
+
+Zusätzlich hat PNG optional einen Transparenzkanal. Die Transparenz kann bei PNG mit weiteren 8 Bit pro Pixel angegeben werden. Dieser Kanal wird auch oft Alpha Kanal genannt. Diese 256 Abstufungen der Transparenz sind wichtig um weiche Übergänge beschreiben zu können. Zuvor haben wir Bilder mit Pixeln betrachtet, die aus den Farben rot, blau und grün bestehen. Mit dem Transparenzkanal würde ein Pixel mit RGBA beschrieben werden und 32 statt 24 Bit benötigen. 
 
 ### Verlustbehaftete Komprimierung
 
-Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qualität verzichten und geringe Verluste akzeptieren. **Deswegen ist bei Fotos JPEG das bekannteste und meistgenutzte Grafikformat.** Praktisch ist, dass man bei JPEG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätseinbußen, ist der Unterschied nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% des PNG-Bilds ).
+Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qualität verzichten und geringe Verluste akzeptieren. **Deswegen ist bei Fotos JPEG das bekannteste und meistgenutzte Grafikformat.** Praktisch ist, dass man bei JPEG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätsverlust, ist der Unterschied mit bloßem Auge nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% des PNG-Bilds ).
 
 <figure class="half">
 	<a href="{{ site.url }}/images/Videos_komprimieren/dragon.png">
@@ -92,21 +94,20 @@ Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qu
 </figure>
 
 
-Reduziert man die Qualität jedoch weiter, fällt das erst mal gar nicht wirklich auf.
-Hierzu eine kleine Tabelle:
+Reduziert man die Qualität jedoch weiter, fällt das erst mal gar nicht wirklich auf. Dazu ein paar Beispiele am Drachenbild.
 
 #### Komprimierung des Drachenbildes
 
 Das Bild hat weiterhin eine Auflösung von 640 x 380 Pixel und 24 Bit Farbtiefe.
 
-| Komprimierung | Qualität 		| Dateigröße | Größe in % |
-|:--------------|:-------------:|:----------:|-----------:|
-| keine (BMP)	| original  	| 712,5 kB	 | 100,0      |
-| PNG   		| verlustfrei   | 191,0 kB 	 | 26,8		  |
-| JPEG  		| 95% 		  	| 63,2 kB    | 8,8		  |
-| JPEG   		| 75%   		| 17,3 kB    | 2,4		  |
-| JPEG   		| 50%   		| 12,7 kB    | 1,8		  |
-| JPEG   		| 25%   		| 9,3 kB     | 1,3 		  |
+| Komprimierung | Qualität 		| Dateigröße | Größe  |
+|:--------------|:-------------:|:----------:|-------:|
+| keine (BMP)	| original  	| 712,5 kB	 | 100,0% |
+| PNG   		| verlustfrei   | 191,0 kB 	 | 26,8%  |
+| JPEG  		| 95% 		  	| 63,2 kB    | 8,8%	  |
+| JPEG   		| 75%   		| 17,3 kB    | 2,4%   |
+| JPEG   		| 50%   		| 12,7 kB    | 1,8%	  |
+| JPEG   		| 25%   		| 9,3 kB     | 1,3%   |
 
 Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 50% und 25% nebeneinander.
 <figure class="fourth" style="text-align: center">
@@ -131,4 +132,4 @@ Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 5
 	</a>
 </figure>
 
-Wie man an Tabelle und Bilder sieht, ist Komprimierung ein sehr wichtiges Thema. Gerade bei einer großen Menge von Bildern macht sich Komprimierung am übrigen Speicherplatz deutlich. Das gilt natürlich auch für Filme und Videos, was ich im nächsten Artikel behandeln werde.
+Wie man an Tabelle und Bilder sieht, ist Komprimierung nach wie vor ein sehr wichtiges Thema. Gerade bei einer großen Menge von Bildern macht sich das am übrigen Speicherplatz deutlich. Das gilt natürlich auch für Filme und Videos, was aber in einem anderen Artikel beschreiben werde.
