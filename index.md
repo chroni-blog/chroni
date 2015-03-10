@@ -9,7 +9,7 @@ image:
 
 <div class="tiles">
 {% for post in site.posts %}
-	{% cat = post.categories%}
+	{% assign cat = post.categories%}
 	{% cat.replace(' ', '')%}
 	{% cat.rstrip()%}
 	{% if cat != '' or cat != nil or cat) != blank %}
