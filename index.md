@@ -8,10 +8,11 @@ image:
 <div class="tiles">
 
 <div class="tiles">
-{% for page in site.pages %}
-	{% unless page.categories == "unpublished" or page.categories == ""%}
+{% for post in site.posts %}
+	{% if post.category == "unpublished" %}
+	{% else if%}
 		{% include post-grid.html %}
-	{% endunless %}
+	{% endif%}
 {% endfor %}
 </div><!-- /.tiles -->
 
