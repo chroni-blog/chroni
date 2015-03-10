@@ -9,7 +9,8 @@ image:
 
 <div class="tiles">
 {% for post in site.posts %}
-	{% if any(c.isalpha() for c in post.categories) %}
+	{% assign cat = post.categories | strip_newlines %}
+	{% if cat != "" or cat != nil or cat != blank %}
 		{% include post-grid.html %}
 	{% endif %}
 {% endfor %}
