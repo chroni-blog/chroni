@@ -9,8 +9,7 @@ image:
 
 <div class="tiles">
 {% for post in site.posts %}
-	{% if post.categories == "unpublished" %}
-	{{ post.categories }}
+	{% if post.categories contains "unpublished" %}
 	{% else if%}
 		{% include post-grid.html %}
 	{% endif%}
