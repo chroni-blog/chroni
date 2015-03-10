@@ -78,13 +78,15 @@ Bei einer größeren Menge von Fotos (z.B. die alljährigen Urlaubsbilder) wird 
 
 Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die verlustfreie Komprimierung. Man spart sich also Speicherplatz und behält aber komplett die Qualität. Die Pixel selbst werden also nicht verändert. Bei Bildern nimmt man einfach das **Grafikformat PNG**. Das vorher genannte Bild des Drachen von **712,5 kB reduziert sich damit auf 191 kB**. Ohne Verlust!
 
+
+##### Transparenz
+
+Arbeitet man mit mehreren Schichten von Bildern, gibt es bei PNG optional einen Transparenzkanal.
+
+
 <figure class="half" style="text-align: center">
-	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example2.png">
-		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example2.png" />
-	</a>
-	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example.png">
-		<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example.png" />
-	</a>
+	<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example2.png" />
+	<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example.png" />
 	<figcaption>
 		Zwei Bilder übereinander. Ein blaues Quadrat unter einem schwarzen Kreis mit Verlauf. <br/>
 		Links PNG ohne Transparenzkanal (24 Bit), <br/>
@@ -93,11 +95,12 @@ Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die
 </figure>
 
 
-Zusätzlich hat PNG optional einen Transparenzkanal. Die Transparenz kann bei PNG mit weiteren 8 Bit pro Pixel angegeben werden. Dieser Kanal wird auch oft Alpha Kanal genannt. Diese 256 Abstufungen der Transparenz sind wichtig um weiche Übergänge beschreiben zu können. Zuvor haben wir Bilder mit Pixeln betrachtet, die aus den Farben rot, blau und grün bestehen. Mit dem Transparenzkanal würde ein Pixel mit RGBA beschrieben werden und 32 statt 24 Bit benötigen. 
+Die Transparenz kann bei PNG mit weiteren 8 Bit pro Pixel angegeben werden. Dieser Kanal wird auch oft Alpha Kanal genannt. Diese 256 Abstufungen der Transparenz sind wichtig um weiche Übergänge beschreiben zu können. Zuvor haben wir Bilder mit Pixeln betrachtet, die aus den Farben rot, blau und grün bestehen. Mit dem Transparenzkanal wird ein Pixel mit 4 Kanälen (RGBA, **R**ot, **G**rün, **B**lau, **A**lpha) beschrieben und benötigt somit **32 Bit statt nur 24 Bit**. 
 
 ### Verlustbehaftete Komprimierung
 
 Bei Fotos, die sowieso ein natürliches Rauschen haben, kann man auf perfekte Qualität verzichten und geringe Verluste akzeptieren. **Deswegen ist bei Fotos JPEG das bekannteste und meistgenutzte Grafikformat.** Praktisch ist, dass man bei JPEG die Qualität in Prozent angeben kann. Bei einer Einstellung von 95%, also kaum Qualitätsverlust, ist der Unterschied mit bloßem Auge nicht erkennbar. Dabei reduziert sich jedoch die Dateigröße von 191 kB auf 36,2 kB ( ca. 19% des PNG-Bilds ).
+
 
 <figure class="half" style="text-align: center">
 	<a href="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon.png">
