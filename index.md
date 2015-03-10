@@ -9,10 +9,7 @@ image:
 
 <div class="tiles">
 {% for post in site.posts %}
-	{% assign cat = post.categories%}
-	{% cat.replace(' ', '')%}
-	{% cat.rstrip()%}
-	{% if cat != '' or cat != nil or cat) != blank %}
+	{% if post.categories != 'unpublished' %}
 		{% include post-grid.html %}
 	{% endif %}
 {% endfor %}
