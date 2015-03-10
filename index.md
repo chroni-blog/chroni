@@ -9,7 +9,10 @@ image:
 
 <div class="tiles">
 {% for post in site.posts %}
-	{% if post.categories != '' or post.categories != nil or post.categories != blank %}
+	{% cat = post.categories%}
+	{% cat.replace(' ', '')%}
+	{% cat.rstrip()%}
+	{% if cat != '' or cat != nil or cat) != blank %}
 		{% include post-grid.html %}
 	{% endif %}
 {% endfor %}
