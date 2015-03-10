@@ -20,7 +20,7 @@
   excerpt: "All komprimierung."
   image: 400x250.gif
   
-  - title: Computergrafik1
+- title: Computergrafik1
   url: /computergrafik1
   excerpt: "Das ist aktuell nur ein Test."
   image: 400x250.gif
@@ -30,7 +30,7 @@
   excerpt: "All komprimierung."
   image: 400x250.gif
   
-  - title: Computergrafik2
+- title: Computergrafik2
   url: /computergrafik2
   excerpt: "Das ist aktuell nur ein Test."
   image: 400x250.gif
@@ -40,7 +40,7 @@
   excerpt: "All komprimierung."
   image: 400x250.gif
   
-  - title: Computergrafik4
+- title: Computergrafik4
   url: /computergrafik4
   excerpt: "Das ist aktuell nur ein Test."
   image: 400x250.gif
@@ -50,7 +50,7 @@
   excerpt: "All komprimierung."
   image: 400x250.gif
   
-  - title: Computergrafik6
+- title: Computergrafik6
   url: /computergrafik6
   excerpt: "Das ist aktuell nur ein Test."
   image: 400x250.gif
