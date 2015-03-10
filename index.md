@@ -10,6 +10,7 @@ image:
 <div class="tiles">
 {% for post in site.posts %}
 	{% if post.categories == "unpublished" %}
+	{{ post.categories }}
 	{% else if%}
 		{% include post-grid.html %}
 	{% endif%}
