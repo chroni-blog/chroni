@@ -3,7 +3,7 @@ layout: article
 title: "Darstellung von 3D-Modellen"
 date: 2015-02-11
 author: Christian
-categories: articles
+categories: computergrafik
 excerpt: "Aus was bestehen 3D-Modelle? Eine kurze Einführung in die Modellierung."
 tags: [rendern]
 toc: true
