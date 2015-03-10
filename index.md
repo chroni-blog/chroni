@@ -9,7 +9,9 @@ image:
 
 <div class="tiles">
 {% for post in site.posts %}
-  {% include post-grid.html %}
+	{% if post.categories != ''}
+		{% include post-grid.html %}
+	{% endif %}
 {% endfor %}
 </div><!-- /.tiles -->
 
