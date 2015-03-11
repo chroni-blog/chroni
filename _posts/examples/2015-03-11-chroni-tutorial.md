@@ -4,7 +4,6 @@ title: "Chroni 1.0: Ein Tutorial"
 date: 2015-03-11
 modified: 
 excerpt:
-tags: []
 image:
   feature:
   teaser:
