@@ -2,7 +2,7 @@
 layout: article
 title: "Syntax HighQQQ Test"
 modified:
-categories: articles
+categories: examples
 excerpt: "Demo post to test the various ways of using syntax highlighting."
 tags: []
 image:

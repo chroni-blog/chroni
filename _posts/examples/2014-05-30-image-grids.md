@@ -3,7 +3,7 @@ layout: article
 title: "Image Grids"
 date: 2014-05-30T11:51:25-04:00
 modified:
-categories: articles
+categories: examples
 excerpt: "Demoing the various thumbnail grid styles."
 tags: []
 ads: true
