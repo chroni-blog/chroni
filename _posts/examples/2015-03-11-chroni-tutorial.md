@@ -11,6 +11,7 @@ image:
 toc: true
 share: false
 categories: examples
+author: Toni
 ---
 
 ## Technische Basis des Blogs
@@ -56,6 +57,7 @@ image:
 toc: true
 modified: 2015-02-27
 comments: true
+author: Toni
 </code>
 </pre>
 
@@ -75,6 +77,8 @@ Wann ein Artikel das letzte mal geändert wurde, kann mit Hilfe von `modified:` 
 
 Die Kommentare werden über die externe Plattform [Disqus] realisiert. Grundsätzlich befürworten wir eine Kommentarfunktion und schalten Sie über `comments: true` ein. 
 
+Schlussendlich kann noch ein Autor über `author: ` hinzugefügt werden. Falls du ein neuer Autor sein solltest, kann muss du ggf. noch hinzugefügt werden. Das ganze ist weiter unten beschrieben.
+
 
 [Disqus]: https://disqus.com/ "Disques Webseite"
 
@@ -92,6 +96,7 @@ Falls man sich entschließen sollte, eine neue Kategorie anzulegen, muss eine so
 Gibt es nun min. 2 Artikel mit ein und derselben Kategorie, erstellen wir einen neuen Menüpunkt innerhalb des Sliders, also den kleinen schwarzen Button rechts oben. Hierfür wird das File `/_data/slidenavigation.yml` geöffnet und weiter Eintrag hinzugefügt. Am besten einfach einen alten Eintrag kopieren und lediglich die Werte anpassen. Das ganze ist relativ selbsterklärend. 
 
 #### Autoren hinzufügen
+Innerhalb des Files `/_data/authors.yml` können mit relativ wenig Aufwand neue Autoren hinzugefügt werden.
 
 #### Cheatsheet: Neuen Artikel schreiben
 1. Artikel eindeutig benennen 
