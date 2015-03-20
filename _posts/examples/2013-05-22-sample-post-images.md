@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "A Post with Images"
-categories: articles
+categories: examples
 excerpt: "Examples and code for displaying images in posts."
 tags: [sample, images, test]
 ads: true

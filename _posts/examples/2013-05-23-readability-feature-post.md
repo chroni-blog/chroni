@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Post with Large Feature Image and Text"
-categories: articles
+categories: examples
 excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
 tags: [sample, readability]
 modified: 2013-06-30
