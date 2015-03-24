@@ -32,7 +32,7 @@ Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pi
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
-**Pro Pixel muss also normalerweise 3 Byte (24 Bit Farbtiefe) bei einem Farbbild gespeichert werden**.
+**Pro Pixel muss also 3 Byte (24 Bit Farbtiefe) bei einem Farbbild gespeichert werden**.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon_tooth.png" />
@@ -96,7 +96,7 @@ Möchte man nicht auf Qualität jeglicher Art verzichten, gibt es immer noch die
 Arbeitet man mit mehreren Schichten von Bildern, gibt es bei PNG optional einen Transparenzkanal.
 
 
-<figure class="half" style="text-align: center">
+<figure class="forth" style="text-align: center">
 	<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example2.png" />
 	<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/transparent_example.png" />
 	<figcaption>
