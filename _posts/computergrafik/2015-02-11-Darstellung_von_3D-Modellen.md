@@ -39,7 +39,7 @@ Meist[^polygonbasiert] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen
 
 [^polygonbasiert]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
 
-<figure  class="half" style="text-align: center">
+<figure  class="forth" style="text-align: center">
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon.gif" />
 	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon_legende.png" />
 	<figcaption>Ein Polygon.
