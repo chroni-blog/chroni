@@ -28,7 +28,20 @@ Rechnen wir doch kurz mal durch:
 	</figcaption>
 </figure>
 
-Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist eine sehr überschaubare Größe. Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G**rün (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Damit kommen wir auf 256 x 256 x 256 (also 3 Byte) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte.
+Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist eine sehr überschaubare Größe. Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G**rün (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben.
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/Komprimierung/Bilder_komprimieren/dragon_tooth.png" />
+	<figcaption>
+		Zoom auf einen Pixel am Zahn des Drachen. Der Farbwert beträgt dort R:148, G:133, B:0.
+	</figcaption>
+</figure>
+
+Der Farbwert wird durch eine **<a href="http://de.wikipedia.org/wiki/Additive_Farbmischung">additive Farbmischung</a>** erreicht. Das kann man sich ungefähr so vorstellen: Man nimmt sich drei LED-Lampen (rot grün und blau). Bei diesen stellt man jeweils deren Intensität ein und richtet sie Dunkeln gegen eine Wand.
+Das genaue Gegenteil wäre das Malen auf einem weißen Blatt Papier. Dort würde man mit seinem Stift aus der weißen Farbe (R:255, G:255 und B:255) immer mehr Farbwerte abziehen (<a href="http://de.wikipedia.org/wiki/Subtraktive_Farbmischung">substraktive Farbmischung</a>).
+
+
+Damit kommen wir auf 256 x 256 x 256 (also 3 Byte) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte.
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
