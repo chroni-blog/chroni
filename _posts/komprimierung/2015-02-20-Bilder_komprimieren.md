@@ -30,9 +30,11 @@ Rechnen wir doch kurz mal durch:
 	</figcaption>
 </figure>
 
-Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist eine sehr überschaubare Größe. Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G**rün (RGB). Jeder Kanal (also R G oder B) kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben.
+Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pixel breit und 380 Pixel hoch. Insgesamt also 243200 Pixel. Ist eine sehr überschaubare Größe. Jeder Pixel wird durch einen Farbwert beschrieben.
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
+
+Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G**rün (RGB). Diese Farben werden auch als Kanäle bezeichnet. Jeder Kanal kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Ein Farbwert wird also durch drei Zahlen von jeweils 0-255 dargestellt. Die Farbe Weiß wäre dementsprechend R:255, G:255, B:255, wobei schwarz durch R:0, G:0, B:0 beschrieben wird.
 
 **Pro Pixel muss also 3 Byte (24 Bit Farbtiefe) bei einem Farbbild gespeichert werden**.
 
@@ -43,12 +45,12 @@ Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pi
 	</figcaption>
 </figure>
 
-Ein Farbwert wird beim RGB-Farbraum durch eine **<a href="http://de.wikipedia.org/wiki/Additive_Farbmischung">additive Farbmischung</a>** erreicht. Das kann man sich ungefähr so vorstellen: Man nimmt sich drei LED-Lampen (rot grün und blau). Bei diesen stellt man jeweils deren Intensität ein und richtet sie im Dunkeln gegen eine Wand.
+Ein Farbwert wird beim RGB-Farbraum durch eine **<a href="http://de.wikipedia.org/wiki/Additive_Farbmischung">additive Farbmischung</a>** erreicht. Das kann man sich ungefähr so vorstellen: Man nimmt sich drei Farblampen (rot, grün und blau) und richtet dieses im Dunkeln gegen eine weiße Wand. Stellt man nun entsprechend die Intensität bei den drei Lampen ein, kann man jeden beliebigen Farbton im RGB-Farbraum erzeugen.
 
-Das genaue Gegenteil wäre das Malen auf einem weißen Blatt Papier. Dort würde man mit seinem Stift aus der weißen Farbe (R:255, G:255 und B:255) immer mehr Farbwerte abziehen (<a href="http://de.wikipedia.org/wiki/Subtraktive_Farbmischung">substraktive Farbmischung</a>).
+Das genaue Gegenteil wäre das Malen auf einem weißen Blatt Papier. Dort zieht man mit seinem Stift aus der weißen Farbe (R:255, G:255, B:255) immer mehr Farbwerte ab (<a href="http://de.wikipedia.org/wiki/Subtraktive_Farbmischung">substraktive Farbmischung</a>).
 
-Damit kommen wir auf 256 x 256 x 256 (also 3 Byte) Farben. Sprich ca. 1,68 Millionen mögliche Farbwerte.
-Unkomprimiert erreichen wir also bei 243200 Pixeln (640 x 380) genau 729600 B (=712,5 kB). Alles noch im grünen Bereich?!
+So kommen wir also auf 256 x 256 x 256 (also 3 Byte) Farbkombinationen pro Pixel. Sprich ca. 1,68 Millionen verschiedene Farbwerte.
+Unkomprimiert erreichen wir bei 243200 Pixeln (640 x 380) genau 729600 Byte (=712,5 kByte). Alles noch im grünen Bereich?!
 
 ## Auflösungen, Megapixel und *-HD
 
@@ -81,7 +83,7 @@ Mit dem Thema ob und wieso es so viel Megapixel gibt und ob das gut oder schlech
 
 Die derzeitige Standardauflösung 1920 x 1080 hat gerade mal 2 Megapixel. In Zukunft soll UHD bzw. 4K kommen und standardisiert werden. Selbst das kommt nicht einmal annähernd an 22 MP heran. Wozu also diese Unmengen an Megapixel? Das weiß nur der zahlungsfreudige Konsument...
 
-**Tipp:** Wer nicht jedes einzelne Bild seiner Sammlung verkleinern will, kann das mit einem der vielen Tools aus dem Internet machen. Ein recht nettes Tool dazu wäre z.B. der <a href="https://imageresizer.codeplex.com/">Image Resizer</a> oder der <a href="http://www.faststone.org/FSResizerDetail.htm">FastStone Photo Resizer</a>. Probiert vorher ein wenig mit den Einstellungen herum! <br/> Achtung aber bei kostenlosen Online-Tools direkt im Browser! Eventuell gebt ihr dort eure Rechte ab und die Bilder werden vielleicht vom Anbieter. Unbedingt das Kleingedruckte lesen! Außerdem könnte das alles ganz schön lange dauern (muss ja erst hochgeladen werden).
+**Tipp:** Wer nicht jedes einzelne Bild seiner Sammlung verkleinern will, kann das mit einem der vielen Tools aus dem Internet machen. Ein recht nettes Tool dazu wäre z.B. der <a href="https://imageresizer.codeplex.com/">Image Resizer</a> oder der <a href="http://www.faststone.org/FSResizerDetail.htm">FastStone Photo Resizer</a>. Probiert vorher ein wenig mit den Einstellungen herum! <br/> Achtung aber bei kostenlosen Online-Tools direkt im Browser! Eventuell gebt ihr dort eure Rechte ab. Unbedingt das Kleingedruckte lesen! Außerdem könnte das alles ganz schön lange dauern (muss ja erst hochgeladen werden).
 {: .notice-info}
 
 ## Komprimierungsarten bei Bildern
