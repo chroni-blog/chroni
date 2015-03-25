@@ -19,11 +19,9 @@ Chroni ist unsere Vorstellung eines Blogs oder besser gesagt: einer Chronik. Ein
 ###Wer ist Chroni?
 
 Toni Fetzer
-<figure>
-<img src="{{ site.url }}/images/Toni.png">
-</figure>
-
-Christian Petry
-<figure>
-<img src="{{ site.url }}/images/Christian.jpg">
+<figure  class="half" style="text-align: center">
+	<img src="{{ site.url }}/images/Toni.png">
+	<img src="{{ site.url }}/images/Christian.jpg">
+	<figcaption>Toni Fetzer und Christian Petry.
+	</figcaption>
 </figure>
