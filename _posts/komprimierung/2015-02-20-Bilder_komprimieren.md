@@ -34,7 +34,7 @@ Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pi
 
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
-Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G**rün (RGB). Diese Farben werden auch als Kanäle bezeichnet. Jeder Kanal kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Ein Farbwert wird also durch drei Zahlen von jeweils 0-255 dargestellt. Die Farbe Weiß wäre dementsprechend R:255, G:255, B:255, wobei schwarz durch R:0, G:0, B:0 beschrieben wird.
+Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G**rün (RGB). Diese Farben werden auch als Kanäle bezeichnet. Jeder Kanal kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Ein Farbwert wird also durch drei Zahlen von jeweils 0-255 dargestellt. Die Farbe Weiß wäre dementsprechend R:255, G:255, B:255, wobei Schwarz durch R:0, G:0, B:0 beschrieben wird.
 
 **Pro Pixel muss also 3 Byte (24 Bit Farbtiefe) bei einem Farbbild gespeichert werden**.
 
@@ -45,7 +45,7 @@ Jeder Farbwert besteht hier aus einer Kombination von **R**ot, **B**lau und **G*
 	</figcaption>
 </figure>
 
-Ein Farbwert wird beim RGB-Farbraum durch eine **<a href="http://de.wikipedia.org/wiki/Additive_Farbmischung">additive Farbmischung</a>** erreicht. Das kann man sich ungefähr so vorstellen: Man nimmt sich drei Farblampen (rot, grün und blau) und richtet dieses im Dunkeln gegen eine weiße Wand. Stellt man nun entsprechend die Intensität bei den drei Lampen ein, kann man jeden beliebigen Farbton im RGB-Farbraum erzeugen.
+Ein Farbwert wird beim RGB-Farbraum durch eine **<a href="http://de.wikipedia.org/wiki/Additive_Farbmischung">additive Farbmischung</a>** erreicht. Das kann man sich ungefähr so vorstellen: Man nimmt sich drei Farblampen (Rot, Grün und Blau) und richtet dieses im Dunkeln gegen eine weiße Wand. Stellt man nun entsprechend die Intensität bei den drei Lampen ein, kann man jeden beliebigen Farbton im RGB-Farbraum erzeugen.
 
 Das genaue Gegenteil wäre das Malen auf einem weißen Blatt Papier. Dort zieht man mit seinem Stift aus der weißen Farbe (R:255, G:255, B:255) immer mehr Farbwerte ab (<a href="http://de.wikipedia.org/wiki/Subtraktive_Farbmischung">substraktive Farbmischung</a>).
 
