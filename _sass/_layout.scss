@@ -387,7 +387,7 @@
 		@include font-size(12,no);
 	}
 	&:before {
-		content: 'Fu&szlig;noten:'; // changed from 'Footnotes'
+		content: 'Fußnoten:'; // changed from 'Footnotes'
 		font-weight: 700;
 	}
 }
