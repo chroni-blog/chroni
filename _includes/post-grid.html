@@ -9,8 +9,8 @@
   {% if post.date %}
   	<p class="entry-date date published">
   		<time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
-  			{{ page.date | date: "%-d" }}
-			{% assign m = page.date | date: "%-m" %}
+  			{{ post.date | date: "%-d" }}
+			{% assign m = post.date | date: "%-m" %}
 			{% case m %}
 			  {% when '1' %}Januar
 			  {% when '2' %}Februar
@@ -25,7 +25,8 @@
 			  {% when '11' %}November
 			  {% when '12' %}Dezember
 			{% endcase %}
-			{{ page.date | date: "%Y" }}
+			{{ post.date | date: "%Y" }}
+			<!--{{ post.date | date: "%B %d, %Y" }}-->
   		</time>
   	</p>
   {% endif %}
