@@ -3,7 +3,7 @@ layout: article
 title: "Videos komprimieren"
 date: 2015-02-25
 author: Christian
-categories: komprimierung
+categories: unpublished
 excerpt: "Wie komprimiert man am besten Videos?"
 tags: [komprimieren, video]
 toc: true
