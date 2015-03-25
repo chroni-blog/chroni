@@ -195,33 +195,6 @@ figure {
 		margin-bottom: 0px + $doc-line-height;
 		margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
 	}
-	&.half {
-		@include outer-container;
-		@include media($medium) {
-			img,
-			figcaption {
-				clear: left;
-			}
-		}
-	}
-	&.third {
-		@include outer-container;
-		@include media($medium) {
-			img,
-			figcaption {
-				clear: left;
-			}
-		}
-	}
-	&.fourth {
-		@include outer-container;
-		@include media($medium) {
-			img,
-			figcaption {
-				clear: left;
-			}
-		}
-	}
 	a {
 		img {
 			// Image hover animation

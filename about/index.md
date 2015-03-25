@@ -1,8 +1,8 @@
 ---
 layout: article
 title: "About"
-date: 2014-06-02T09:44:20-04:00
-modified: 2014-08-27T14:56:44-04:00
+date: 2015-02-11
+modified: 2015-03-25
 excerpt: "This is the Skinny Bones about page."
 image:
   feature:
@@ -18,7 +18,6 @@ Chroni ist unsere Vorstellung eines Blogs oder besser gesagt: einer Chronik. Ein
 
 ###Wer ist Chroni?
 
-Toni Fetzer
 <figure class="half" style="text-align: center">
 	<img src="{{ site.url }}/images/Toni.png" />
 	<img src="{{ site.url }}/images/Christian.jpg" />
