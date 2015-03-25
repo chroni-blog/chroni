@@ -12,7 +12,7 @@ toc: true
 comments: true
 image:
   feature: 
-  teaser: Darstellung_von_3D_Modellen/Vorschau.jpg
+  teaser: computergrafik/Darstellung_von_3D_Modellen/Vorschau.jpg
 ---
 
 Computergrafik verfolgt uns in jedem Bereich der mit Technik zu tun hat. In der Werbung, in Filmen, in Computerspielen, im Web, auf Smartphones und bald sicherlich auch als Hologramm. Dabei sind viele der dort sichtbaren Objekte von einem Designer am Rechner erstellt worden. Aber wie macht man so was und was steckt dahinter?
@@ -25,8 +25,8 @@ Trotzdem bleib ich dabei ganz allgemein und bei der Basis, um mich nicht in Deta
 Als erstes schauen wir uns an woraus so ein Modell besteht.
 
 <figure>
-	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg">
-		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg" />
+	<a href="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg">
+		<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/stone_and_displ_and_ao.jpg" />
 	</a>
 	<figcaption>
 		Beispielmodell: Ein Turm.
@@ -42,8 +42,8 @@ Meist[^polygonbasiert] ist ein Modell aus lauter kleinen Dreiecken - **Polygonen
 [^polygonbasiert]: Es gibt auch voxelbasiertes Rendern, worüber ich vielleicht ein andermal schreibe...
 
 <figure  class="forth" style="text-align: center">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon.gif" />
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/polygon_legende.png" />
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/polygon.gif" />
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/polygon_legende.png" />
 	<figcaption>Ein Polygon.
 	Hier dargestellt mit Vertices (rot), Edges/Kanten (blau) und die Normale (leicht lila).
 	</figcaption>
@@ -61,7 +61,7 @@ Polygone werden bei vielen Objekten nur für die Außenhülle erstellt, nicht f�
 Gerade bei aufwändigen Grafikeffekten wie Beleuchtung und Schatten bedeutet eine geringe Polygonanzahl weniger Rechenaufwand. Deshalb ist es wichtig keine Polygone zu erstellen, die man nicht sehen kann. Das leuchtet sicher noch mehr ein wenn man einen Schritt weiter geht.
 
 <figure style="text-align: center">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/hemisphere.gif" />
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/hemisphere.gif" />
 	<figcaption>Eine sehr simple halbe Kugel aus wenigen Polygonen. 
 	</figcaption>
 </figure>
@@ -74,11 +74,11 @@ Es gibt eine Vielzahl von Techniken und Möglichkeiten wie man von Grundformen z
 
 ## Erstellen eines Meshes
 <figure class="half" style="text-align: center">
-	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_below.jpg">
-		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_below.jpg" />
+	<a href="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/from_below.jpg">
+		<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/from_below.jpg" />
 	</a>
-	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_top.jpg">
-		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/from_top.jpg" />
+	<a href="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/from_top.jpg">
+		<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/from_top.jpg" />
 	</a>
 	<figcaption>
 		Je nach Distanz, Blickwinkel und Verwendungszweck variiert der nötige Detailgrad stark
@@ -101,8 +101,8 @@ Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und d
 
 <figure class="forth" style="text-align: center">
 	<!-- Animation für Spline -->
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline.gif">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/spline_lathe.gif">
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/spline.gif">
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/spline_lathe.gif">
 	<figcaption>Links: Verkettete Linien und Kurven - ein Spline.
 		<br/>
 		Rechts: Ein Rotationskörper aus einem Spline und der Lathe Funktion (Drehverfahren). Es entstehen 36 Seiten mit einer vollen Umdrehung.
@@ -124,8 +124,8 @@ Hier am Turm-Beispiel zeig ich ein paar hilfreiche Tricks:
 Noch fehlen die Zinnen und das Fenster des Turms. Um diese zu erzeugen gibt es zwei nützliche Funktionen.
 
 <figure class="half" style="text-align: center">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/extrude.gif">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/chamfer.gif">
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/extrude.gif">
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/chamfer.gif">
 	<figcaption>
 		Links: Durch die Extrude-Funktion kann man Polygone "herausziehen". Der Turm bekommt somit seine Zinnen. <br/>
 		Rechts: Mit Chamfer kann man Ecken gut abrunden.
@@ -142,7 +142,7 @@ An der Oberseite des Turms werden ein paar der Polygone ausgewählt und "herausg
 Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetzt mit händischer Kleinstarbeit Polygone schneiden und Vertices herumschieben (ziemlich umständlich), Flächen per Extrude hineinschieben und und und... Ein wenig schneller geht es, wenn man das Fenster "herausstanzt". Dazu baut man sich einfach eine Art Stempel in Form eines Fensters.
 
 <figure style="text-align: center">
-	<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_B.png">
+	<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/boolean_B.png">
 	<figcaption>
 		Stempel für das "Ausstechen" eines Fensters in den Turm.
 	</figcaption>
@@ -151,14 +151,14 @@ Das Modellieren eines Fensters wird schon ein wenig kniffliger. Man könnte jetz
 Nun brauchen wir nur noch über eine **boolsche** Funktion das Fenster aus dem Turm stechen. Mit einer boolschen Funktion (ähnlich der mathematischen Mengenlehre) kann man sich entweder die Kombination, die Schnittmenge oder die Subtraktion zweier Meshes erzeugen lassen. In unserem Fall hier wollen wir den Fensterstempel vom Turm subtrahieren.
 
 <figure class="third" style="text-align: center">
-	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
-		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_union.png">
+	<a href="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/boolean_union.png">
+		<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/boolean_union.png">
 	</a>
-	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
-		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_intersection.png">
+	<a href="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/boolean_intersection.png">
+		<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/boolean_intersection.png">
 	</a>
-	<a href="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
-		<img src="{{ site.url }}/images/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
+	<a href="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
+		<img src="{{ site.url }}/images/computergrafik/Darstellung_von_3D_Modellen/boolean_subtraction(A-B).png">
 	</a>
 	<figcaption>Boolsche Funktion mit Turm (Objekt A) und Fensterstempel (Objekt B) <br/> Links: Kombination <br/>Mitte: Schnittmenge <br/>Rechts: Subtraktion (A-B)</figcaption>
 </figure>
