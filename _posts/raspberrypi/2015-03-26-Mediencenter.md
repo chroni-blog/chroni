@@ -15,7 +15,14 @@ image:
   teaser: raspberrypi/mediencenter/mediencenter_teaser.png
 ---
 
-Seit einiger Zeit sind immer wieder Neuigkeiten und Hobbyprojekte über ihn bekannt. Der <a href="http://www.raspberrypi.org">Raspberry Pi</a> ist ein kleiner - sehr kleiner - Computer. Er braucht unglaublich wenig Strom, lässt sich leicht an jeden Monitor oder Fernseher mit HDMI anschließen und hat alles was man für sein Informatikhobby braucht. Gerade der Preis des Rechners in Scheckkartengröße ist interessant. 
+Seit einiger Zeit sind immer über Neuigkeiten und Hobbyprojekte über ihn zu lesen. Der <a href="http://www.raspberrypi.org">Raspberry Pi</a>. Er ist ein kleiner - sehr kleiner - Computer, der unglaublich wenig Strom braucht und sich leicht an jeden Monitor oder Fernseher mit HDMI anschließen lässt. Dabei hat er alles was man für das eigene Hobbyprojekt im Bereich Informatik braucht. Gerade der Preis des Rechners in Scheckkartengröße ist interessant. 
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/raspberry_pi.jpg">
+	<figcaption>
+		Der Raspberry Pi 2.
+	</figcaption>
+</figure>
 
 Hier eine Auflistung der wichtigsten Details eines Raspberry Pi 2:
 
@@ -28,7 +35,7 @@ Hier eine Auflistung der wichtigsten Details eines Raspberry Pi 2:
 * Micro SD Slot
 * **Preis: 35€**
 
-Nicht jeder hat aber das Know-How, die Zeit und die Lust sich mit den Grundfunktionen eines Linux-Betriebssystems herumzuschlagen. Was kann man also ohne viel Informatik-Kenntnisse mit dem Ding anstellen?
+Nicht jeder hat aber das Know-How, die Zeit und die Lust sich mit den Grundfunktionen eines Linux-Betriebssystems herumzuschlagen. **Was kann man also ohne viel Informatik-Kenntnisse mit dem Ding anstellen?**
 
 ## Mediencenter
 
