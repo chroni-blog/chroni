@@ -40,9 +40,7 @@ Nicht jeder hat aber das Know-How, die Zeit und die Lust sich mit den Grundfunkt
 ## Mediencenter
 
 <figure style="text-align: center">
-	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi.jpg">
-		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi.jpg" />
-	</a>
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi.jpg" />
 	<figcaption>
 		Kodi - Ein kostenloses und umfangreiches Media Center für verschiedene Betriebssysteme, mit dem man Filme, Fotos und Musik verwalten und abspielen kann.
 	</figcaption>
