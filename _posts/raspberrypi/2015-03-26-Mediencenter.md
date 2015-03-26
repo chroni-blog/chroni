@@ -52,5 +52,29 @@ Im Netz gibt es einige vielversprechende kostenlose Systeme. Hinter den meisten 
 
 **OpenElec** ist ein System, welches sehr einfach einzurichten ist. Es baut ein eigenes Linux-Betriebssystem um das Programm Kodi herum auf und schafft eine sehr simple und performante Umgebung. Nachfolgend zeige ich, wie man ein solches System einrichtet.
 
-## Einrichten von OpenElec
+## Voraussetzungen
 
+Bevor wir hier anfangen so ein Mediencenter einzurichten, brauchen wir erst einmal ein paar Dinge:
+
+* Raspberry Pi (am besten Version 2)
+* Micro-USB Netzteil (5V, 2A)
+* HDMI-Kabel
+* Micro-SD Karte (8GB ist ausreichend) mit Adapter
+* (optional) Ethernet-Kabel oder USB-WLAN-Stick
+* (optional) Raspberry Pi Gehäuse
+
+Sobald man auf Dienste aus dem Internet ( Youtube, Netflix, etc. ) oder auf externe Laufwerke im LAN zugreifen will (Festplatten am Router oder an einem <a href="http://de.wikipedia.org/wiki/Network_Attached_Storage">NAS[^nas]</a>) braucht man natürlich eine Internetverbindung. Falls das jedoch per Ethernet-Kabel sich schwierig gestaltet, nimmt man am besten einen USB-WLAN-Stick. Simpel, klein und günstig auf z.B. Amazon zu kaufen.
+
+[^nas]: NAS: Network Attached Storage, bezeichnet einfach zu verwaltende Dateiserver. Allgemein wird NAS eingesetzt, um ohne hohen Aufwand unabhängige Speicherkapazität in einem Rechnernetz bereitzustellen.
+
+Zusätzlich braucht man einen PC, an dem man die Micro-SD Karte benutzen kann.
+
+## Installieren von OpenElec
+
+Hat man alle Komponenten zusammen, läd man sich am besten zuerst die neueste Version von OpenElec herunter. Unter <a href="http://openelec.tv/get-openelec">OpenElec.tv</a> wählt man das Image für den eigenen Raspberry Pi herunter. Die Datei entpackt man am besten mit <a href="http://www.7-zip.de/">7Zip</a> oder einem ähnlichen Programm.
+
+Sobald man dann die *.img Datei hat, läd man sich als Windows-Benutzer das Programm <a href="http://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a> herunter. Mit diesem Programm kann man das OpenElec Betriebssystem direkt auf die SD-Karte schreiben.
+
+Disk-Image-Warning.png
+
+testVideo: Big Buck Bunny https://peach.blender.org/download/
