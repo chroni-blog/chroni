@@ -39,14 +39,14 @@ Nicht jeder hat aber das Know-How, die Zeit und die Lust sich mit den Grundfunkt
 
 ## Mediencenter
 
+Eine der beliebtesten Anwendungen, die im Netz mir dem Raspberry Pi zu finden sind, ist die des Mediencenters. Der Sinn des Ganzen ist das einfache Verwalten und Abspielen von Medien aller Art. Viele steigen derzeit um Filme über Streaming Portale wie Maxdome, Amazon Prime instant video und Netflix anstatt sich Filme auf DVD oder BluRay zu kaufen. Möchte man zusätzlich seine Musik in Form von MP3s abspielen, kann ein Mediencenter die Lösung sein.
+
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi.jpg" />
 	<figcaption>
 		Kodi - Ein kostenloses und umfangreiches Media Center für verschiedene Betriebssysteme, mit dem man Filme, Fotos und Musik verwalten und abspielen kann.
 	</figcaption>
 </figure>
-
-Eine der beliebtesten Anwendungen, die im Netz mir dem Raspberry Pi zu finden sind, ist die des Mediencenters. Der Sinn des Ganzen ist das einfache Verwalten und Abspielen von Medien aller Art. Viele steigen derzeit um Filme über Streaming Portale wie Maxdome, Amazon Prime instant video und Netflix anstatt sich Filme auf DVD oder BluRay zu kaufen. Möchte man zusätzlich seine Musik in Form von MP3s abspielen, kann ein Mediencenter die Lösung sein.
 
 Im Netz gibt es einige vielversprechende kostenlose Systeme. Hinter den meisten steckt jeweils eine große oder kleine Community, die das System weiterentwickelt. Dabei kann es monatlich oder sogar wöchentlich zu Updates und Verbesserungen kommen. Viele der Systeme, die sich um das Thema Mediencenter drehen nutzen das Programm **Kodi (früher XBMC)**. Kodi ist ein Programm zur Verwaltung und Abspielen von Filmen, Serien, Musik und Bildern. Die Anzahl der Addons übersteigt locker die 2000, womit man das Programm leicht individuell erweitern kann.
 
