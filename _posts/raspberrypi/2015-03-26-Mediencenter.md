@@ -24,7 +24,7 @@ Seit einiger Zeit sind immer über Neuigkeiten und Hobbyprojekte über ihn zu le
 	</figcaption>
 </figure>
 
-Hier eine Auflistung der wichtigsten Details eines Raspberry Pi 2:
+Hier eine Auflistung der wichtigsten Details des Raspberry Pi 2:
 
 * 900MHz Quad-Core ARM Cortex-A7 CPU
 * 1GB RAM
@@ -39,8 +39,20 @@ Nicht jeder hat aber das Know-How, die Zeit und die Lust sich mit den Grundfunkt
 
 ## Mediencenter
 
+<figure style="text-align: center">
+	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi.jpg" />
+	</a>
+	<figcaption>
+		Kodi - Ein kostenloses und umfangreiches Media Center für verschiedene Betriebssysteme, mit dem man Filme, Fotos und Musik verwalten und abspielen kann.
+	</figcaption>
+</figure>
+
 Eine der beliebtesten Anwendungen, die im Netz mir dem Raspberry Pi zu finden sind, ist die des Mediencenters. Der Sinn des Ganzen ist das einfache Verwalten und Abspielen von Medien aller Art. Viele steigen derzeit um Filme über Streaming Portale wie Maxdome, Amazon Prime instant video und Netflix anstatt sich Filme auf DVD oder BluRay zu kaufen. Möchte man zusätzlich seine Musik in Form von MP3s abspielen, kann ein Mediencenter die Lösung sein.
 
 Im Netz gibt es einige vielversprechende kostenlose Systeme. Hinter den meisten steckt jeweils eine große oder kleine Community, die das System weiterentwickelt. Dabei kann es monatlich oder sogar wöchentlich zu Updates und Verbesserungen kommen. Viele der Systeme, die sich um das Thema Mediencenter drehen nutzen das Programm **Kodi (früher XBMC)**. Kodi ist ein Programm zur Verwaltung und Abspielen von Filmen, Serien, Musik und Bildern. Die Anzahl der Addons übersteigt locker die 2000, womit man das Programm leicht individuell erweitern kann.
 
-**OpenElec** ist ein System, welches sehr einfach einzurichten ist.
+**OpenElec** ist ein System, welches sehr einfach einzurichten ist. Es baut ein eigenes Linux-Betriebssystem um das Programm Kodi herum auf und schafft eine sehr simple und performante Umgebung. Nachfolgend zeige ich, wie man ein solches System einrichtet.
+
+## Einrichten von OpenElec
+
