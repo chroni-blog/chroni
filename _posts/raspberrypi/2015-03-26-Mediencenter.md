@@ -75,6 +75,30 @@ Hat man alle Komponenten zusammen, läd man sich am besten zuerst die neueste Ve
 
 Sobald man dann die *.img Datei hat, läd man sich als Windows-Benutzer das Programm <a href="http://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a> herunter. Mit diesem Programm kann man das OpenElec Betriebssystem direkt auf die SD-Karte schreiben.
 
-Disk-Image-Warning.png
+**Wichtig**: Den richtigen Laufwerksbuchstaben wählen! Vorher am besten prüfen welchen Buchstaben die SD-Karte belegt hat.
+{: .notice-info}
 
-testVideo: Big Buck Bunny https://peach.blender.org/download/
+<figure class="forth" style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/
+Disk-Image-Warning.png" />
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/
+Disk-Image-Complete.png" />
+	<figcaption>
+		Mit dem Tool Win32 Disk Imager lässt sich leicht das System OpenElec auf eine Micro-SD Karte schreiben.
+		Image auswählen, Laufwerk der SD-Karte wählen und auf "Write" klicken. 
+	</figcaption>
+</figure>
+
+Sobald das erledigt wurde, kann der Raspberry Pi gestartet werden. Zuerst die SD-Karte einstecken, danach HDMI und Strom anschließen. Falls der Fernseher CEC unterstützt kann alles in Kodi mit der eigenen Fernbedienung des TVs gesteuert werden. Wirklich tolles Feature! Ansonsten eine Wireless Maus oder Tastatur anschließen. Später ist es auch möglich eine App fürs Smartphone zur Steuerung zu nutzen.
+
+Zu Beginn wird man Schritt für Schritt durch eine Startkonfiguration geleitet, in der man Sprache, Netzwerk und sonstige Einstellungen vornehmen kann.
+Danach kann man unter Videos die Orte seiner Film und Serien Dateien festlegen.
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/big_buck_bunny_small.png" />
+	<figcaption>
+		Big Buck Bunny - Blender Foundation | www.blender.org
+	</figcaption>
+</figure>
+
+Als Testvideo kann ich <a href="https://peach.blender.org/download/">Big Buck Bunny</a> der <a href="www.blender.org">Blender Foundation</a> empfehlen. Das Video kann kostenfrei in FullHD Qualität (1080p) mit Surround Sound (AC3 und AAC) heruntergeladen werden. Der Raspberry Pi 2 kommt damit ohne Probleme klar.
