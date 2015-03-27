@@ -80,7 +80,7 @@ Sobald man dann die *.img Datei hat, läd man sich als Windows-Benutzer das Prog
 
 <figure class="forth" style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/
-Disk-Image-Warning.png" />
+Disk-Image-Warning.png" width= />
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/
 Disk-Image-Complete.png" />
 	<figcaption>
@@ -92,6 +92,15 @@ Disk-Image-Complete.png" />
 Sobald das erledigt wurde, kann der Raspberry Pi gestartet werden. Zuerst die SD-Karte einstecken, danach HDMI und Strom anschließen. Falls der Fernseher CEC unterstützt kann alles in Kodi mit der eigenen Fernbedienung des TVs gesteuert werden. Wirklich tolles Feature! Ansonsten eine Wireless Maus oder Tastatur anschließen. Später ist es auch möglich eine App fürs Smartphone zur Steuerung zu nutzen.
 
 Zu Beginn wird man Schritt für Schritt durch eine Startkonfiguration geleitet, in der man Sprache, Netzwerk und sonstige Einstellungen vornehmen kann.
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/openelec_start.png" />
+	<figcaption>
+		Erster Start von OpenElec. Hier wird man nach und nach durch die grundlegenden Einstellungen geführt.
+	</figcaption>
+</figure>
+
+
 Danach kann man unter Videos die Orte seiner Film und Serien Dateien festlegen.
 
 <figure style="text-align: center">
