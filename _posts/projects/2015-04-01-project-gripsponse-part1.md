@@ -23,7 +23,7 @@ Ja, was ist Gripsponse nun? Nachdem Bilder mehr als tausend Worte sagen, hier gl
 
 Video
 
-Der aufmerksame Leser/Zuschauer wird jetzt sicher denken: DER 3D EFFEKT IST JA GEFÄLSCHT !!11Eins11elf. Ich kann euch beruhigen, er ist es. Das liegt hauptsächlich daran, das unsere Kamera keine Shutter-Brille tragen wollte. 
+Der aufmerksame Leser  Zuschauer wird jetzt sicher denken: DER 3D EFFEKT IST JA GEFÄLSCHT !!11Eins11elf. Ich kann euch beruhigen, er ist es. Das liegt hauptsächlich daran, das unsere Kamera keine Shutter-Brille tragen wollte. 
 
 Jetzt aber mal Spaß bei Seite, was habt ihr hier gerade gesehen? Gripsponse ist eine Software die eine gestenbasierte Steuerung von virtuellen Objekten ermöglicht. Es nutzt einen handelsüblichen 3D Fernseher mit einer sogenannten Shutter Technologie und einen Tiefensensor zur Gestenerkennung. Neben dem stereoskopischen Erlebnis werden sowohl zweidimensionale Anzeigen, als auch die Virtual Reality-Brille Oculus Rift unterstützt. Die Interaktion mit dem virtuellen Objekt ist stark an die Realität angelehnt und somit sehr intuitiv zu nutzen.
 
