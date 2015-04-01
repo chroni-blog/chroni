@@ -23,7 +23,7 @@ In diesem Artikel möchte ich unser bis dato Hauptprojekt mit dem tollen Namen "
 
 Ja, was ist Gripsponse nun? Nachdem Bilder mehr als tausend Worte sagen, hier gleich mal ein ganzes Video:
 
-<iframe src="https://player.vimeo.com/video/122987351" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/122987351">GRIPSPONSE - 3D Interaction Design</a> from <a href="https://vimeo.com/idisfhws">IDIS - FHWS</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4YlQ7xFUFmA" frameborder="0" allowfullscreen></iframe>
 
 Der aufmerksame Leser/Zuschauer wird jetzt sicher denken: "DER 3D EFFEKT IST JA GEFÄLSCHT !!11Eins11elf". Ich kann euch beruhigen, er ist es. Das liegt hauptsächlich daran, das unsere Kamera keine Shutter-Brille tragen wollte. 
 
