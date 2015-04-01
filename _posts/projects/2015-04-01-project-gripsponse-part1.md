@@ -29,8 +29,10 @@ Der aufmerksame Zuschauer wird jetzt sicher denken: "DER 3D EFFEKT IST JA GEFÄLS
 
 Jetzt aber mal Spaß bei Seite, was habt ihr hier gerade gesehen? Gripsponse ist eine Software die eine gestenbasierte Steuerung von virtuellen Objekten ermöglicht. Es nutzt einen handelsüblichen 3D Fernseher mit einer sogenannten Shutter Technologie und einen Tiefensensor zur Gestenerkennung. Neben dem stereoskopischen Erlebnis werden sowohl zweidimensionale Anzeigen, als auch die Virtual Reality-Brille Oculus Rift unterstützt. Die Interaktion mit dem virtuellen Objekt ist stark an die Realität angelehnt und somit sehr intuitiv zu nutzen.
 
-####Aller Anfang ist leicht[^1]
+####Aller Anfang ist leicht[^Note]
 Im Grunde haben wir uns zu Beginn von Gripsponse gefragt: Wie sieht die moderne Mensch-Computer-Interaktion aus - und was kommt nach Maus und Tastatur? Angefixt von zwei Professoren unsere Hochschule sowie Filmen wie "Minority Report" und "Iron Man" haben wir einfach mal angefangen der Frage auf den Zahn zu fühlen. 
+
+[^Note]:Ich verzichte hier bewusst auf die technischen Details, da wir sonst ganz viele tollen noch geplante Chroni Artikel vorwegnehmen würden. 
 
 Nachdem Christian im Rahmen seiner Bachelorarbeit sich intensiv mit der 3D Spiele-Engine Unity auseinandergesetzt hatte und ich mich im Gegenzug mit der Kinect von Microsoft, waren die Mittel zum Zweck recht schnell gefunden. Nur was machen damit? Am Anfang wollten wir vor allem zweierlei: Bewegung und Holographie! 
 
@@ -39,7 +41,7 @@ Nachdem Christian im Rahmen seiner Bachelorarbeit sich intensiv mit der 3D Spiel
 Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an Unity sowie der Übertragung der Position der Hände in die virtuelle Umgebung. Christian hatte sich währenddessen  
 
 
-[^1]: Ich verzichte hier bewusst auf die technischen Details, da wir sonst ganz viele tollen noch geplante Chroni Artikel vorwegnehmen würden. 
+
 
 
 
