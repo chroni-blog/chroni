@@ -23,7 +23,7 @@ In diesem Artikel möchte ich unser bis dato Hauptprojekt mit dem tollen Namen "
 
 Ja, was ist Gripsponse nun? Nachdem Bilder mehr als tausend Worte sagen, hier gleich mal ein ganzes Video:
 
-Video
+<iframe width="560" height="315" src="//vimeo.com/122987351" frameborder="0"> </iframe>
 
 Der aufmerksame Leser/Zuschauer wird jetzt sicher denken: "DER 3D EFFEKT IST JA GEFÄLSCHT !!11Eins11elf". Ich kann euch beruhigen, er ist es. Das liegt hauptsächlich daran, das unsere Kamera keine Shutter-Brille tragen wollte. 
 
