@@ -15,4 +15,5 @@ image:
   teaser: computergrafik/Darstellung_von_3D_Modellen/Vorschau.jpg
 ---
 
-Was treiben Christian und ich eigentlich den ganzen Tag? Klar, wir sind Studenten und besuchen daher auch mal die ein oder andere Vorlesung, wenn es ganz böse kommt müssen wir sogar Prüfungen ablegen. Aber sonst? Nein, wir liegen nicht (nur) auf der faulen Haut und lassen die Sonne auf unsere blassen Bäuche scheinen. Wir sind sogar recht schaffenslustig. Ein Teil dieser Schaffenslust wird seit mittlerweile über einem Jahr vom Institut für Design und Informationssystem (IDIS) gestillt. Was das IDIS ist und was es macht, kann man auf der dazughörigen Homepage einfach mal nachlesen. 
+Polygone werden bei vielen Objekten nur für die Außenhülle erstellt, nicht für das Innere (sieht man ja eh nicht). Falls ein Polygon "falsch gepolt" wäre, also die Normale nach innen zeigen würde, fällt das sofort auf. An der Stelle wäre nämlich ein Loch und man könnte dort durch das Objekt durchsehen. Ungewollt sieht das sehr unschön und fehlerhaft aus.
+Gerade bei aufwändigen Grafikeffekten wie Beleuchtung und Schatten bedeutet eine geringe Polygonanzahl weniger Rechenaufwand. Deshalb ist es wichtig keine Polygone zu erstellen, die man nicht sehen kann. Das leuchtet sicher noch mehr ein wenn man einen Schritt weiter geht.
