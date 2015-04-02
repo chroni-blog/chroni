@@ -10,8 +10,7 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'js/*.js',
-        '!js/main.js',
-        '!js/ganalytics.js'
+        '!js/main.js'
       ]
     },
     watch: {
