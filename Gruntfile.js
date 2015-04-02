@@ -10,7 +10,8 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'js/*.js',
-        '!js/main.js'
+        '!js/main.js',
+        '!js/ganalytics.js'
       ]
     },
     watch: {
@@ -33,7 +34,6 @@ module.exports = function(grunt) {
           mangle: false
         },
         files: {
-          'js/ganalytics.js',
           'js/main.js': [
             'js/plugins/*.js',
             'js/_*.js'
