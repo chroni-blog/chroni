@@ -4,7 +4,7 @@ title: "Mediencenter mit dem Raspberry Pi"
 date: 2015-03-26
 modified: 2015-03-26
 author: Christian
-categories: unpublished
+categories: raspberrypi
 share: true
 excerpt: "Der Mini-Computer für Filme, Musik, Serien und mehr."
 tags: [raspberrypi, movies, music]
