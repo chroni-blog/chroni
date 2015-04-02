@@ -110,7 +110,7 @@ Danach kann man unter Videos die Orte seiner Film und Serien Dateien festlegen.
 Als Testvideo kann ich <a href="https://peach.blender.org/download/">Big Buck Bunny</a> der <a href="www.blender.org">Blender Foundation</a> empfehlen. Das Video kann kostenfrei in FullHD Qualität (1080p) mit Surround Sound (AC3 und AAC) heruntergeladen werden. Sobald das Testvideo auf einem USB-Stick oder einer externen Festplatte direkt an den Raspberry Pi per USB angesteckt ist, kanns losgehen. Im Hauptmenü unter Videos wählt man "Dateien" aus. Hier könnte man jetzt direkt auf den Datenträger zugreifen und das Video abspielen.
 
 <figure class="forth" style="text-align: center">
-	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_buck_small.JPG" />
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_buck_small.jpg" />
 	<figcaption>
 		
 	</figcaption>
@@ -121,7 +121,7 @@ Es könnte aber lästig werden jedes mal die Filme oder Serien direkt auf den Fe
 Für Netzwerklaufwerke gibt es unter "Dateien" die Option "Videos hinzufügen". Dort kann man Pfad und Inhalt festlegen.
 
 <figure class="forth" style="text-align: center">
-	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen_filme_small.JPG" />
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen_filme_small.jpg" />
 	<figcaption>
 	</figcaption>
 </figure>
@@ -134,7 +134,7 @@ Ein **Scraper** ist eine Webseite die für Filme, Serien oder sonstigem Details 
 Rekursives Scannen bedeutet, dass in dem ausgewählten Pfad alle Unterordner, deren Unterordner etc. nach abspielbaren Dateien durchsucht werden. Damit wird dann die Datenbank gefüttert. Bei einer großen Menge von Filmen kann das auch mal eine Weile dauern. Ist aber nur einmalig zu Beginn. Wenn neue Dateien dazu kommen wird in regelmäßigen Abständen aktualisiert.
 
 <figure style="text-align: center">
-	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_filme_small.JPG" />
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_filme_small.jpg" />
 	<figcaption>
 		Hauptmenü mit zusätzlichem Reiter "Filme".
 	</figcaption>
