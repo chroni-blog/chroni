@@ -107,15 +107,10 @@ Zu Beginn wird man Schritt für Schritt durch eine Startkonfiguration geleitet, 
 </figure>
 
 Danach kann man unter Videos die Orte seiner Film und Serien Dateien festlegen. 
-Als Testvideo kann ich <a href="https://peach.blender.org/download/">Big Buck Bunny</a> der <a href="www.blender.org">Blender Foundation</a> empfehlen. Sobald das Testvideo auf einem USB-Stick oder einer externen Festplatte direkt an den Raspberry Pi per USB angesteckt ist, kanns losgehen. Im Hauptmenü unter Videos wählt man "Dateien" aus. Hier könnte man jetzt direkt auf den Datenträger zugreifen und das Video abspielen.
+Als Testvideo kann ich <a href="https://peach.blender.org/download/">Big Buck Bunny</a> der <a href="www.blender.org">Blender Foundation</a> empfehlen. Das Video kann kostenfrei in FullHD Qualität (1080p) mit Surround Sound (AC3 und AAC) heruntergeladen werden. Sobald das Testvideo auf einem USB-Stick oder einer externen Festplatte direkt an den Raspberry Pi per USB angesteckt ist, kanns losgehen. Im Hauptmenü unter Videos wählt man "Dateien" aus. Hier könnte man jetzt direkt auf den Datenträger zugreifen und das Video abspielen.
 
 <figure class="forth" style="text-align: center">
-	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb.jpg">
-		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb.jpg" />
-	</a>
-	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_buck.jpg">
-		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_buck.jpg" />
-	</a>
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_buck_small.JPG" />
 	<figcaption>
 		
 	</figcaption>
@@ -126,16 +121,38 @@ Es könnte aber lästig werden jedes mal die Filme oder Serien direkt auf den Fe
 Für Netzwerklaufwerke gibt es unter "Dateien" die Option "Videos hinzufügen". Dort kann man Pfad und Inhalt festlegen.
 
 <figure class="forth" style="text-align: center">
-	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen.JPG">
-		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen.JPG" />
-	</a>
-	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen_filme.JPG">
-		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen_filme.JPG" />
-	</a>
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen_filme_small.JPG" />
 	<figcaption>
 	</figcaption>
 </figure>
 
+**Wichtig**: In den Einstellungen die Sprache auf Deutsch (de) stellen! Die Filme werden sonst unter englischem Namen in der Datenbank gespeichert.
+{: .notice-info}
+
+Ein **Scraper** ist eine Webseite die für Filme, Serien oder sonstigem Details verlinkt. Man kann darüber also Informationen zu seinen Filmen - wie Trailer, allerlei Bilder, Filmhandlung, Bewertungen etc. - sich automatisiert holen. Standardmäßig ist "The Movie Database" ausgewählt.
+
+Rekursives Scannen bedeutet, dass in dem ausgewählten Pfad alle Unterordner, deren Unterordner etc. nach abspielbaren Dateien durchsucht werden. Damit wird dann die Datenbank gefüttert. Bei einer großen Menge von Filmen kann das auch mal eine Weile dauern. Ist aber nur einmalig zu Beginn. Wenn neue Dateien dazu kommen wird in regelmäßigen Abständen aktualisiert.
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_filme_small.JPG" />
+	<figcaption>
+		Hauptmenü mit zusätzlichem Reiter "Filme".
+	</figcaption>
+</figure>
+
+Wurde die Datenbank mit den Einträgen gespeist, erscheint das Feld "Filme" im Hauptmenü mit den zuletzt zugefügten Filmen.
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_filme_ansicht_small.jpg" />
+	<figcaption>
+		Filmdatenbank mit Ansicht "Medieninformationen".
+	</figcaption>
+</figure>
+
+Geht man direkt auf "Filme" erscheint eine Liste aller Filme der Datenbank. In unseren Fall ist das nur einer. Im Menü Links lässt sich die Art der Ansicht der Liste ändern. Hier habe ich mal die Ansicht "Medieninformationen" gewählt. Man Sieht eine Bewertung, Informationen zum Film und eine Kurzbeschreibung.
+Das ist alles das Ergebnis des Scrapers. Wirklich toll!
+
+Sobald man das Video zu ca. 90% gesehen hat, erscheint sogar ein Haken in der Liste. Der Film wird also als "gesehen" markiert. Durch setzen eines Filters findet man dann recht schnell noch nicht gesehene Filme.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/big_buck_bunny_small.png" />
@@ -144,4 +161,6 @@ Für Netzwerklaufwerke gibt es unter "Dateien" die Option "Videos hinzufügen". 
 	</figcaption>
 </figure>
 
-Das Video kann kostenfrei in FullHD Qualität (1080p) mit Surround Sound (AC3 und AAC) heruntergeladen werden. Der Raspberry Pi 2 kommt damit ohne Probleme klar. Selbst als ich das noch mit dem Raspberry Pi 1 Version B+ getestet hatte, lief das wie geschmiert. Einzig bei Untertitel war der Vorgänger ab und an ein leicht überfordert.
+Der Raspberry Pi 2 kommt damit ohne Probleme klar. Selbst als ich das noch mit dem Raspberry Pi 1 Version B+ getestet hatte, lief das wie geschmiert. Einzig bei Untertitel war der Vorgänger ab und an ein leicht überfordert.
+
+Das wars auch schon fürs Erste. Den Rest findet man leicht selbst oder mit ein wenig Hilfe des Internets heraus. Wenn ihr auf Probleme bei der Installation stoßt, schreibt einfach einen Kommentar!
