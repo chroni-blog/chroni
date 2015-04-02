@@ -33,6 +33,7 @@ module.exports = function(grunt) {
           mangle: false
         },
         files: {
+          'js/ganalytics.js',
           'js/main.js': [
             'js/plugins/*.js',
             'js/_*.js'
