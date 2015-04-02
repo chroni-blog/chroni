@@ -15,7 +15,11 @@ image:
   teaser: raspberrypi/mediencenter/mediencenter_teaser.png
 ---
 
-Seit einiger Zeit sind immer über Neuigkeiten und Hobbyprojekte über ihn zu lesen. Der <a href="http://www.raspberrypi.org">Raspberry Pi</a>. Er ist ein kleiner - sehr kleiner - Computer, der unglaublich wenig Strom braucht und sich leicht an jeden Monitor oder Fernseher mit HDMI anschließen lässt. Dabei hat er alles was man für das eigene Hobbyprojekt im Bereich Informatik braucht. Gerade der Preis des Rechners in Scheckkartengröße ist interessant. 
+Seit einiger Zeit sind immer über Neuigkeiten und Hobbyprojekte über ihn zu lesen. Der <a href="http://www.raspberrypi.org">Raspberry Pi</a>. Er ist ein kleiner - sehr kleiner - Computer, der unglaublich wenig Strom braucht und sich leicht an jeden Monitor oder Fernseher per HDMI anschließen lässt. Er hat alles was man für das eigene Hobbyprojekt im Bereich Informatik braucht. Gerade der Preis und Größe des Rechners sind unschlagbar.
+
+Nicht jeder hat aber das Know-How, die Zeit und die Lust sich mit den Grundfunktionen eines Linux-Betriebssystems herumzuschlagen. **Was kann man also ohne viel Informatik-Kenntnisse mit einem Raspberry Pi anstellen?**
+
+## Der Raspberry Pi 2:
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/raspberry_pi.jpg">
@@ -35,11 +39,12 @@ Hier eine Auflistung der wichtigsten Details des Raspberry Pi 2:
 * Micro SD Slot
 * **Preis: 35€**
 
-Nicht jeder hat aber das Know-How, die Zeit und die Lust sich mit den Grundfunktionen eines Linux-Betriebssystems herumzuschlagen. **Was kann man also ohne viel Informatik-Kenntnisse mit dem Ding anstellen?**
+Mit der Version 2 des kleinen Computers ist es möglich eine Linux-Distribution oder eine kostenlose Version von <a href="http://dev.windows.com/de-de/featured/raspberrypi2support">Windows 10</a> zu nutzen.
+
 
 ## Mediencenter
 
-Eine der beliebtesten Anwendungen, die im Netz mir dem Raspberry Pi zu finden sind, ist die des Mediencenters. Der Sinn des Ganzen ist das einfache Verwalten und Abspielen von Medien aller Art. Viele steigen derzeit um Filme über Streaming Portale wie Maxdome, Amazon Prime instant video und Netflix anstatt sich Filme auf DVD oder BluRay zu kaufen. Möchte man zusätzlich seine Musik in Form von MP3s abspielen, kann ein Mediencenter die Lösung sein.
+Eine der beliebtesten Anwendungen, die im Netz mir dem Raspberry Pi zu finden sind, ist die des Mediencenters. Der Sinn des Ganzen ist das einfache **Verwalten und Abspielen von Medien aller Art**. Viele Heimanwender steigen derzeit vo Kauf von BluRay und DVD auf Streaming Portale wie Maxdome, Amazon Prime instant video und Netflix um. Dadurch spart man sich z.B. Platz im Regal und den Weg zum Händler bzw. Versandkosten. Möchte man zusätzlich seine Musik in Form von MP3s abspielen, kann ein Mediencenter die Lösung sein.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi.jpg" />
@@ -63,11 +68,12 @@ Bevor wir hier anfangen so ein Mediencenter einzurichten, brauchen wir erst einm
 * (optional) Ethernet-Kabel oder USB-WLAN-Stick
 * (optional) Raspberry Pi Gehäuse
 
+Man sollte dafür nicht mehr als ca. 60-80€ ausgeben müssen.
 Sobald man auf Dienste aus dem Internet ( Youtube, Netflix, etc. ) oder auf externe Laufwerke im LAN zugreifen will (Festplatten am Router oder an einem <a href="http://de.wikipedia.org/wiki/Network_Attached_Storage">NAS[^nas]</a>) braucht man natürlich eine Internetverbindung. Falls das jedoch per Ethernet-Kabel sich schwierig gestaltet, nimmt man am besten einen USB-WLAN-Stick. Simpel, klein und günstig auf z.B. Amazon zu kaufen.
 
 [^nas]: NAS: Network Attached Storage, bezeichnet einfach zu verwaltende Dateiserver. Allgemein wird NAS eingesetzt, um ohne hohen Aufwand unabhängige Speicherkapazität in einem Rechnernetz bereitzustellen.
 
-Zusätzlich braucht man einen PC, an dem man die Micro-SD Karte benutzen kann.
+Zusätzlich braucht man einen PC oder Laptop, an dem man die Micro-SD Karte benutzen kann.
 
 ## Installieren von OpenElec
 
@@ -80,7 +86,7 @@ Sobald man dann die *.img Datei hat, läd man sich als Windows-Benutzer das Prog
 
 <figure class="forth" style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/
-Disk-Image-Warning.png" width= />
+Disk-Image-Warning.png" />
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/
 Disk-Image-Complete.png" />
 	<figcaption>
@@ -89,9 +95,9 @@ Disk-Image-Complete.png" />
 	</figcaption>
 </figure>
 
-Sobald das erledigt wurde, kann der Raspberry Pi gestartet werden. Zuerst die SD-Karte einstecken, danach HDMI und Strom anschließen. Falls der Fernseher CEC unterstützt kann alles in Kodi mit der eigenen Fernbedienung des TVs gesteuert werden. Wirklich tolles Feature! Ansonsten eine Wireless Maus oder Tastatur anschließen. Später ist es auch möglich eine App fürs Smartphone zur Steuerung zu nutzen.
+Sobald das erledigt wurde, kann der Raspberry Pi gestartet werden. Zuerst die SD-Karte einstecken, danach HDMI und Strom anschließen. Falls der Fernseher CEC unterstützt kann alles in Kodi mit der eigenen Fernbedienung des TVs gesteuert werden. Wirklich tolles Feature! Ansonsten einfach eine Maus oder Tastatur (Empfehlung: Logitech K400) anschließen. Später ist es auch möglich eine Smartphone-App zur Steuerung zu nutzen.
 
-Zu Beginn wird man Schritt für Schritt durch eine Startkonfiguration geleitet, in der man Sprache, Netzwerk und sonstige Einstellungen vornehmen kann.
+Zu Beginn wird man Schritt für Schritt durch eine Startkonfiguration geleitet, in der man Sprache, Netzwerk und sonstige Einstellungen vornehmen kann. Danach befindet man sich schon im Hauptmenü. Hier 
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/openelec_start.png" />
@@ -100,8 +106,36 @@ Zu Beginn wird man Schritt für Schritt durch eine Startkonfiguration geleitet, 
 	</figcaption>
 </figure>
 
+Danach kann man unter Videos die Orte seiner Film und Serien Dateien festlegen. 
+Als Testvideo kann ich <a href="https://peach.blender.org/download/">Big Buck Bunny</a> der <a href="www.blender.org">Blender Foundation</a> empfehlen. Sobald das Testvideo auf einem USB-Stick oder einer externen Festplatte direkt an den Raspberry Pi per USB angesteckt ist, kanns losgehen. Im Hauptmenü unter Videos wählt man "Dateien" aus. Hier könnte man jetzt direkt auf den Datenträger zugreifen und das Video abspielen.
 
-Danach kann man unter Videos die Orte seiner Film und Serien Dateien festlegen.
+<figure class="forth" style="text-align: center">
+	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb.jpg" />
+	</a>
+	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_buck.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_buck.jpg" />
+	</a>
+	<figcaption>
+		
+	</figcaption>
+</figure>
+
+Es könnte aber lästig werden jedes mal die Filme oder Serien direkt auf den Festplatten zu suchen (gerade wenn man dort keine Ordnung hat). Deswegen gibt es unter Kodi eine Datenbank. In diesem Beispiel kann man mit Rechtsklick auf das Wechsellaufwerk den "Inhalt festlegen". Dabei kann man dann unter "Filme", "Serien" oder "Musikvideos" wählen und mehrere Optionen festlegen.
+
+Für Netzwerklaufwerke gibt es unter "Dateien" die Option "Videos hinzufügen". Dort kann man Pfad und Inhalt festlegen.
+
+<figure class="forth" style="text-align: center">
+	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen.JPG">
+		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen.JPG" />
+	</a>
+	<a href="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen_filme.JPG">
+		<img src="{{ site.url }}/images/raspberrypi/mediencenter/kodi_usb_inhalt_festlegen_filme.JPG" />
+	</a>
+	<figcaption>
+	</figcaption>
+</figure>
+
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/big_buck_bunny_small.png" />
@@ -110,4 +144,4 @@ Danach kann man unter Videos die Orte seiner Film und Serien Dateien festlegen.
 	</figcaption>
 </figure>
 
-Als Testvideo kann ich <a href="https://peach.blender.org/download/">Big Buck Bunny</a> der <a href="www.blender.org">Blender Foundation</a> empfehlen. Das Video kann kostenfrei in FullHD Qualität (1080p) mit Surround Sound (AC3 und AAC) heruntergeladen werden. Der Raspberry Pi 2 kommt damit ohne Probleme klar.
+Das Video kann kostenfrei in FullHD Qualität (1080p) mit Surround Sound (AC3 und AAC) heruntergeladen werden. Der Raspberry Pi 2 kommt damit ohne Probleme klar. Selbst als ich das noch mit dem Raspberry Pi 1 Version B+ getestet hatte, lief das wie geschmiert. Einzig bei Untertitel war der Vorgänger ab und an ein leicht überfordert.
