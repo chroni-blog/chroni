@@ -1,8 +1,8 @@
 ---
 layout: article
 title: "Trust me, I'm an Engineer!"
-date: 2015-04-04
-modified: 2015-04-04
+date: 2015-04-07
+modified: 2015-04-07
 author: Christian
 categories: trust_me
 share: true
