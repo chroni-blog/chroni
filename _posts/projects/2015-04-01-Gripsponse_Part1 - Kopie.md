@@ -36,6 +36,8 @@ Nachdem Christian im Rahmen seiner Bachelorarbeit sich intensiv mit der 3D Spiel
 
 ##Der erste Prototyp
 
+
+
 Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an Unity sowie der Übertragung der Position der Hände in die virtuelle Umgebung. Christian hatte sich währenddessen  
 
 
