@@ -25,7 +25,8 @@ name: Admin
 web: http://chroni.de
 email: mail@chroni.de
 twitter: 
-bio: 
+bio:
+disqus-shortname: chronide
 avatar: bio-photo.jpg # 160x160 px image for author byline
 google:
 plus: 
