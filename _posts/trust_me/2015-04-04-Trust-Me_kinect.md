@@ -4,7 +4,7 @@ title: "Trust me, I'm an Engineer!"
 date: 2015-04-04
 modified: 2015-04-04
 author: Christian
-categories: unpublished
+categories: trust_me
 share: true
 excerpt: "Halterung für eine Kinect."
 tags: [project, kinect, engineer]
@@ -17,7 +17,28 @@ image:
   creditlink: https://www.youtube.com/user/Gonzossm
 ---
 
-Nachdem die Speicherkapazität meiner SSD keine 5 GB mehr zählte, ich aber gerade eine Virtuelle Maschine mit Fedora 21 aufsetzen wollte, kam ich auf die grandiose Idee eine weitere SSD in mein Cubecase zu quetschen. Aus meinem alten Laptop war die SSD recht schnell ausgebaut... der Rest gehört zur Kategorie: Trust me, I'm an Engineer! 
-<a href="{{ site.url }}/images/trust_me/01_trust.jpg">
-	<img src="{{ site.url }}/images/trust_me/01_trust.jpg" />
-</a>
+Der Aufbau für den Videodreh von Gripsponse (siehe {% post_url /projects/2015-04-01-Gripsponse_Part1 %}) 
+verlief nicht so Reibungslos wie man vermuten könnte.
+
+<figure>
+	<img src="{{ site.url }}/images/trust_me/kinect/fotostudio.jpg" />
+	<figcaption>
+		Aufbau im Fotostudio mit Toni im Vordergrund.
+	</figcaption>
+</figure>
+
+Wir konnten die Kinect nicht einfach auf ein Podest stellen, weil genau dort der Boden abgerundet in der Wand mündete. 
+Naja hätten sowieso kein passendes Podest gehabt. Ein Glück dass wir folgende Gegenstände parat hatten:
+
+* Zollstock
+* Radiergummi
+* Paketklebeband
+
+<figure>
+	<img src="{{ site.url }}/images/trust_me/kinect/kinect_trust.jpg" />
+	<figcaption>
+		Montage der Kinect am TV.
+	</figcaption>
+</figure>
+
+Hat den ganzen Drehtag gehalten.
