@@ -71,7 +71,16 @@ Bei einer Binärzahl darf man nur die Ziffer 0 und die Ziffer 1 verwenden. So im
 
 Bis zur Zahl **1** gibt es keinerlei Probleme. Ab der Zahl **2** jedoch, brauchen wir bei der Binärzahl eine weitere Stelle. Es sind ja nur die Ziffern 0 und 1 verwendbar. Ab der Dezimalzahl **4** und **8** brauchen wir jeweils eine weitere Stelle. Hier ist sicher nochmal gut zu sehen, dass bei einer Dezimalzahl 10 verschiedene Zeichen pro Stelle und bei einer Binärzahl immer nur 2 verschiedene Zeichen pro Stelle verwendet werden können. Man muss also bei Binärzahlen auch viel mehr Stellen nehmen, als in Dezimalzahlen, um die gleiche Zahl darzustellen.
 
-Legt man vorher die Anzahl der Stellen fest, wird damit auch die maximal mögliche Zahl festgelegt, die man darstellen kann. Sprich: Wenn ich vorgebe, dass man nur **3** Stellen im Binärsystem verwenden kann, dann ist die höchste darzustellende Zahl die **7** (Binär: 111). Die kleinste Zahl, die man darstellen kann ist dabei immer die 0. Mit 3 Bit lassen sich somit die 8 verschiedenen Zahlen 0,1,2,3,4,5,6 und 7 darstellen. **Mit einem Byte sind 8 Bits, also 8 Stellen in einem Binärsystem, gemeint**. Die höchste Zahl, die man mit **8** Bits darstellen kann, ist die **127** (Binär: 11111111). Mit 8 Bits lassen sich also 128 verschiedene Zahlen darstellen (Nicht die **0** vergessen!).
+Legt man vorher die Anzahl der Stellen fest, wird damit auch die maximal mögliche Zahl festgelegt, die man darstellen kann. Sprich: Wenn ich vorgebe, dass man nur **3** Stellen im Binärsystem verwenden kann, dann ist die höchste darzustellende Zahl die **7** (Binär: 111). Die kleinste Zahl, die man darstellen kann ist dabei immer die 0. Mit 3 Bit lassen sich somit die 8 verschiedenen Zahlen 0,1,2,3,4,5,6 und 7 darstellen. **Mit einem Byte sind 8 Bits, also 8 Stellen in einem Binärsystem, gemeint**. Die höchste Zahl, die man mit **8** Bits darstellen kann, ist die **255** (Binär: 11111111). Mit 8 Bits lassen sich also 256 verschiedene Zahlen darstellen (Nicht die **0** vergessen!).
+
+Hier ein Beispiel, wie mit 8 Hebeln, die Zahl 175 dargestellt werden kann.
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/Komprimierung/lever_10101111_example.png" />
+	<figcaption>
+		8 Hebeln, die die Zahl 175 darstellen. <br/>
+		Binär: 10101111
+	</figcaption>
+</figure>
 
 ## Weiter im Rechenbeispiel
 
