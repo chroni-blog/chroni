@@ -69,7 +69,7 @@ Bevor wir hier anfangen so ein Mediencenter einzurichten, brauchen wir erst einm
 * (optional) Raspberry Pi Gehäuse
 
 Man sollte dafür nicht mehr als ca. 60-80€ ausgeben müssen.
-Sobald man auf Dienste aus dem Internet ( Youtube, Netflix, etc. ) oder auf externe Laufwerke im LAN zugreifen will (Festplatten am Router oder an einem <a href="http://de.wikipedia.org/wiki/Network_Attached_Storage">NAS[^nas]</a>) braucht man natürlich eine Internetverbindung. Falls das jedoch per Ethernet-Kabel sich schwierig gestaltet, nimmt man am besten einen USB-WLAN-Stick. Simpel, klein und günstig auf z.B. Amazon zu kaufen.
+Sobald man auf Dienste aus dem Internet ( Youtube, Netflix, etc. ) oder auf externe Laufwerke im LAN zugreifen will (Festplatten am Router oder an einem <a href="http://de.wikipedia.org/wiki/Network_Attached_Storage">NAS[^nas]</a>) braucht man natürlich eine Netzwerkverbindung. Falls das jedoch per Ethernet-Kabel sich schwierig gestaltet, nimmt man am besten einen USB-WLAN-Stick. Simpel, klein und günstig auf z.B. Amazon zu kaufen.
 
 [^nas]: NAS: Network Attached Storage, bezeichnet einfach zu verwaltende Dateiserver. Allgemein wird NAS eingesetzt, um ohne hohen Aufwand unabhängige Speicherkapazität in einem Rechnernetz bereitzustellen.
 

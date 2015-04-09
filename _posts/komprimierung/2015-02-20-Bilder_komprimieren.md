@@ -15,11 +15,11 @@ image:
   teaser:  Komprimierung/Bilder_komprimieren/teaser.jpg
 ---
 
-Vor 3 Jahren hat man sich noch über einen geschenkten USB-Stick mit 1GB gefreut. Geht man heute auf eine Computermesse, überlegt man schon bei 2GB ob es das überhaupt Wert ist dafür 5 Minuten in einer Schlange zu stehen. Zeitgleich wird das Internet immer schneller. Die Zugänge werden soweit es geht mit Glasfaserkabeln ausgestattet und die Preise sinken stetig.
+Vor 3 Jahren hat man sich noch über einen geschenkten USB-Stick mit 1 GB gefreut. Geht man heute auf eine Computermesse, überlegt man schon bei 2 GB, ob es das überhaupt Wert ist, dafür 5 Minuten in einer Schlange zu stehen. Zeitgleich wird das Internet immer schneller. Die Zugänge werden, soweit es geht, mit Glasfaserkabeln ausgestattet, und die Preise sinken stetig.
 
 **Muss man noch auf Speicherplatz achten? Können wir nicht langsam auf Komprimierung verzichten und hohe Qualität beibehalten?**
 
-Rechnen wir doch kurz mal durch:
+Rechnen wir doch mal kurz durch:
 
 ## Rechenbeispiel
 
@@ -35,6 +35,40 @@ Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pi
 [^drache]: Das Modell des Drachen ist aus dem <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford Repository</a> und wurde mit 3Ds Max gerendert. An dieser Stelle: Vielen Dank an das Stanford Computer Graphics Laboratory für die Bereitstellung!
 
 Ein solcher Farbwert besteht hier aus einer Kombination von **R**ot, **G**rün und **B**lau (RGB). Diese Farben werden auch als Kanäle bezeichnet. Jeder Kanal kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Ein Farbwert wird also durch drei Zahlen zwischen 0 und 255 dargestellt. Die Farbe Weiß wäre dementsprechend R:255, G:255, B:255, wobei Schwarz durch R:0, G:0, B:0 beschrieben wird.
+
+## kurzer Exkurs: Bits und Bytes
+
+Wenn man Bits nicht nur aus dem Heimwerkerbereich kennt, kann man diesen Teil überspringen. Für den Rest hier ein kleiner Exkurs was Bits genau sind und wie man mit ihnen Zahlen darstellt.
+
+<figure class="forth" style="text-align: center">
+	<img src="{{ site.url }}/images/Komprimierung/lever_down.png" />
+	<img src="{{ site.url }}/images/Komprimierung/lever_up.png" />
+	<figcaption>
+		Zwei Hebel mit jeweils zwei möglichen Zuständen. Entweder oben oder unten. Bei zwei Hebeln hat man insgesamt 4 verschiedene Kombinationen.
+	</figcaption>
+</figure>
+
+Ein Bit kann mehrere Bedeutungen haben - "Aus" und "An", 0 und 1, "zu" und "offen", "ja" und "nein", etc. Was bei allen jedoch gleich ist: **Ein Bit beschreibt einen von zwei möglichen Zuständen**. Interpretiert man "oben" als 1 und "unten" als 0, so erhält man eine Binärzahl. Bei einer Binärzahl darf man nur die Ziffer 0 und die Ziffer 1 verwenden. In dem täglichen Gebrauch verwenden wir das Dezimalsystem. Hier sind pro Stelle die Ziffern 0-9 verwendbar. Hier eine kleine Tabelle:
+
+| Dezimal | Binär   |
+|--------:|:--------|
+|    0    |   0     |
+|    1    |   1     |
+|    2    |   10    |
+|    3    |   11    |
+|    4    |   100   |
+|    5    |   101   |
+|    6    |   110   |
+|    7    |   111   |
+|    8    |   1000  |
+|    9    |   1001  |
+|    10   |   1010  |
+
+Bis zur Zahl 1 gibt es keinerlei Probleme. Ab der Zahl 2 jedoch, muss bei der Binärzahl eine weitere Stelle hinzugefügt werden. Es sind ja nur die Ziffern 0 und 1 verwendbar. Ab der Dezimalzahl 4 und 8 muss jeweils wieder eine Stelle in der Binärdarstellung hinzugefügt werden. Hier erkennt man hoffentlich, dass bei einer Dezimalzahl 10 Zeichen pro Stelle und bei einer Binärzahl immer nur 2 Zahlen pro Stelle verwendet werden können. Demnach muss man bei Binärzahlen auch viel mehr Stellen verwenden, wie im Dezimalsystem, um die gleiche Zahl darzustellen.
+
+Legt man vorher die Anzahl der Stellen fest, wird damit auch die maximal mögliche Zahl festgelegt, die man darstellen kann. Sprich: Wenn ich vorgebe, dass man nur 3 Stellen im Binärsystem verwenden kann, dann ist die höchste darzustellende Zahl die 7 (Binär: 111). Die kleinste Zahl, die man darstellen kann ist dabei immer die 0. Man kann also mit 3 Bit die 8 verschiedenen Zahlen 0,1,2,3,4,5,6 und 7 darstellen.
+
+Mit einem Byte sind 8 Bits, also 8 Stellen in einem Binärsystem, gemeint. Die höchste Zahl, die man mit 8 Bits darstellen kann, ist 127. Man kann mit 8 Bits 128 verschiedene Zahlen darstellen (Nicht die 0 vergessen!).
 
 **Pro Pixel müssen bei einem Farbbild also 3 Byte (24 Bit Farbtiefe) gespeichert werden**.
 
