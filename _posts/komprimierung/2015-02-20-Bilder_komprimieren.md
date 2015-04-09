@@ -36,7 +36,7 @@ Hier habe ich ein kleines Bild eines Drachen[^drache]. Das Bild ist genau 640 Pi
 
 Ein solcher Farbwert besteht hier aus einer Kombination von **R**ot, **G**rün und **B**lau (RGB). Diese Farben werden auch als Kanäle bezeichnet. Jeder Kanal kann jeweils 256 (8 Bit bzw. 1 Byte) Abstufungen haben. Ein Farbwert wird also durch drei Zahlen zwischen 0 und 255 dargestellt. Die Farbe Weiß wäre dementsprechend R:255, G:255, B:255, wobei Schwarz durch R:0, G:0, B:0 beschrieben wird.
 
-## kurzer Exkurs: Bits und Bytes
+## Kleiner Exkurs: Bits und Bytes
 
 Wenn man Bits nicht nur aus dem Heimwerkerbereich kennt, kann man diesen Teil überspringen. Für den Rest hier ein kleiner Exkurs was Bits genau sind und wie man mit ihnen Zahlen darstellt.
 
@@ -46,11 +46,14 @@ Ein Bit kann mehrere Bedeutungen haben - "Aus" und "An", 0 und 1, "zu" und "offe
 	<img src="{{ site.url }}/images/Komprimierung/lever_10_example.png" />
 	<figcaption>
 		Zwei Hebel mit jeweils zwei möglichen Zuständen. Entweder oben oder unten. Bei zwei Hebeln hat man insgesamt 4 verschiedene Kombinationen:<br/>
-		"unten" + "unten", "unten" + "oben", "oben" + "unten" und "oben" + "oben".
+		"unten" + "unten",<br/>
+		"unten" + "oben",<br/>
+		"oben" + "unten" und <br/>
+		"oben" + "oben".
 	</figcaption>
 </figure>
 
-Bei einer Binärzahl darf man nur die Ziffer 0 und die Ziffer 1 verwenden. In dem täglichen Gebrauch verwenden wir das Dezimalsystem. Im Dezimalsystem sind pro Stelle die Ziffern 0-9 verwendbar. Hier zur Übersicht eine kleine Tabelle:
+Bei einer Binärzahl darf man nur die Ziffer 0 und die Ziffer 1 verwenden. So im alltäglichem Gebrauch verwenden wir das Dezimalsystem. Im Dezimalsystem sind pro Stelle die Ziffern 0-9 verwendbar. Hier zur Übersicht eine kleine Tabelle:
 
 | Dezimal | Binär   |
 |--------:|:--------|
@@ -66,9 +69,9 @@ Bei einer Binärzahl darf man nur die Ziffer 0 und die Ziffer 1 verwenden. In de
 |    9    |   1001  |
 |    10   |   1010  |
 
-Bis zur Zahl 1 gibt es keinerlei Probleme. Ab der Zahl 2 jedoch, muss bei der Binärzahl eine weitere Stelle hinzugefügt werden. Es sind ja nur die Ziffern 0 und 1 verwendbar. Ab der Dezimalzahl 4 und 8 muss jeweils wieder eine Stelle in der Binärdarstellung hinzugefügt werden. Hier erkennt man nochmal gut, dass bei einer Dezimalzahl 10 Zeichen pro Stelle und bei einer Binärzahl immer nur 2 Zahlen pro Stelle verwendet werden können. Demnach muss man bei Binärzahlen auch viel mehr Stellen verwenden, wie in Dezimalzahlen, um die gleiche Zahl darzustellen.
+Bis zur Zahl **1** gibt es keinerlei Probleme. Ab der Zahl **2** jedoch, brauchen wir bei der Binärzahl eine weitere Stelle. Es sind ja nur die Ziffern 0 und 1 verwendbar. Ab der Dezimalzahl **4** und **8** brauchen wir jeweils eine weitere Stelle. Hier ist sicher nochmal gut zu sehen, dass bei einer Dezimalzahl 10 verschiedene Zeichen pro Stelle und bei einer Binärzahl immer nur 2 verschiedene Zeichen pro Stelle verwendet werden können. Man muss also bei Binärzahlen auch viel mehr Stellen nehmen, als in Dezimalzahlen, um die gleiche Zahl darzustellen.
 
-Legt man vorher die Anzahl der Stellen fest, wird damit auch die maximal mögliche Zahl festgelegt, die man darstellen kann. Sprich: Wenn ich vorgebe, dass man nur 3 Stellen im Binärsystem verwenden kann, dann ist die höchste darzustellende Zahl die 7 (Binär: 111). Die kleinste Zahl, die man darstellen kann ist dabei immer die 0. Mit 3 Bit lassen sich somit die 8 verschiedenen Zahlen 0,1,2,3,4,5,6 und 7 darstellen. **Mit einem Byte sind 8 Bits, also 8 Stellen in einem Binärsystem, gemeint**. Die höchste Zahl, die man mit 8 Bits darstellen kann, ist die 127 (Binär: 11111111). Mit 8 Bits lassen sich also 128 verschiedene Zahlen darstellen (Nicht die 0 vergessen!).
+Legt man vorher die Anzahl der Stellen fest, wird damit auch die maximal mögliche Zahl festgelegt, die man darstellen kann. Sprich: Wenn ich vorgebe, dass man nur **3** Stellen im Binärsystem verwenden kann, dann ist die höchste darzustellende Zahl die **7** (Binär: 111). Die kleinste Zahl, die man darstellen kann ist dabei immer die 0. Mit 3 Bit lassen sich somit die 8 verschiedenen Zahlen 0,1,2,3,4,5,6 und 7 darstellen. **Mit einem Byte sind 8 Bits, also 8 Stellen in einem Binärsystem, gemeint**. Die höchste Zahl, die man mit **8** Bits darstellen kann, ist die **127** (Binär: 11111111). Mit 8 Bits lassen sich also 128 verschiedene Zahlen darstellen (Nicht die **0** vergessen!).
 
 ## Weiter im Rechenbeispiel
 
