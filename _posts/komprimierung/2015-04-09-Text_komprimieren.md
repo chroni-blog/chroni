@@ -6,8 +6,8 @@ modified: 2015-04-09
 author: Christian
 categories: unpublished
 share: true
-excerpt: "Was ist Komprimierung? Wie mache ich das mit Bildern?"
-tags: [komprimieren, bilder]
+excerpt: "Was ist UTF-8 und Unicode? Wie wird das kodiert?"
+tags: [komprimieren, text]
 toc: true
 comments: false
 image:
