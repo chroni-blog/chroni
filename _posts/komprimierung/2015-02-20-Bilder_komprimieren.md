@@ -48,7 +48,7 @@ Ein Bit kann mehrere Bedeutungen haben - "Aus" und "An", 0 und 1, "zu" und "offe
 		Zwei Hebel mit jeweils zwei möglichen Zuständen. Entweder oben oder unten. Bei zwei Hebeln hat man insgesamt 4 verschiedene Kombinationen:<br/>
 		"unten" + "unten",<br/>
 		"unten" + "oben",<br/>
-		"oben" + "unten" und <br/>
+		"oben" + "unten" und<br/>
 		"oben" + "oben".
 	</figcaption>
 </figure>
