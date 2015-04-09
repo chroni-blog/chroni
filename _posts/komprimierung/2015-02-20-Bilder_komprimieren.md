@@ -77,7 +77,7 @@ Hier ein Beispiel, wie mit 8 Hebeln, die Zahl 175 dargestellt werden kann.
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/Komprimierung/lever_10101111_example.png" />
 	<figcaption>
-		Hier 8 Hebel, die die Zahl 175 darstellen. Binär: 10101111.
+		Hier 8 Hebel, die die Zahl 175 darstellen. Binär: 10101111. Nicht ganz leicht umzurechnen.
 	</figcaption>
 </figure>
 
