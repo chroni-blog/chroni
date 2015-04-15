@@ -95,7 +95,7 @@ Es reichen vielleicht sogar schon sehr grobe Strukturen. In diesem Fall ist das 
 
 ## Die grobe Form
 
-Gehen wir zum Handwerk über. In jeder mir bekannten Software die sich mit der Modellierung von Objekten befasst, gibt einen Haufen Grundfunktionen. Hier gehe ich auf ein paar der wichtigsten drauf ein.
+Gehen wir zum Handwerk über. In jeder mir bekannten Software, die sich mit der Modellierung von Objekten befasst, gibt es einen Haufen Grundfunktionen. Hier gehe ich auf ein paar der wichtigsten drauf ein.
 
 Um einen Turm wie oben zu erstellen habe ich mit einem **Spline** begonnen und durch die **Lathe**-Funktion (Drehverfahren) einen Rotationskörper daraus erstellt. Das klingt jetzt erst einmal kryptisch, wird aber sicher durch eine kleine Erkärung und der Animation deutlich.
 
