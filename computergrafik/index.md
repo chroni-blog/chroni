@@ -3,10 +3,10 @@ layout: archive
 title: "Computergrafik"
 date: 2014-05-30T11:39:03-04:00
 modified:
-excerpt: "Hier steht was über Computergrafik oder so."
+excerpt: "Hier sind alle Artikel über 2D- und 3D-Grafik sowie alles was dazu gehört unter gebracht."
 tags: []
 image:
-  feature: book.jpg
+  feature:
   teaser:
 ---
 

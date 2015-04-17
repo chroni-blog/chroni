@@ -13,9 +13,9 @@
 - title: Computergrafik
   url: /computergrafik
   excerpt: "Artikel über 2D- und 3D-Grafik und alles was dazu gehört."
-  image: 400x250.gif
+  image: computergrafik/teaser.jpg
 
 - title: Komprimierung
   url: /komprimierung
   excerpt: "Alles was mit Komprimierung zu tun hat."
-  image: 400x250.gif
+  image: Komprimierung/teaser.jpg
