@@ -2,20 +2,20 @@
 
 - title: Home
   url: /
-  excerpt: "The newest stuff, written by us."
+  excerpt: "Übersicht über alle Artikel."
   image: 400x250.gif
 
 - title: About
   url: /about/
-  excerpt: "All about Skinny Bones for Jekyll."
+  excerpt: "Wer und was ist das hier?"
   image: 400x250.gif
 
 - title: Computergrafik
   url: /computergrafik
-  excerpt: "Das ist aktuell nur ein Test."
+  excerpt: "Artikel über 2D- und 3D-Grafik und alles was dazu gehört."
   image: 400x250.gif
 
 - title: Komprimierung
   url: /komprimierung
-  excerpt: "All komprimierung."
+  excerpt: "Alles was mit Komprimierung zu tun hat."
   image: 400x250.gif
