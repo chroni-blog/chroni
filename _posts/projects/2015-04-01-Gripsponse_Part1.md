@@ -15,7 +15,7 @@ image:
   teaser:  Komprimierung/Bilder_komprimieren/teaser.jpg
 ---
 
-Was treiben Christian und ich eigentlich den ganzen Tag? Klar, wir sind Studenten und besuchen daher auch mal die ein oder andere Vorlesung, wenn es ganz böse kommt müssen wir sogar Prüfungen ablegen. Aber sonst? Nein, wir liegen nicht (nur) auf der faulen Haut und lassen die Sonne auf unsere blassen Bäuche scheinen. Wir sind sogar recht schaffenslustig. Ein Teil dieser Schaffenslust wird seit mittlerweile über einem Jahr vom Institut für Design und Informationssystem (IDIS) gestillt. Was das IDIS ist und was es macht, kann man auf der dazughörigen Homepage einfach mal nachlesen. 
+Was treiben Christian und ich eigentlich den ganzen Tag? Klar, wir sind Studenten und besuchen daher auch mal die ein oder andere Vorlesung, wenn es ganz böse kommt müssen wir sogar Prüfungen ablegen. Aber sonst? Nein, wir liegen nicht (nur) auf der faulen Haut und lassen die Sonne auf unsere blassen Bäuche scheinen. Wir sind sogar recht schaffenslustig. Ein Teil dieser Schaffenslust wird seit mittlerweile über einem Jahr vom Institut für Design und Informationssystem (IDIS) gestillt. Was das IDIS ist und was es macht, kann man auf der dazugehörigen Homepage einfach mal nachlesen. 
 
 In diesem Artikel möchte ich unser bis dato Hauptprojekt mit dem tollen Namen "Gripsponse" einmal etwas genauer vorstellen. 
 
@@ -35,11 +35,29 @@ Im Grunde haben wir uns zu Beginn von Gripsponse gefragt: Wie sieht die moderne 
 Nachdem Christian im Rahmen seiner Bachelorarbeit sich intensiv mit der 3D Spiele-Engine Unity auseinandergesetzt hatte und ich mich im Gegenzug mit der Kinect von Microsoft, waren die Mittel zum Zweck recht schnell gefunden. Nur was machen damit? Am Anfang wollten wir vor allem zweierlei: Bewegung und Hologramme zum anfassen! 
 
 ##Der erste Prototyp
-Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an Unity sowie der Übertragung der Position der Hände in die virtuelle Umgebung. Christian hatte sich währenddessen mit der Interaktion von virtuellen Objekten (im Video war es bspwl. ein Motor) beschäftigt. Beides war recht schnell umgesetzt, worraus der erste kleine Prototyp (vgl. Bild ) enstanden ist. Die Aufgabe für den Benutzer bestand lediglich darin, die Formen in die dafür vorgesehenen Löcher zu befördern. Um das ganze etwas schwieriger zu gestalten, hat sich die Fläche mit den Löchern horizontal im Raum gedreht. 
+Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an Unity sowie der Übertragung der Position der Hände in die virtuelle Umgebung. Christian hatte sich währenddessen mit der Interaktion von virtuellen Objekten (im Video war es bspw. ein Motor) beschäftigt. Beides war recht schnell umgesetzt, woraus der erste kleine Prototyp (vgl. Bild ) entstanden ist. Die Aufgabe für den Benutzer bestand lediglich darin, die Formen in die dafür vorgesehenen Löcher zu befördern. Um das ganze etwas schwieriger zu gestalten, hat sich die Fläche mit den Löchern horizontal im Raum gedreht. 
 
-Die Frage nach den Hologrammen hatte sich jedoch schwieriger erwiesen als zunächst erwartet. Es benötigte viel Feintuning und eine Menge Geduld um einen bestmöglichen stereoskopischen Effekt zu erzeugen. Von echten Hologrammen zum Anfassen sind wir aber leider noch weit entfernt (nicht nur wir, sondern auch die Welt). Hierfür müsste das dreidimensionalle Objekt, welches aus dem Fernseher "herrauskommt", direkt zwischen unseren Händen erscheinen. Das ist bisher jedoch nur mit spezieller Hardware, welche auch noch Ihre Schwächen hat, möglich. Grundsätzlich gilt jedoch, je mehr unser Auge von der virtuellen Umgebung sieht, desto besser ist der stereoskopische Effekt. Deshalb finden wir die VR-Brille Oculus Rift auch so spannend, denn hier versinken wir ganz und gar in der virtuellen Welt. Ob man dabei jedoch noch von Hologrammen sprechen kann, ist fraglich.
+<figure>
+	<a href="{{ site.url }}/images/projects/Gripsponse_1/prototyp_1.png">
+		<img src="{{ site.url }}/images/projects/Gripsponse_1/prototyp_1.png" />
+	</a>
+	<figcaption>
+		Beispielmodell: Ein Turm.
+	</figcaption>
+</figure>
 
-Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen sowie erstes Feedback zum Interaktions Design zu erhalten. Funkioniert hat das System und die ca. 30 Tester hatten sichtlich Spaß damit. Im Hintergrund haben wir natürlich fleißig Daten gesammelt sowie die Nutzer einzeln zum System befragt. Das Ergebnis war, sagen wir, supoptimal. Zum Bewegen von Objekten hatten wir uns eine kollisionsbasierte Variante entschieden. D.h. durch "drücken" der virtuellen Hände (die kleinen Vierrecke in Bild .. ) an das Objekt, konnte dieses bewegt werden. Hiermit hatten viele Nutzer Probleme bzw. erforderte es eine Menge Konzentration. Außerdem 
+Die Frage nach den Hologrammen hatte sich jedoch schwieriger erwiesen als zunächst erwartet. Es benötigte viel Feintuning und eine Menge Geduld um einen bestmöglichen stereoskopischen Effekt zu erzeugen. Von echten Hologrammen zum Anfassen sind wir aber leider noch weit entfernt (nicht nur wir, sondern auch die Welt). Hierfür müsste das dreidimensionale Objekt, welches aus dem Fernseher "herauskommt", direkt zwischen unseren Händen erscheinen. Das ist bisher jedoch nur mit spezieller Hardware, welche auch noch Ihre Schwächen hat, möglich. Grundsätzlich gilt jedoch, je mehr unser Auge von der virtuellen Umgebung sieht, desto besser ist der stereoskopische Effekt. Deshalb finden wir die VR-Brille Oculus Rift auch so spannend, denn hier versinken wir ganz und gar in der virtuellen Welt. Ob man dabei jedoch noch von Hologrammen sprechen kann, ist fraglich.
+
+<figure>
+	<a href="{{ site.url }}/images/projects/Gripsponse_1/interaction_1.png">
+		<img src="{{ site.url }}/images/projects/Gripsponse_1/interaction_1.png" />
+	</a>
+	<figcaption>
+		Beispielmodell: Ein Turm.
+	</figcaption>
+</figure>
+
+Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen sowie erstes Feedback zum Interaktions Design zu erhalten. Funktioniert hat das System und die ca. 30 Tester hatten sichtlich Spaß damit. Im Hintergrund haben wir natürlich fleißig Daten gesammelt sowie die Nutzer einzeln zum System befragt. Das Ergebnis war, sagen wir, suboptimal. Zum Bewegen von Objekten hatten wir uns eine kollisionsbasierte Variante entschieden. D.h. durch "pressen" der virtuellen Hände (die kleinen Vierecke in Bild .. ) an das Objekt, konnte dieses bewegt werden. Hiermit hatten viele Nutzer Probleme bzw. erforderte es eine Menge Konzentration. Außerdem 
 
 
 
