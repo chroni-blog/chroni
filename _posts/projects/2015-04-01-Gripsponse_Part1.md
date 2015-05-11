@@ -35,14 +35,14 @@ Im Grunde haben wir uns zu Beginn von Gripsponse gefragt: Wie sieht die moderne 
 Nachdem Christian im Rahmen seiner Bachelorarbeit sich intensiv mit der 3D Spiele-Engine Unity auseinandergesetzt hatte und ich mich im Gegenzug mit der Kinect von Microsoft, waren die Mittel zum Zweck recht schnell gefunden. Nur was machen damit? Am Anfang wollten wir vor allem zweierlei: Bewegung und Hologramme zum anfassen! 
 
 ##Der erste Prototyp
-Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an Unity sowie der Übertragung der Position der Hände in die virtuelle Umgebung. Christian hatte sich währenddessen mit der Interaktion von virtuellen Objekten (im Video war es bspw. ein Motor) beschäftigt. Beides war recht schnell umgesetzt, woraus der erste kleine Prototyp (vgl. Bild ) entstanden ist. Die Aufgabe für den Benutzer bestand lediglich darin, die Formen in die dafür vorgesehenen Löcher zu befördern. Um das ganze etwas schwieriger zu gestalten, hat sich die Fläche mit den Löchern horizontal im Raum gedreht. 
+Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an Unity sowie der Übertragung der Position der Hände in die virtuelle Umgebung. Christian hatte sich währenddessen mit der Interaktion von virtuellen Objekten (im Video war es bspw. ein Motor) beschäftigt. Beides war recht schnell umgesetzt, woraus der erste kleine Prototyp (vgl. Bild #1) entstanden ist. Die Aufgabe für den Benutzer bestand lediglich darin, die Formen in die dafür vorgesehenen Löcher zu befördern. Um das ganze etwas schwieriger zu gestalten, hat sich die Fläche mit den Löchern horizontal im Raum gedreht. 
 
 <figure>
 	<a href="{{ site.url }}/images/projects/Gripsponse_1/prototyp_1.png">
 		<img src="{{ site.url }}/images/projects/Gripsponse_1/prototyp_1.png" />
 	</a>
 	<figcaption>
-		Beispielmodell: Ein Turm.
+		#1: So hat der erste Prototyp ausgesehen.
 	</figcaption>
 </figure>
 
@@ -53,13 +53,16 @@ Die Frage nach den Hologrammen hatte sich jedoch schwieriger erwiesen als zunäc
 		<img src="{{ site.url }}/images/projects/Gripsponse_1/interaction_1.png" />
 	</a>
 	<figcaption>
-		Beispielmodell: Ein Turm.
+		#2: Interaktion mit Objektion.
 	</figcaption>
 </figure>
 
-Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen sowie erstes Feedback zum Interaktions Design zu erhalten. Funktioniert hat das System und die ca. 30 Tester hatten sichtlich Spaß damit. Im Hintergrund haben wir natürlich fleißig Daten gesammelt sowie die Nutzer einzeln zum System befragt. Das Ergebnis war, sagen wir, suboptimal. Zum Bewegen von Objekten hatten wir uns eine kollisionsbasierte Variante entschieden. D.h. durch "pressen" der virtuellen Hände (die kleinen Vierecke in Bild .. ) an das Objekt, konnte dieses bewegt werden. Hiermit hatten viele Nutzer Probleme bzw. erforderte es eine Menge Konzentration. Außerdem 
+Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen sowie erstes Feedback zum Interaktions Design zu erhalten. Funktioniert hat das System und die ca. 30 Tester hatten sichtlich Spaß damit. Im Hintergrund haben wir natürlich fleißig Daten gesammelt sowie die Nutzer einzeln zum System befragt. Das Ergebnis war, sagen wir, suboptimal. Zum Bewegen von Objekten hatten wir uns eine kollisionsbasierte Variante entschieden. D.h. durch "pressen" der virtuellen Hände (die kleinen Vierecke in Bild #2) an das Objekt, konnte dieses bewegt werden. Hiermit hatten viele Nutzer Probleme bzw. erforderte es eine Menge Konzentration. Außerdem hatte es sich herausgestellt, dass nur die Hälfte aller Teilnehmer einen wirklichen Mehrwert aus dem stereoskopischen Effekt gezogen haben. Alles in allem war das Feedback an dieser Stelle unglaublich wertvoll für uns. Die iterative Vorgehensweise hat sich also mehr als bezahlt gemacht. In der nächsten Iteration ging es also darum, an unseren Fehlern des ersten Prototyps zu lernen. 
 
+##Der zweite Prototyp
+Nach Analyse der Datensätze und Fragebögen der ersten Testphase wurde uns eines klar: Die Wirkung der Stereoskopie wird unglaublich stark vom gewählten Interaktions Design beeinflusst. Deshalb lag unser Augenmerk für den zweiten Prototypen auf einer Optimierung dessen. 
 
+Bei der kollisionsbasierten Variante zur Manipulation von Objektion, 
 
 [^1]: Ich verzichte hier bewusst auf die technischen Details, da wir sonst ganz viele tollen noch geplante Chroni Artikel vorwegnehmen würden. 
 
