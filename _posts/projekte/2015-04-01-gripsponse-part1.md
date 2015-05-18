@@ -38,7 +38,7 @@ Nachdem Christian im Rahmen seiner [Bachelorarbeit](http://petry-christian.de/vo
 Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an [Unity3D](https://unity3d.com/){:target="_blank"} sowie der Übertragung der Position der Hände in die virtuelle Umgebung. Christian hatte sich währenddessen mit der Interaktion von virtuellen Objekten (im Video war es bspw. ein Motor) beschäftigt.[^1] Beides war recht schnell umgesetzt, woraus der erste kleine Prototyp (vgl. Bild #1) entstanden ist. Die Aufgabe für den Benutzer bestand lediglich darin, die Formen in die dafür vorgesehenen Löcher zu befördern. Um das ganze etwas schwieriger zu gestalten, hat sich die Fläche mit den Löchern horizontal im Raum gedreht. 
 
 <figure>
-	<a href="{{ site.url }}/images/projects/Gripsponse_1/prototyp_1.png">
+	<a href="{{ site.url }}/images/projekte/Gripsponse_1/prototyp_1.png">
 		<img src="{{ site.url }}/images/projects/Gripsponse_1/prototyp_1.png" />
 	</a>
 	<figcaption>
@@ -49,7 +49,7 @@ Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an [Unity3D](ht
 Die Frage nach den Hologrammen hatte sich jedoch schwieriger erwiesen als zunächst erwartet. Es benötigte viel Feintuning und eine Menge Geduld um einen bestmöglichen [stereoskopischen Effekt](http://www.spektrum.de/lexikon/geowissenschaften/stereoskopischer-effekt/15673){:target="_blank"} zu erzeugen. Von echten Hologrammen zum Anfassen sind wir aber noch ein Stück entfernt (nicht nur wir, sondern auch die [Welt](http://obm.media.mit.edu/wp-content/uploads/sites/10/2012/09/barabasdissertation1-21-14a.pdf){:target="_blank"}). Hierfür müsste das dreidimensionale Objekt, welches aus dem Fernseher "herauskommt", direkt zwischen unseren Händen erscheinen. Das ist bisher jedoch nur mit [spezieller Hardware](https://www.youtube.com/watch?v=k8trP3V-tqE){:target="_blank"}, welche auch noch Ihre Schwächen hat, möglich. Grundsätzlich gilt jedoch, je mehr unser Auge von der virtuellen Umgebung sieht, desto besser ist der stereoskopische Effekt. Deshalb finden wir die VR-Brille Oculus Rift auch so spannend, denn hier versinken wir ganz und gar in der virtuellen Welt. Ob man dabei jedoch noch von Hologrammen sprechen kann, ist fraglich.
 
 <figure>
-	<a href="{{ site.url }}/images/projects/Gripsponse_1/interaction_1.png">
+	<a href="{{ site.url }}/images/projekte/Gripsponse_1/interaction_1.png">
 		<img src="{{ site.url }}/images/projects/Gripsponse_1/interaction_1.png" />
 	</a>
 	<figcaption>
