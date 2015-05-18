@@ -15,6 +15,10 @@ image:
   teaser:  Komprimierung/Bilder_komprimieren/teaser.jpg
 ---
 
+
+[Hier geht es zu Teil 2]({% post_url /projects/2015-04-18-Gripsponse_Part2 %})
+
+
 ##Der zweite Prototyp
 Nach Analyse der Datensätze und Fragebögen der ersten Testphase wurde uns eines klar: Die Wirkung der Stereoskopie wird unglaublich stark vom gewählten Interaktions Design beeinflusst. Deshalb lag unser Augenmerk für den Zweiten auf einer Optimierung dessen. 
 

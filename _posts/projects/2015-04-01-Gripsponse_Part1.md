@@ -61,11 +61,4 @@ Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen s
 
 Fortsetzung folgt...
 
-<!---
-[Hier geht es zu Teil 2]({% post_url /projects/2015-04-18-Gripsponse_Part2 %})
--->
-
 [^1]: Ich verzichte hier bewusst auf die technischen Details, da wir sonst ganz viele tollen noch geplante Chroni Artikel vorwegnehmen würden.
-
-
-
