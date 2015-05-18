@@ -6,7 +6,7 @@ modified: 2015-04-12
 author: Toni
 categories: projekte
 share: true
-excerpt: "Gripsponse: Ein 3D Interaction Design von uns."
+excerpt: "Was ist Gripsponse und wie hat es begonnen?"
 tags: [project, gripsponse, interaction]
 toc: true
 comments: true
@@ -59,7 +59,7 @@ Die Frage nach den Hologrammen hatte sich jedoch schwieriger erwiesen als zunäc
 
 Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen sowie erstes Feedback zum Interaktions Design zu erhalten. Funktioniert hat das System und die ca. 30 Tester hatten sichtlich Spaß damit. Im Hintergrund haben wir natürlich fleißig Daten gesammelt sowie die Nutzer einzeln zum System befragt. Das Ergebnis war, sagen wir, suboptimal. Zum Bewegen von Objekten hatten wir uns für eine kollisionsbasierte Variante entschieden. D.h. durch "pressen" der virtuellen Hände (die kleinen Vierecke in Bild #2) an das Objekt, konnte dieses bewegt werden. Hiermit hatten viele Nutzer Probleme bzw. erforderte es eine Menge Konzentration. Außerdem hatte es sich herausgestellt, dass nur die Hälfte aller Teilnehmer einen wirklichen Mehrwert aus dem stereoskopischen Effekt gezogen haben. Alles in allem war das Feedback an dieser Stelle unglaublich wertvoll für uns. Die iterative Vorgehensweise hat sich also mehr als bezahlt gemacht. In der nächsten Iteration ging es also darum, an unseren Fehlern des ersten Prototyps zu lernen.
 
-Fortsetzung folgt...
+[Hier geht es zu Teil 2]({% post_url /projekte/2015-04-18-gripsponse-part2 %})
 
 [^1]: Ich verzichte hier bewusst auf die technischen Details, da wir sonst ganz viele tollen noch geplante Chroni Artikel vorwegnehmen würden.
 
