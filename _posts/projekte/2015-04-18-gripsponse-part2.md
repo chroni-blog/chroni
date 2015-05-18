@@ -15,7 +15,7 @@ image:
   teaser: projekte/gripsponse.jpg
 ---
 
-Im [ersten Teil]({% post_url /projekte/2015-04-01-gripsponse-part1 %}) dieser Serie habe ich etwas über die Intentionen hinter dem Projekt "Gripsponse" gesprochen. Außerdem wurde der ersten Prototyp sowie dessen Feedback Runde erläutert. Teil 2 setzt also genau in dieser Stelle an...
+Im dieser Serie habe ich etwas über die Intentionen hinter dem Projekt "Gripsponse" gesprochen. Außerdem wurde der ersten Prototyp sowie dessen Feedback Runde erläutert. Teil 2 setzt also genau in dieser Stelle an...
 
 ##Der zweite Prototyp
 Nach Analyse der Datensätze und Fragebögen der ersten Testphase wurde uns eines klar: Die Wirkung der Stereoskopie wird unglaublich stark vom gewählten Interaktions Design beeinflusst. Deshalb lag unser Augenmerk auf einer Optimierung dessen. 
