@@ -39,7 +39,7 @@ Ich kümmerte mich also um eine ordentliche Anbindung der Kinect an [Unity3D](ht
 
 <figure>
 	<a href="{{ site.url }}/images/projekte/Gripsponse_1/prototyp_1.png">
-		<img src="{{ site.url }}/images/projects/Gripsponse_1/prototyp_1.png" />
+		<img src="{{ site.url }}/images/projekte/Gripsponse_1/prototyp_1.png" />
 	</a>
 	<figcaption>
 		#1: So hat der erste Prototyp ausgesehen.
@@ -50,7 +50,7 @@ Die Frage nach den Hologrammen hatte sich jedoch schwieriger erwiesen als zunäc
 
 <figure>
 	<a href="{{ site.url }}/images/projekte/Gripsponse_1/interaction_1.png">
-		<img src="{{ site.url }}/images/projects/Gripsponse_1/interaction_1.png" />
+		<img src="{{ site.url }}/images/projekte/Gripsponse_1/interaction_1.png" />
 	</a>
 	<figcaption>
 		#2: Interaktion mit Objekten.
