@@ -71,6 +71,6 @@ Falls nicht anders angegeben, unterliegen alle Bilder sowie Texte dieser Chronik
 Neben unseren eigenen Grafiken und Texten kommt es auch mal vor, dass wir uns bei anderen Bloggern, Autoren, Fotografen und Designer bedienen. Diesen sind folgende Zeilen und Erwähnungen gewidmet: 
 
 ######Das Banner auf /home
-Vielen Dank [Markus Spiske](http://www.temporausch.com) für dieses grandiose Bild und deine tolle 'Free for commercial use' Initiative auf [raumrot.com](raumrot.com). Wir hoffen das du noch viele weitere Fotografen und Designer animierst und ein Vorbild bist. 
+Vielen Dank [Markus Spiske](http://www.temporausch.com) für dieses grandiose Bild und deine tolle 'Free for commercial use' Initiative auf [raumrot.com](http://raumrot.com). Wir hoffen das du noch viele weitere Fotografen und Designer animierst und ein Vorbild bist. 
 
 Hipster Desktop Office / Markus Spiske / www.temporausch.com / [CC-BY 2.0](https://creativecommons.org/licenses/by/2.0/de/legalcode) 
