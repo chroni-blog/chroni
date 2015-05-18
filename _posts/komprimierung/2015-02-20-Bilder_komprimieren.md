@@ -15,8 +15,6 @@ image:
   teaser:  Komprimierung/Bilder_komprimieren/teaser.jpg
 ---
 
-TEST
-
 Vor 3 Jahren hat man sich noch über einen geschenkten USB-Stick mit 1 GB gefreut. Geht man heute auf eine Computermesse, überlegt man schon bei 2 GB, ob es das überhaupt Wert ist, dafür 5 Minuten in einer Schlange zu stehen. Zeitgleich wird das Internet immer schneller. Die Zugänge werden, soweit es geht, mit Glasfaserkabeln ausgestattet, und die Preise sinken stetig.
 
 **Muss man noch auf Speicherplatz achten? Können wir nicht langsam auf Komprimierung verzichten und hohe Qualität beibehalten?**
@@ -216,3 +214,4 @@ Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 5
 </figure>
 
 Wie man an Tabelle und Bilder sieht, ist Komprimierung nach wie vor ein sehr wichtiges Thema. Gerade bei einer großen Menge von Bildern, macht sich das am übrigen Speicherplatz deutlich. Das gilt natürlich auch für Filme und Videos, worüber ich aber in einem anderen Artikel schreiben werde.
+
