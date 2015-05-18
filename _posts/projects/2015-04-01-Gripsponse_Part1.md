@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Projekt: Gripsponse - Teil 1"
+title: "Teil 1"
 date: 2015-04-05
 modified: 2015-04-12
 author: Toni
