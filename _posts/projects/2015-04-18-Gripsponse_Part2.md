@@ -15,7 +15,9 @@ image:
   teaser:  Komprimierung/Bilder_komprimieren/teaser.jpg
 ---
 
+test
 
+<!--
 [Hier geht es zu Teil 2]({% post_url /projects/2015-04-18-Gripsponse_Part2 %})
 
 
@@ -31,3 +33,5 @@ Unsere Lösung soll für jeden möglichst einfach sein und schnell erlernbar. De
 Neben der reinen Manipulation von Objekten haben wir noch die Explosion, also das Aufsplitten eines Modells in seine Einzelteile, sowie das Snapping eingeführt. Beim Snapping wird eine sog. Boolesche Operation ausgeführt. Bei dieser wird überprüft ob sich ein vorher gelöstes Objekt komplett in seiner ursprünglichen Position befindet oder nicht. Bewegt man also ein Objekt in die Nähe seiner Ursprungsposition, so wird es automatisch an diese Stelle befördert und wie wir sagen "gesnappt". Das ist sehr praktisch, wenn ein Nutzer aus Übungszwecken bspw. den Motor in unserem Video auseinander und wieder zusammensetzen möchte, "rasten" die Einzelteile an die richtige Position wieder ein. Das Ganze manuell und ohne Snapping durchzuführen wäre nahezu ein Ding der Unmöglichkeit. 
 
 Auch unser ursprüngliches Szenario aus Bild #1 haben wir überarbeitet und sind zu dem Entschluss gekommen, das ein wenig "Außenrum" nicht schaden könnten. Da neben Erwachsenen aber auch Kinder Ihren Spaß haben sollten, haben wir uns für eine sehr spielerische Variante entschieden. Bild #5 zeigt die äußere Erscheinung des zweiten Prototyps. Wie das ganze funktioniert kann man sich ja leicht denken: Vor dem aktuellen Spieler können sechs unterschiedliche Formen erscheinen, jede dieser Form hat eine passende Lücke im Würfel. Ziel des Spiels ist es, die Teile möglichst schnell in die dafür vorgesehenen Löcher zu stecken. 
+
+-->
