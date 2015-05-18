@@ -38,8 +38,8 @@ Unsere Lösung soll für jeden möglichst einfach sein und schnell erlernbar. De
 Neben der reinen Manipulation von Objekten haben wir noch die Explosion, also das Aufsplitten eines Modells in seine Einzelteile, sowie das Snapping eingeführt. Beim Snapping wird eine sog. Boolesche Operation ausgeführt. Bei dieser wird überprüft ob sich ein vorher gelöstes Objekt komplett in seiner ursprünglichen Position befindet oder nicht. Bewegt man also ein Objekt in die Nähe seiner Ursprungsposition, so wird es automatisch an diese Stelle befördert und wie wir sagen "gesnappt". Das ist sehr praktisch, wenn ein Nutzer aus Übungszwecken bspw. den Motor in unserem Video auseinander und wieder zusammensetzen möchte, "rasten" die Einzelteile an die richtige Position wieder ein. Das Ganze manuell und ohne Snapping durchzuführen wäre nahezu ein Ding der Unmöglichkeit. 
 
 <figure>
-	<a href="{{ site.url }}/images/projekte/Gripsponse_2/vr-environment.png">
-		<img src="{{ site.url }}/images/projekte/Gripsponse_2/vr-environment.png" />
+	<a href="{{ site.url }}/images/projekte/Gripsponse_2/vr-environment.jpg">
+		<img src="{{ site.url }}/images/projekte/Gripsponse_2/vr-environment.jpg" />
 	</a>
 	<figcaption>
 		#1: So hat der erste Prototyp ausgesehen.
