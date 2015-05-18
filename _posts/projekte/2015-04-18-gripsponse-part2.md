@@ -8,7 +8,7 @@ categories: projekte
 share: true
 excerpt: "Doppelt gegriffen hält besser!"
 tags: [project, gripsponse, interaction]
-toc: true
+toc: false
 comments: true
 image:
   feature:
@@ -31,7 +31,7 @@ Unsere Lösung soll für jeden möglichst einfach sein und schnell erlernbar. De
 		<img src="{{ site.url }}/images/projekte/Gripsponse_2/manipulation.png" />
 	</a>
 	<figcaption>
-		#1: So hat der erste Prototyp ausgesehen.
+		#1: Darstellung wie virtuelle Objekte manipuliert werden.
 	</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Neben der reinen Manipulation von Objekten haben wir noch die Explosion, also da
 		<img src="{{ site.url }}/images/projekte/Gripsponse_2/vr-environment.jpg" />
 	</a>
 	<figcaption>
-		#1: So hat der erste Prototyp ausgesehen.
+		#2: So hat der zweite Prototyp ausgesehen.
 	</figcaption>
 </figure>
 
