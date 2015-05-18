@@ -19,7 +19,7 @@ Was treiben Christian und ich eigentlich den ganzen Tag? Klar, wir sind Studente
 
 In diesem Artikel möchte ich unser bis dato Hauptprojekt mit dem tollen Namen "Gripsponse" einmal etwas genauer vorstellen. 
 
-##Was ist Gripsponse? [^1]
+##Was ist Gripsponse?
 
 Ja, was ist Gripsponse nun? Nachdem Bilder mehr als tausend Worte sagen, hier gleich mal ein ganzes Video:
 
@@ -29,7 +29,7 @@ Der aufmerksame Leser/Zuschauer wird jetzt sicher denken: "DER 3D EFFEKT IST JA 
 
 Jetzt aber mal Spaß bei Seite, was habt ihr hier gerade gesehen? Gripsponse ist eine Software die eine gestenbasierte Steuerung von virtuellen Objekten ermöglicht. Es nutzt einen handelsüblichen 3D Fernseher mit einer sogenannten Shutter Technologie und einen Tiefensensor zur Gestenerkennung. Neben dem stereoskopischen Erlebnis werden sowohl zweidimensionale Anzeigen, als auch die Virtual Reality-Brille Oculus Rift unterstützt. Die Interaktion mit dem virtuellen Objekt ist stark an die Realität angelehnt und somit sehr intuitiv zu nutzen.
 
-####Aller Anfang ist leicht
+####Aller Anfang ist leicht[^1]
 Im Grunde haben wir uns zu Beginn von Gripsponse gefragt: Wie sieht die moderne Mensch-Computer-Interaktion aus - und was kommt nach Maus und Tastatur? Angefixt von zwei Professoren unsere Hochschule sowie Filmen wie "Minority Report" und "Iron Man" haben wir einfach mal angefangen der Frage auf den Grund zu gehen. 
 
 Nachdem Christian im Rahmen seiner Bachelorarbeit sich intensiv mit der 3D Spiele-Engine Unity auseinandergesetzt hatte und ich mich im Gegenzug mit der Kinect von Microsoft, waren die Mittel zum Zweck recht schnell gefunden. Nur was machen damit? Am Anfang wollten wir vor allem zweierlei: Bewegung und Hologramme zum anfassen! 
@@ -53,16 +53,37 @@ Die Frage nach den Hologrammen hatte sich jedoch schwieriger erwiesen als zunäc
 		<img src="{{ site.url }}/images/projects/Gripsponse_1/interaction_1.png" />
 	</a>
 	<figcaption>
-		#2: Interaktion mit Objektion.
+		#2: Interaktion mit Objekten.
 	</figcaption>
 </figure>
 
-Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen sowie erstes Feedback zum Interaktions Design zu erhalten. Funktioniert hat das System und die ca. 30 Tester hatten sichtlich Spaß damit. Im Hintergrund haben wir natürlich fleißig Daten gesammelt sowie die Nutzer einzeln zum System befragt. Das Ergebnis war, sagen wir, suboptimal. Zum Bewegen von Objekten hatten wir uns eine kollisionsbasierte Variante entschieden. D.h. durch "pressen" der virtuellen Hände (die kleinen Vierecke in Bild #2) an das Objekt, konnte dieses bewegt werden. Hiermit hatten viele Nutzer Probleme bzw. erforderte es eine Menge Konzentration. Außerdem hatte es sich herausgestellt, dass nur die Hälfte aller Teilnehmer einen wirklichen Mehrwert aus dem stereoskopischen Effekt gezogen haben. Alles in allem war das Feedback an dieser Stelle unglaublich wertvoll für uns. Die iterative Vorgehensweise hat sich also mehr als bezahlt gemacht. In der nächsten Iteration ging es also darum, an unseren Fehlern des ersten Prototyps zu lernen. 
+Sinn des ersten Prototyps war es also eine Art Machbarkeitsstudie aufzustellen sowie erstes Feedback zum Interaktions Design zu erhalten. Funktioniert hat das System und die ca. 30 Tester hatten sichtlich Spaß damit. Im Hintergrund haben wir natürlich fleißig Daten gesammelt sowie die Nutzer einzeln zum System befragt. Das Ergebnis war, sagen wir, suboptimal. Zum Bewegen von Objekten hatten wir uns für eine kollisionsbasierte Variante entschieden. D.h. durch "pressen" der virtuellen Hände (die kleinen Vierecke in Bild #2) an das Objekt, konnte dieses bewegt werden. Hiermit hatten viele Nutzer Probleme bzw. erforderte es eine Menge Konzentration. Außerdem hatte es sich herausgestellt, dass nur die Hälfte aller Teilnehmer einen wirklichen Mehrwert aus dem stereoskopischen Effekt gezogen haben. Alles in allem war das Feedback an dieser Stelle unglaublich wertvoll für uns. Die iterative Vorgehensweise hat sich also mehr als bezahlt gemacht. In der nächsten Iteration ging es also darum, an unseren Fehlern des ersten Prototyps zu lernen.
 
 ##Der zweite Prototyp
-Nach Analyse der Datensätze und Fragebögen der ersten Testphase wurde uns eines klar: Die Wirkung der Stereoskopie wird unglaublich stark vom gewählten Interaktions Design beeinflusst. Deshalb lag unser Augenmerk für den zweiten Prototypen auf einer Optimierung dessen. 
+Nach Analyse der Datensätze und Fragebögen der ersten Testphase wurde uns eines klar: Die Wirkung der Stereoskopie wird unglaublich stark vom gewählten Interaktions Design beeinflusst. Deshalb lag unser Augenmerk für den Zweiten auf einer Optimierung dessen. 
 
-Bei der kollisionsbasierten Variante zur Manipulation von Objektion, 
+Es musste also ein Ersatz für die kollisionsbasierte Manipulation von Objektion her. Die neue Lösung sollte vor allem flexibel und robust sein. Flexibel im Sinne der unterschiedlichen Nutzergruppen und Robust in Hinblick auf schlechte Erkennung der Hände. Zum Beispiel direkte Sonneneinstrahlung auf den Tiefensensor kann zu einer Ungenauigkeit von bis zu 10 cm führen. Die virtuellen Hände des Nutzers springen dann wie wild im Bild umher, nicht cool! 
 
-[^1]: Ich verzichte hier bewusst auf die technischen Details, da wir sonst ganz viele tollen noch geplante Chroni Artikel vorwegnehmen würden. 
+Um die Robustheit zu steigern hilft das sog. Smoothing. Das hat aber nichts mit Smoothies zu tun, sondern beschreibt viel mehr eine Art von Glättungsalgorithmus. Diese bügeln extreme Bewegungssprünge aus und ermöglichen somit eine "smoothe" Interaktion. Beeinflusst der Algorithmus jedoch zu stark, hat man das Gefühl als wären die virtuellen Hände besoffen. Hier mussten wir also wieder einiges an Geduld für die optimale Parameter aufbringen. 
+
+Unsere Lösung soll für jeden möglichst einfach sein und schnell erlernbar. Deshalb haben wir uns gegen aufwendige Gesten, wie Sie bspw. mit der Leap Motion möglich sind, entschieden. Es wird lediglich eine Geste von uns eingeführt: Das ballen beider Fäuste zum Greifen eines Objektes. Der volle Funktionsumfang kann aus unserem Poster (Bild #3) bzw. dem Video nun entnommen werden. 
+
+Neben der reinen Manipulation von Objekten haben wir noch die Explosion, also das Aufsplitten eines Modells in seine Einzelteile, sowie das Snapping eingeführt. Beim Snapping wird eine sog. Boolesche Operation ausgeführt. Bei dieser wird überprüft ob sich ein vorher gelöstes Objekt komplett in seiner ursprünglichen Position befindet oder nicht. Bewegt man also ein Objekt in die Nähe seiner Ursprungsposition, so wird es automatisch an diese Stelle befördert und wie wir sagen "gesnappt". Das ist sehr praktisch, wenn ein Nutzer aus Übungszwecken bspw. den Motor in unserem Video auseinander und wieder zusammensetzen möchte, "rasten" die Einzelteile an die richtige Position wieder ein. Das Ganze manuell und ohne Snapping durchzuführen wäre nahezu ein Ding der Unmöglichkeit. 
+
+Auch unser ursprüngliches Szenario aus Bild #1 haben wir überarbeitet und sind zu dem Entschluss gekommen, das ein wenig "Außenrum" nicht schaden könnten. Da neben Erwachsenen aber auch Kinder Ihren Spaß haben sollten, haben wir uns für eine sehr spielerische Variante entschieden. Bild #5 zeigt die äußere Erscheinung des zweiten Prototyps. Wie das ganze funktioniert kann man sich ja leicht denken: Vor dem aktuellen Spieler können sechs unterschiedliche Formen erscheinen, jede dieser Form hat eine passende Lücke im Würfel. Ziel des Spiels ist es, die Teile möglichst schnell in die dafür vorgesehenen Löcher zu stecken. 
+
+##Forschungsfrage und eine Konferenz
+Bereits nach der Feedback Runde des ersten Prototyps wurden einige Stimmen laut, unserem Projekt eine wissenschaftlichere Note zu geben und nicht nur grob nach einer neuen Art der Mensch-Computer-Interaktion zu fragen. Hierfür haben wir uns auf einen Faktor gestützt, der uns von herkömmlichen Lösungen unterschiedet: Dem stereoskopischen Effekt. Neben der Programmierarbeit ging es also zusätzlich noch darum folgende Forschungsfrage zu überprüfen: "".
+
+Wie es in der Wissenschaft nun mal so üblich ist, langt es nicht eine Hypothese einfach so zu verifizieren/falsifizieren, es muss natürlich auch ein mehrseitiges wissenschaftliches Papier dazu geschrieben werden. Wo kämmen wir denn sonst hin, wenn man seine Ergebnisse einfach so mir nichts dir nichts im Internet veröffentlichen würde ;). [^2] 
+
+Anstatt einer einfachen Feedback Runde, wurde nun eine Studie mit 50 Teilnehmern im Alter zwischen 6 und 60 Jahren durchgeführt. Hierfür wurden zwei Gruppen gebildet, die entweder mit der monoskopischen Anzeige (normales TV-Bild) oder der stereoskopischen Anzeige (3D-TV) begonnen haben. Nach einem kompletten Testdurchlauf wurden die Anzeigetechnik dann pro Gruppe gewechselt. Als Testumgebung kam unser Puzzle-Spiel des zweiten Prototypen zum Einsatz. Es wurden die Zeiten gemessen, die ein Proband zum Einsetzen der sechs Teile in den Würfel gebraucht hat sowie die subjektive Meinung über einen Fragebogen ermittelt. 
+
+
+
+
+[^1]: Ich verzichte hier bewusst auf die technischen Details, da wir sonst ganz viele tollen noch geplante Chroni Artikel vorwegnehmen würden.
+ 
+[^2]: Aber mal im Ernst, mir macht das Schreiben von wissenschaftlichen Arbeiten sogar richtig Spaß, sonst hätte ich wohl auch keinen Blog mit diesen Themen!
+
 
