@@ -7,12 +7,12 @@ author: Toni
 categories: projects
 share: true
 excerpt: "Gripsponse: Ein 3D Interaction Design von uns."
-tags: [komprimieren, bilder]
+tags: [project, gripsponse, interaction]
 toc: true
 comments: true
 image:
   feature: 
-  teaser: projects/gripsponse.jpg
+  teaser: 
 ---
 
 Was treiben Christian und ich eigentlich den ganzen Tag? Klar, wir sind Studenten und besuchen daher auch mal die ein oder andere Vorlesung, wenn es ganz böse kommt müssen wir sogar Prüfungen ablegen. Aber sonst? Nein, wir liegen nicht (nur) auf der faulen Haut und lassen die Sonne auf unsere blassen Bäuche scheinen. Wir sind sogar recht schaffenslustig. Ein Teil dieser Schaffenslust wird seit mittlerweile über einem Jahr vom Institut für Design und Informationssystem (IDIS) gestillt. Was das IDIS ist und was es macht, kann man auf der dazugehörigen [Homepage](http://idis.fhws.de){:target="_blank"} einfach mal nachlesen. 

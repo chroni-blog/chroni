@@ -7,7 +7,7 @@ author: Toni
 categories: unpublished
 share: true
 excerpt: "Gripsponse: Ein 3D Interaction Design von uns."
-tags: [komprimieren, bilder]
+tags: [project, gripsponse, interaction]
 toc: true
 comments: true
 image:
