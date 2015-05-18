@@ -1,18 +1,18 @@
 ---
 layout: article
-title: "Teil 1"
-date: 2015-04-05
-modified: 2015-04-12
-author: Toni
-categories: unpublished
+title: "test3"
+date: 2015-02-25
+modified: 2015-03-25
+author: Christian
+categories: komprimierung
 share: true
-excerpt: "Gripsponse: Ein 3D Interaction Design von uns."
-tags: []
+excerpt: "Was ist Komprimierung? Wie mache ich das mit Bildern?"
+tags: [komprimieren, bilder]
 toc: true
 comments: true
 image:
-  feature:
-  teaser:
+  feature: 
+  teaser:  Komprimierung/Bilder_komprimieren/teaser.jpg
 ---
 
 test
