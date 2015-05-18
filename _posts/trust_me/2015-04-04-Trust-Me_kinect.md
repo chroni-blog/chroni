@@ -17,7 +17,7 @@ image:
   creditlink: https://www.youtube.com/user/Gonzossm
 ---
 
-Der Aufbau für den Videodreh von verlief nicht so Reibungslos wie man vermuten könnte.
+Der Aufbau für den Videodreh von [Gripsponse](../2015-04-01-gripsponse-part1)){:target="_blank"} verlief nicht so Reibungslos wie man vermuten könnte.
 
 <figure>
 	<img src="{{ site.url }}/images/trust_me/kinect/fotostudio.jpg" />
