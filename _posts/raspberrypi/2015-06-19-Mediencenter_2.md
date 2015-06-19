@@ -83,13 +83,17 @@ Diese ROMs kann man entweder direkt auf die SD-Karte des Raspberry Pis kopieren 
 
 Um ein Spiel einzurichten, geht im Hauptmenü auf 
 
-**Programme -> Addvanced Launcher -> Default **
+**Programme -> Addvanced Launcher -> Default**
 
 und dann auf die Konsole, zu dem das Spiel gehört. Falls diese nicht existiert müsst ihr einen Eintrag hier hinzufügen. Wir erstellen hier aber mal eine Verknüpfung zu einem SNES Spiel. Also ruft das "Rechtsklickmenü" auf SNES auf und wählt 
 
-** Programmstarter bearbeiten -> Erweiterte Einstellungen.**
+**Programmstarter bearbeiten -> Erweiterte Einstellungen.**
 
-Dort müsstet ihr nur noch das Verzeichnis zu den Dateien und eventuell Dateierweiterungen anpassen. Das Verzeichnis ist natürlich das, wo die ROMs bei euch liegen. Dateierweiterungen bei SNES können *.smc, *.sfc und *.zip sein. Das kann man so angeben: smc|sfc|zip.
+Dort müsstet ihr nur noch das Verzeichnis zu den Dateien und eventuell Dateierweiterungen anpassen. Das Verzeichnis ist natürlich das, wo die ROMs bei euch liegen. Dateierweiterungen bei SNES können *.smc, *.sfc und *.zip sein. Das kann man so angeben: 
+
+{% highlight bash %}
+smc|sfc|zip
+{% endhighlight %}
 
 Danach verlasst ihr diese Optionen wieder und wählt im Rechtsklickmenü von SNES "Dateien verwalten". Dort könnt ihr automatisch nach allen Spielen innerhalb des Ordners suchen lassen. Hier sollten dann die Spiele gefunden worden sein.
 
