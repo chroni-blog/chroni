@@ -6,10 +6,9 @@ modified: 2015-04-07
 excerpt: "Tägliche Routinearbeiten eines Ingenieurs."
 tags: []
 image:
-  feature: images/trust_me/feature.png
-  teaser:  images/trust_me/teaser.png
-  credit: Gonzossm
-  creditlink: https://www.youtube.com/user/Gonzossm
+  feature:
+  teaser: 
+
 ---
 
 <div class="tiles">

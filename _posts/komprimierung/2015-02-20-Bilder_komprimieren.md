@@ -214,3 +214,4 @@ Zum direkten Vergleich ein Ausschnitt und die ganzen JPEG Bilder mit 95%, 75%, 5
 </figure>
 
 Wie man an Tabelle und Bilder sieht, ist Komprimierung nach wie vor ein sehr wichtiges Thema. Gerade bei einer großen Menge von Bildern, macht sich das am übrigen Speicherplatz deutlich. Das gilt natürlich auch für Filme und Videos, worüber ich aber in einem anderen Artikel schreiben werde.
+

@@ -3,12 +3,12 @@
 - title: Home
   url: /
   excerpt: "Übersicht über alle Artikel."
-  image: 400x250.gif
-
+  image: logo-400x250.jpg
+  
 - title: About
   url: /about/
   excerpt: "Wer und was ist das hier?"
-  image: 400x250.gif
+  image: books.jpg
 
 - title: Computergrafik
   url: /computergrafik
@@ -19,3 +19,8 @@
   url: /komprimierung
   excerpt: "Alles was mit Komprimierung zu tun hat."
   image: Komprimierung/teaser.jpg
+  
+- title: Projekte
+  url: /projekte
+  excerpt: "Aktuelle und vergangene Projekte."
+  image: projekte/teaser.jpg
