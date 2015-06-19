@@ -33,9 +33,11 @@ Zu Beginn befinden wir uns im Hauptmenü von Kodi.
 
 Zuerst aber müssen wir uns mit einem PC an dem Raspberry Pi einloggen.
 
-### 1.Schritt: Einloggen auf dem Raspberry Pi mit einem PC über SSH
+## 1.Schritt: Einloggen auf dem Raspberry Pi mit einem PC über SSH
 
 Um per SSH[^ssh] sich mit dem Rechner zu verbinden, kann man bei einem Windows PC das Programm <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> nehmen. Dazu muss der Raspberry Pi mit dem Rechner im LAN verbunden sein.
+
+[^ssh] SSH ist ein Protokoll, über welches man relativ direkt und sicher nutzen kann um mit anderen Rechnern zu kommunizieren.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/putty.PNG" />
@@ -53,7 +55,7 @@ Die IP-Adresse des Raspberry Pi könnt ihr in Kodi unter System -> Systeminfo ->
 	</figcaption>
 </figure>
 
-### 2.Schritt: Installieren des Plugins
+## 2.Schritt: Installieren des Plugins
 
 Um nun RetroArch samt dem AdvancedLauncher (ermöglicht einfachereres Starten von Spielen) zu installieren gebt folgende Befehle nacheinander ein:
 
@@ -67,10 +69,14 @@ killall -9 kodi.bin
 Diese simple Installation haben wir <a href="http://misapuntesde.com/post.php?id=502">mezzo</a> zu verdanken. Danach startet sich der Pi kurz neu.
 
 
-### 3.Schritt: Spiele hinzufügen
+## 3.Schritt: Spiele hinzufügen
 
 Nachdem das geschehen ist, muss man nur noch die ROMs hinzufügen. Roms sind die Spieldateien, die das komplette Spiel beinhalten. Hier gehe ich nicht weiter auf rechtliches ein und verweise einfach auf eine beliebige Suchmaschine. Soweit ich weiß, darf man ROMs benutzen, wenn man auch das Originalspiel besitzt.
 
-Diese ROMs kann man entweder direkt auf die SD-Karte des Raspberry Pis kopieren (per Filezilla z.B.), per USB-Stick oder -Festplatte an den Pi hängen oder sogar im Netzwerk freigeben und dann über "Samba" zugreifen. Ist hier genauso wie mit Filmen und Musik.
+Diese ROMs kann man entweder direkt auf die SD-Karte des Raspberry Pis kopieren (per Filezilla z.B.), per USB-Stick oder -Festplatte an den Pi hängen oder sogar im Netzwerk freigeben und dann über "Samba" zugreifen. Ist hier genauso wie mit Filmen und Musik. Fragen dazu einfach in den Kommentaren.
 
-### 4.Schritt: Controller konfigurieren
+## 4.Schritt: Controller konfigurieren
+
+Zunächst sollte man eine Tastatur am Pi anschliessen. Startet man ein Spiel, kann man mit F1 auf ein Menü zugreifen. Ab da ist eigentlich alles selbsterklärend. Ein paar Hinweise jedoch: Man muss das automatische binding der Controller abstellen, da sonst jedes mal die Einstellungen überschrieben werden.
+
+Optional sollte man für den Controller sich auch noch einen Button für das RetroArch Menü einrichten. Dann kann man das Spiel auch wieder verlassen und kommt direkt wieder zu Kodi.
