@@ -77,12 +77,20 @@ Diese simple Installation haben wir <a href="http://misapuntesde.com/post.php?id
 
 ## 3.Schritt: Spiele hinzufügen
 
-Nachdem das geschehen ist, muss man nur noch die ROMs hinzufügen. Roms sind die Spieldateien, die das komplette Spiel beinhalten. Hier gehe ich nicht weiter auf rechtliches ein und verweise einfach auf eine beliebige Suchmaschine. Soweit ich weiß, darf man ROMs benutzen, wenn man auch das Originalspiel besitzt.
+Nachdem das geschehen ist, muss man nur noch die ROMs hinzufügen. Roms sind die Spieldateien, die das komplette Spiel beinhalten. Soweit ich weiß, darf man ROMs benutzen, wenn man auch das Originalspiel besitzt. Hier gehe ich aber nicht weiter auf das Rechtliche ein und verweise einfach auf eine beliebige Suchmaschine. Den Rest, könnt und sollt ihr selbst entscheiden.
 
 Diese ROMs kann man entweder direkt auf die SD-Karte des Raspberry Pis kopieren (per Filezilla z.B.), per USB-Stick oder -Festplatte an den Pi hängen oder sogar im Netzwerk freigeben und dann über "Samba" zugreifen. Ist hier genauso wie mit Filmen und Musik. Fragen dazu einfach in den Kommentaren.
 
+Um ein Spiel einzurichten, geht im Hauptmenü auf Programme -> Addvanced Launcher -> Default und dann auf die Konsole, zu dem das Spiel gehört. Falls diese nicht existiert müsst ihr einen Eintrag hier hinzufügen. Wir erstellen hier aber mal eine Verknüpfung zu einem SNES Spiel. Also ruft das "Rechtsklickmenü" auf SNES auf und wählt Programmstarter bearbeiten -> Erweiterte Einstellungen.
+Dort müsstet ihr nur noch das Verzeichnis zu den Dateien und eventuell Dateierweiterungen anpassen. Das Verzeichnis ist natürlich das, wo die ROMs bei euch liegen. Dateierweiterungen bei SNES können *.smc, *.sfc und *.zip sein. Das kann man so angeben: smc|sfc|zip.
+Danach verlasst ihr diese Optionen wieder und wählt im Rechtsklickmenü von SNES "Dateien verwalten". Dort könnt ihr automatisch nach allen Spielen innerhalb des Ordners suchen lassen. Hier sollten dann die Spiele gefunden worden sein.
+
+{: .notice} Achtung ab hier solltet ihr eine Tastatur am Raspberry Pi angeschlossen haben!
+
+Wählt nun einfach ein Spiel aus und startet es.
+
 ## 4.Schritt: Controller konfigurieren
 
-Zunächst sollte man eine Tastatur am Pi anschliessen. Startet man ein Spiel, kann man mit F1 auf ein Menü zugreifen. Ab da ist eigentlich alles selbsterklärend. Ein paar Hinweise jedoch: Man muss das automatische binding der Controller abstellen, da sonst jedes mal die Einstellungen überschrieben werden.
+Habt ihr ein Spiel gestartet, sollte nach kurzer Zeit das Spiel mit Intro beginnen. Mit drücken der F1-Taste auf der Tastatur könnt ihr auf ein Menü zugreifen. Ab da ist eigentlich alles selbsterklärend. Ein paar Hinweise jedoch: Man muss das automatische Zuweisung (automatic binding) der Controller abstellen, da sonst jedes mal die Einstellungen überschrieben werden.
 
 Optional sollte man für den Controller sich auch noch einen Button für das RetroArch Menü einrichten. Dann kann man das Spiel auch wieder verlassen und kommt direkt wieder zu Kodi.
