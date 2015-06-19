@@ -17,7 +17,7 @@ image:
   creditlink: https://www.youtube.com/user/Gonzossm
 ---
 
-Der Aufbau für den Videodreh von Gripsponse (siehe [Gripsponse]({% post_url /projects/2015-04-01-Gripsponse_Part1 %})) 
+Der Aufbau für den Videodreh von Gripsponse (siehe [Gripsponse]{% post_url /projects/2015-04-01-Gripsponse_Part1 %}) 
 verlief nicht so Reibungslos wie man vermuten könnte.
 
 <figure>
