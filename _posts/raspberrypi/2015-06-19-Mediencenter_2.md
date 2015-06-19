@@ -22,6 +22,12 @@ Zu erst holen wir uns das Plugin "RetroArch". Dieses Plugin beinhaltet mehr als 
 
 [^emulator]: Ein Emulator ist ein Programm, das so tut als wäre es eine Konsole.
 
+Dann richten wir Spiele ein, um diese direkt aus Kodi zu starten. Hier ist natürlich zunächst wichtig wo wir diese Spiele lagern und darauf zugreifen können.
+
+Als letztes richten wir einen Controller ein. Das kann auch gern ein XBOX 360 Controller sein, wobei aber auch jeder andere USB-Controller funktionieren sollte. Es gibt ja sogar Controller, die genau so aussehen wie z.B. SNES Controller. :D Schon irgendwie cool!
+
+Sobald das alles erledigt ist, können wir anfangen zu spielen! Insgesamt sollte das alles nicht mehr als 30min dauern.
+
 Zu Beginn befinden wir uns im Hauptmenü von Kodi.
 
 <figure style="text-align: center">
