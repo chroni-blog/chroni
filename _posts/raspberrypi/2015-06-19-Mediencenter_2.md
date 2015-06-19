@@ -57,7 +57,7 @@ Die IP-Adresse des Raspberry Pi könnt ihr in Kodi unter System -> Systeminfo ->
 
 Um nun RetroArch samt dem AdvancedLauncher (ermöglicht einfachereres Starten von Spielen) zu installieren gebt folgende Befehle nacheinander ein:
 
-{% highlight ansi %}
+{% highlight bash %}
 wget http://misapuntesde.com/res/AdvLauncher_uLySeSS.zip
 unzip AdvLauncher_uLySeSS.zip -d /
 rm AdvLauncher_uLySeSS.zip
