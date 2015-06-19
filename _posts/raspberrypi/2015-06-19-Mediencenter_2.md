@@ -37,7 +37,7 @@ Zuerst aber müssen wir uns mit einem PC an dem Raspberry Pi einloggen.
 
 Um per SSH[^ssh] sich mit dem Rechner zu verbinden, kann man bei einem Windows PC das Programm <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> nehmen. Dazu muss der Raspberry Pi mit dem Rechner im LAN verbunden sein.
 
-[^ssh] SSH ist ein Protokoll, über welches man relativ direkt und sicher nutzen kann um mit anderen Rechnern zu kommunizieren.
+[^ssh]: SSH ist ein Protokoll, über welches man relativ direkt und sicher nutzen kann um mit anderen Rechnern zu kommunizieren.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/putty.PNG" />
