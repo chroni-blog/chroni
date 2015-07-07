@@ -42,6 +42,7 @@ Nachdem ich also ein paar Stunden mich im Internet schlau gemacht hab, hab ich m
 
 Im oberen Bild sieht man die Anzeige für aktuelle Daten. Wenn ich mir den Verlauf anzeigen lasse, schaut das wie folgt aus:
 
+
 <figure style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag.png">
 		<img src="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag_small.png">
