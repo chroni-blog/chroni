@@ -18,7 +18,9 @@ image:
 Kaum hat man mal ein wenig mehr Erfahrung mit dem Raspberry Pi, kommt man auf allerlei Ideen. Es gibt automatische [Mediencenter](../Mediencenter){:target="_blank"}, Web- und Datenserver, [Spielekonsole](../Mediencenter_2){:target="_blank"}, Aquariensteuerungen, Sprenkleranlagen, uvm.
 
 <figure style="text-align: center">
-	<img src="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview.PNG">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview.PNG">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview_small.png">
+	</a>
 	<figcaption>
 		Übersicht meiner Webapplikation mit Messwerten.
 	</figcaption>
