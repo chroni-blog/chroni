@@ -20,7 +20,7 @@ image:
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/super_mario_SNES_screen.png" />
 </figure>
 
-Beim letzten [Mal](../Mediencenter){:target="_blank"} habe ich vorgestellt, wie man Filme, Musik und Serien mit dem Mini-PC Raspberry Pi abspielt. Seit kurzem spiele ich damit auch Konsolenspiele wie Super Mario, Final Fantasy oder Sonic.
+Beim letzten Mal habe ich vorgestellt, wie man mit einem [Mediencenter](../Mediencenter){:target="_blank"} Filme, Musik und Serien mit dem Mini-PC Raspberry Pi abspielt. Seit kurzem spiele ich damit auch Konsolenspiele wie Super Mario, Final Fantasy oder Sonic.
 Wie man das mit dem eingerichteten OpenELEC auf der Raspberry Pi macht, geh ich hier mal Schritt für Schritt durch.
 
 Zu erst holen wir uns das Plugin "RetroArch". Dieses Plugin beinhaltet mehr als nur die gängigen Emulatoren[^emulator] für Konsolen die es so gibt. Gerade die Konsolengeneration von Playstation, Nintendo 64 und alle vorherigen sind dabei vertreten. Atari, Sega Megadrive, Sega Genesis, Super Nintendo, Gameboy, Gameboy Advance, etc... die Liste geht immer weiter und erfüllt so ziemlich jeden retro Spielewunsch den es gibt.

@@ -164,3 +164,6 @@ Sobald man das Video zu ca. 90% gesehen hat, erscheint sogar ein Haken in der Li
 Der Raspberry Pi 2 kommt damit ohne Probleme klar. Selbst als ich das noch mit dem Raspberry Pi 1 Version B+ getestet hatte, lief das wie geschmiert. Einzig bei Untertitel war der Vorgänger ab und an ein leicht überfordert.
 
 Das wars auch schon fürs Erste. Den Rest findet man leicht selbst oder mit ein wenig Hilfe des Internets heraus. Wenn ihr auf Probleme bei der Installation stoßt, schreibt einfach einen Kommentar!
+
+#### Update:
+Schaut euch die [Spielekonsolen-Erweiterung](../Mediencenter_2){:target="_blank"} an! Ab jetzt wird der Controller wieder in die Hand genommen und Klassiker gezockt!
