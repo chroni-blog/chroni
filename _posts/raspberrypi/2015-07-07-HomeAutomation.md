@@ -12,7 +12,7 @@ toc: true
 comments: true
 image:
   feature: 
-  teaser: raspberrypi/mediencenter/mediencenter_teaser.png
+  teaser: raspberrypi/homeautomation/homeautomation_teaser.png
 ---
 
 Kaum hat man mal ein wenig mehr Erfahrung mit dem Raspberry Pi, kommt man auf allerlei Ideen. Es gibt automatische [Mediencenter](../Mediencenter){:target="_blank"}, Web- und Datenserver, [Spielekonsole](../Mediencenter_2){:target="_blank"}, Aquariensteuerungen, Sprenkleranlagen, uvm.
