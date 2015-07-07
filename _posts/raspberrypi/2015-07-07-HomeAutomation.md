@@ -45,10 +45,7 @@ Im oberen Bild sieht man die Anzeige für aktuelle Daten. Wenn ich mir den Verla
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag.png">
 		<img src="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag_small.png">
 	</a>
-	<figcaption>
-		Verlauf von Feuchtigkeit und Temperatur eines Tages.
-		Der Graph ist mit Highcharts.js dargestellt.
-	</figcaption>
+	<figcaption>Verlauf von Feuchtigkeit und Temperatur eines Tages. Der Graph ist mit Highcharts-js dargestellt.</figcaption>
 </figure>
 
 
