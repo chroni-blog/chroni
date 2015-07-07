@@ -57,9 +57,12 @@ Nachdem man sich kurz mal nach Modulen und Hausautomation umgesehen hat wird man
 Naja, nicht unbedingt. Wenn man wie ich erstmal nur Informationen zur Analyse sammeln möchte, kann man das sehr billig selbst bauen.
 Gerade die Homepage mit den Projekten von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> haben mir extrem geholfen. An dieser Stelle: Vielen Dank! Hier steht vieles darüber wie man selbst Funkmodule bauen kann und wie man damit Informationen versenden und empfangen kann.
 
-Den Raspberry Pi hab ich aus folgenden Gründen gewählt: 
+Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
+
 * Es gibt eine riesige Community, die gern hilft.
 * Es gibt schon unzählige Informationen und ähnliche Projekte.
 * Er kostet nicht viel und verbraucht unglaublich wenig (4-5 Watt).
 
 Ich hab mich ab da für Funk entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen, weil es sehr wenig Strom braucht. Das schont Batterien und hält damit dann auch schön lang. Will ja nicht dauernd Batterien wechseln...
+
+So das schließt erstmal den ersten Schritt ab. Als nächstes werd ich beschreiben wie genau ich die Funkmodule gebaut habe.
