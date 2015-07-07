@@ -4,9 +4,9 @@ title: "Homeautomation mit dem Raspberry Pi - Teil 1"
 date: 2015-07-07
 modified: 2015-07-07
 author: Christian
-categories: unpublished
+categories: raspberrypi
 share: true
-excerpt: "Temperaturmessung zum Selbstbauen mit dem Raspberry Pi"
+excerpt: "Temperaturmessung zum Selbstbauen mit dem Raspberry Pi - Übersicht/Beginn"
 tags: [raspberrypi, homeautomation]
 toc: true
 comments: true
