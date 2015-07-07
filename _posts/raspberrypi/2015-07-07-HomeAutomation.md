@@ -15,8 +15,8 @@ image:
   teaser: raspberrypi/homeautomation/homeautomation_teaser.png
 ---
 
-Kaum hat man mal ein wenig mehr Erfahrung mit dem Raspberry Pi, kommt man auf allerlei Ideen. Es gibt automatische [Mediencenter](../Mediencenter){:target="_blank"}, Web- und Datenserver, [Spielekonsole](../Mediencenter_2){:target="_blank"}, Aquariensteuerungen, Sprenkleranlagen, uvm.
-Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt dann doch recht groß wurde, teile ich das ganze in mehrere Schritte auf. Jetzt erstmal beschreibe ich Anfang und Allgemeines. Dann beschreibe ich wie ich die Module gebaut habe und danach das Aufsetzen des Systems auf dem Raspberry Pi.
+Kaum hat man mal ein wenig mehr Erfahrung mit dem Raspberry Pi, kommt man auf allerlei Ideen. Es gibt [Mediencenter](../Mediencenter){:target="_blank"}, Web- und Datenserver, [Spielekonsole](../Mediencenter_2){:target="_blank"}, Aquariensteuerungen, automatische Sprenkleranlagen, uvm.
+Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt dann doch recht groß wurde, teile ich das ganze in mehrere Schritte auf. Jetzt erstmal beschreibe ich Anfang und Allgemeines. Dann beschreibe ich wie ich die Module gebaut habe und anschließend das Aufsetzen des Systems auf dem Raspberry Pi.
 
 <figure style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview.PNG">
@@ -62,9 +62,9 @@ Nachdem ich also ein paar Stunden mich im Internet schlau gemacht hab, hab ich m
 	</figcaption>
 </figure>
 
-Nachdem man sich kurz mal nach Modulen und Hausautomation umgesehen hat wird man schnell merken: Mist, das wird teuer!
-Naja, nicht unbedingt. Wenn man wie ich erstmal nur Informationen zur Analyse sammeln möchte, kann man das sehr billig selbst bauen.
-Gerade die Homepage mit den Projekten von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> haben mir extrem geholfen. An dieser Stelle: Vielen Dank! Hier steht vieles darüber wie man selbst Funkmodule bauen kann und wie man damit Informationen versenden und empfangen kann.
+Nachdem man sich kurz mal nach Modulen und Hausautomation umgesehen hat, wird man schnell merken: Mist, das wird teuer!
+Naja, nur wenn man die fertigen Module kauft. Wenn man wie ich erstmal nur Informationen zur Analyse sammeln möchte, kann man das sehr billig selbst bauen.
+Gerade die Homepage mit den Projekten von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> haben mir da extrem geholfen. An dieser Stelle: Vielen Dank! Hier steht vieles darüber wie man selbst Funkmodule bauen kann und wie man damit Informationen versenden und empfangen kann.
 
 Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
 
@@ -72,6 +72,6 @@ Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
 * Es gibt schon unzählige Informationen und ähnliche Projekte.
 * Er kostet nicht viel und verbraucht unglaublich wenig (4-5 Watt).
 
-Ich hab mich ab da für Funk entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen, weil es sehr wenig Strom braucht. Das schont Batterien und hält damit dann auch schön lang. Will ja nicht dauernd Batterien wechseln...
+Ich hab mich ab da für Funk entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen, weil es sehr wenig Strom braucht. Das schont Batterien und hält damit auch schön lang. Will ja nicht dauernd Batterien wechseln...
 
-So das schließt erstmal den ersten Schritt ab. Als nächstes werd ich beschreiben wie genau ich die Funkmodule gebaut habe.
+So das schließt erst mal den ersten Schritt ab. Als nächstes werd' ich beschreiben wie genau ich die Funkmodule gebaut habe.
