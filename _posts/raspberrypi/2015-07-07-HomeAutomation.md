@@ -22,6 +22,9 @@ Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt d
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview.PNG">
 		<img src="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview_small.png">
 	</a>
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview_smartphone.png">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview_smartphone.png">
+	</a>
 	<figcaption>
 		Übersicht meiner Webapplikation mit Messwerten.
 		Hier sehe ich aktuelle Temperatur, Feuchtigkeit, ob ein Fenster offen oder geschlossen ist und der Batteriezustand meiner Module.
