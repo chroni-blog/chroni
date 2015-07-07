@@ -4,7 +4,7 @@ title: "Mediencenter mit dem Raspberry Pi - Retrospiele"
 date: 2015-06-19
 modified: 2015-06-19
 author: Christian
-categories: unpublished
+categories: raspberrypi
 share: true
 excerpt: "Der Mini-Computer für Filme, Musik, Serien und Spiele."
 tags: [raspberrypi, movies, music, games]
@@ -14,6 +14,14 @@ image:
   feature: 
   teaser: raspberrypi/mediencenter/mediencenter_teaser.png
 ---
+
+
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/super_mario_SNES_screen.png" />
+	<figcaption>
+		So ziemlich alle Klassiker sind mit dem Addon spielbar. Von Gameboy über Dreamcast, N64 uvm.
+	</figcaption>
+</figure>
 
 Beim letzten [Mal](../Mediencenter){:target="_blank"} habe ich vorgestellt, wie man Filme, Musik und Serien mit dem Mini-PC Raspberry Pi abspielt. Seit kurzem spiele ich damit auch Konsolenspiele wie Super Mario, Final Fantasy oder Sonic.
 Wie man das mit dem eingerichteten OpenELEC auf der Raspberry Pi macht, geh ich hier mal Schritt für Schritt durch.
@@ -89,6 +97,13 @@ und dann auf die Konsole, zu dem das Spiel gehört. Falls diese nicht existiert 
 
 **Programmstarter bearbeiten -> Erweiterte Einstellungen.**
 
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/mediencenter/snes_starter.jpg" />
+	<figcaption>
+		Einstellungen des SNES Programmstarter
+	</figcaption>
+</figure>
+
 Dort müsstet ihr nur noch das Verzeichnis zu den Dateien und eventuell Dateierweiterungen anpassen. Das Verzeichnis ist natürlich das, wo die ROMs bei euch liegen. Dateierweiterungen bei SNES können *.smc, *.sfc und *.zip sein. Das kann man so angeben: 
 
 {% highlight bash %}
@@ -104,6 +119,13 @@ Wählt nun einfach ein Spiel aus und startet es.
 
 ## 4.Schritt: Controller konfigurieren
 
-Habt ihr ein Spiel gestartet, sollte nach kurzer Zeit das Spiel mit Intro beginnen. Mit drücken der F1-Taste auf der Tastatur könnt ihr auf ein Menü zugreifen. Ab da ist eigentlich alles selbsterklärend. Ein paar Hinweise jedoch: Man muss das automatische Zuweisung (automatic binding) der Controller abstellen, da sonst jedes mal die Einstellungen überschrieben werden.
+Habt ihr ein Spiel gestartet, sollte nach kurzer Zeit das Spiel mit Intro beginnen. Mit drücken der F1-Taste auf der Tastatur könnt ihr auf ein Menü zugreifen. Ab da ist eigentlich alles selbsterklärend. Geht in die Controller Einstellungen und legt eure Buttons so wie ihr sie gern hättet. 
+Ein paar Hinweise jedoch: Man muss das automatische Zuweisung (automatic binding) der Controller abstellen, da sonst jedes mal die Einstellungen überschrieben werden.
 
-Optional sollte man für den Controller sich auch noch einen Button für das RetroArch Menü einrichten. Dann kann man das Spiel auch wieder verlassen und kommt direkt wieder zu Kodi.
+Optional sollte man für den Controller sich auch noch einen Button (linker Analogbutton) für das RetroArch Menü einrichten. Dann kann man das Spiel auch wieder verlassen und kommt direkt wieder zu Kodi.
+
+Beim XBOX 360 Controller blinkt derzeit leider dauerhaft die LEDs. Das kommt daher, dass unter OpenELEC nicht die korrekten Treiber installiert sind. Anscheinend wird sich das auch so schnell nicht ändern. Sobald ich was neues höre, schreibe ichs hier rein.
+
+## 5.Schritt: Spielen!
+
+Habt ihr all das geschafft, solltet ihr nun ohne Probleme spielen können. Praktisch bei Emulatoren ist das Speichern und Laden von Spielständen. Egal wo ihr gerade seid, könnt ihr das Spiel wie einen Screenshot speichern und von dort aus weitermachen. Stundenlang nach einem Speicherpunkt zu suchen war früher vielleicht noch in, heute aber nicht mehr.
