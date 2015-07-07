@@ -18,15 +18,13 @@ image:
 Kaum hat man mal ein wenig mehr Erfahrung mit dem Raspberry Pi, kommt man auf allerlei Ideen. Es gibt automatische [Mediencenter](../Mediencenter){:target="_blank"}, Web- und Datenserver, [Spielekonsole](../Mediencenter_2){:target="_blank"}, Aquariensteuerungen, Sprenkleranlagen, uvm.
 Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt dann doch recht groß wurde, teile ich das ganze in mehrere Schritte auf. Jetzt erstmal beschreibe ich Anfang und Allgemeines. Dann beschreibe ich wie ich die Module gebaut habe und danach das Aufsetzen des Systems auf dem Raspberry Pi.
 
-<figure class="half" style="text-align: center">
+<figure style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview.PNG">
 		<img src="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview_small.png">
 	</a>
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview_smartphone.png">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview_smartphone.png">
-	</a>
 	<figcaption>
 		Übersicht meiner Webapplikation mit Messwerten.
+		Links Desktop-, Rechts Smartphoneansicht.
 		Hier sehe ich aktuelle Temperatur, Feuchtigkeit, ob ein Fenster offen oder geschlossen ist und der Batteriezustand meiner Module.
 	</figcaption>
 </figure>
