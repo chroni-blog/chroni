@@ -46,12 +46,13 @@ Im oberen Bild sieht man die Anzeige für aktuelle Daten. Wenn ich mir den Verla
 		<img src="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag_small.png">
 	</a>
 	<figcaption>
-		Verlauf von Feuchtigkeit und Temperatur eines Tages. Der Graph ist mit Highcharts.js dargestellt.
+		Verlauf von Feuchtigkeit und Temperatur eines Tages.
+		Der Graph ist mit Highcharts.js dargestellt.
 	</figcaption>
 </figure>
 
 
-Nachdem man sich kurz mal nach Modulen und Hausautomation umgesehen hat wird man schnell merken: **Mist, das wird teuer!**
+Nachdem man sich kurz mal nach Modulen und Hausautomation umgesehen hat wird man schnell merken: Mist, das wird teuer!
 Naja, nicht unbedingt. Wenn man wie ich erstmal nur Informationen zur Analyse sammeln möchte, kann man das sehr billig selbst bauen.
 Gerade die Homepage mit den Projekten von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> haben mir extrem geholfen. An dieser Stelle: Vielen Dank! Hier steht vieles darüber wie man selbst Funkmodule bauen kann und wie man damit Informationen versenden und empfangen kann.
 
