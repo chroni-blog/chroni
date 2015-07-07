@@ -18,9 +18,6 @@ image:
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/mediencenter/super_mario_SNES_screen.png" />
-	<figcaption>
-		So ziemlich alle Klassiker sind mit dem Addon spielbar. Von Gameboy über Dreamcast, N64 uvm.
-	</figcaption>
 </figure>
 
 Beim letzten [Mal](../Mediencenter){:target="_blank"} habe ich vorgestellt, wie man Filme, Musik und Serien mit dem Mini-PC Raspberry Pi abspielt. Seit kurzem spiele ich damit auch Konsolenspiele wie Super Mario, Final Fantasy oder Sonic.
