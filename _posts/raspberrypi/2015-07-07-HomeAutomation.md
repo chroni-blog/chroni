@@ -28,6 +28,18 @@ Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt d
 	</figcaption>
 </figure>
 
+Im oberen Bild sieht man die Anzeige für aktuelle Daten. Wenn ich mir den Verlauf anzeigen lasse, schaut das wie folgt aus:
+
+<figure style="text-align: center">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag.png">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag_small.png">
+	</a>
+	<figcaption>
+		Verlauf von Feuchtigkeit und Temperatur eines Tages. 
+		Der Graph ist mit Highcharts-js dargestellt.
+	</figcaption>
+</figure>
+
 **Ich hatte mir das alles so gedacht: Ich baue mir Module mit denen ich Temperatur und Feuchtigkeit messen und an einen Raspberry Pi schicken kann.**
 
 Ob ich dann später Temperatur regeln kann/will oder nicht, war mir erstmal nicht so wichtig. Dabei wollte ich nicht zu viel Geld ausgeben und trotzdem ein wenig mit Technischer Informatik mich beschäftigen. Der Plan war also erstmal zu verstehen was man alles dafür braucht und wie das dann alles funktionieren soll.
@@ -37,19 +49,15 @@ Nachdem ich also ein paar Stunden mich im Internet schlau gemacht hab, hab ich m
 * Selber Module Bauen/Löten.
 * Module sollen erweiterbar sein.
 * Raspberry Pi als zentrales "Gehirn" des ganzen.
+* Ganzes System soll erweiterbar sein (beliebig viele Module).
 * Kosten so gering wie möglich (bin ja Student).
 * Per Browser Zugriff und Anzeige auf aktuelle und gespeicherte Daten.
 
-Im oberen Bild sieht man die Anzeige für aktuelle Daten. Wenn ich mir den Verlauf anzeigen lasse, schaut das wie folgt aus:
-
-
 <figure style="text-align: center">
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag.png">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag_small.png">
-	</a>
+	<img src="{{ site.url }}/images/raspberrypi/homeautomation/concept.png">
 	<figcaption>
-		Verlauf von Feuchtigkeit und Temperatur eines Tages. 
-		Der Graph ist mit Highcharts-js dargestellt.
+		Raspberry Pi als Basis und Empfänger.
+		Die Sendermodule schicken nach und nach Informationen an die Basis.
 	</figcaption>
 </figure>
 
