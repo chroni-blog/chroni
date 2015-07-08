@@ -12,8 +12,8 @@
 
 - title: Raspberry Pi
   url: /raspberrypi
-  excerpt: "Rund um den kleinen Rechner!"
-  image: raspberry/raspberry_pi.jpg
+  excerpt: "Themen rund um den kleinen Rechner!"
+  image: raspberrypi/raspberry_pi.jpg
 
 - title: Computergrafik
   url: /computergrafik
