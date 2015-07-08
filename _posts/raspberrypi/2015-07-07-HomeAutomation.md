@@ -16,7 +16,11 @@ image:
 ---
 
 Kaum hat man mal ein wenig mehr Erfahrung mit dem Raspberry Pi, kommt man auf allerlei Ideen. Es gibt [Mediencenter](../Mediencenter){:target="_blank"}, Web- und Datenserver, [Spielekonsole](../Mediencenter_2){:target="_blank"}, Aquariensteuerungen, automatische Sprenkleranlagen, uvm.
-Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt dann doch recht groß wurde, teile ich das ganze in mehrere Schritte auf. Jetzt erstmal beschreibe ich Anfang und Allgemeines. Dann beschreibe ich wie ich die Module gebaut habe und anschließend das Aufsetzen des Systems auf dem Raspberry Pi.
+Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt dann doch recht groß wurde, teile ich das ganze in mehrere Schritte auf. Jetzt beschreibe ich Anfang und Allgemeines. Dann beschreibe ich wie ich die Module gebaut habe und anschließend das Aufsetzen des Systems auf dem Raspberry Pi.
+
+## Übersicht und Anzeige
+
+Zunächst erstmal, wie das alles jetzt für den Benutzer aussieht.
 
 <figure style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/rooms_overview.PNG">
@@ -43,11 +47,13 @@ Wenn ich mir den Verlauf von Temperatur und Feuchtigkeit des letzten Tages anzei
 	</figcaption>
 </figure>
 
-Es war mir wichtig dynamisch festlegen zu können, wie weit ich in die Vergangenheit schauen möchte. Ich kann also per Buttons und andere GUI[^Gui]-Elemente den zeitlichen Bereich (x-Achse) festlegen. Auf der rechten Seite, kann ich festlegen welche Elemente ich mir als Kurve anzeigen lassen will. Für jedes Element ist da ein kleines Bild.
+Hier nutze ich Highcharts-js. Ein tolle Bibliothek für eine Weboberfläche zur Darstellung von Graphen. Es war mir wichtig dynamisch festlegen zu können, wie weit ich in die Vergangenheit schauen möchte. Ich kann also per Buttons und andere GUI[^Gui]-Elemente den zeitlichen Bereich (x-Achse) festlegen. Auf der rechten Seite, kann ich festlegen welche Elemente ich mir als Kurve anzeigen lassen will. Für jedes Element ist da ein kleines Bild.
 
 [^GUI]: Graphical User Interface (Klick und Anzeigezeug)
 
-**Ich hatte mir das alles so gedacht: Ich baue mir Module mit denen ich Temperatur und Feuchtigkeit messen und an einen Raspberry Pi schicken kann.**
+## Grobe Planung
+
+Ich hatte mir das alles so gedacht: **Ich baue mir Module mit denen ich Temperatur und Feuchtigkeit messen und an einen Raspberry Pi schicken kann.**
 
 Ob ich dann später Temperatur regeln kann/will oder nicht, war mir erstmal nicht so wichtig. Dabei wollte ich nicht zu viel Geld ausgeben und mich trotzdem ein wenig mit "Technischer Informatik" beschäftigen. Der Plan war also zunächst zu verstehen was man alles dafür braucht und wie das dann alles funktionieren soll.
 
