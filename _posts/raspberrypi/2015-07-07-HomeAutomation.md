@@ -29,7 +29,9 @@ Hier beschreibe ich mal ein Projekt im Thema Hausautomation. Da dieses Projekt d
 	</figcaption>
 </figure>
 
-Im oberen Bild sieht man die Anzeige für aktuelle Daten. Wenn ich mir den Verlauf anzeigen lasse, schaut das wie folgt aus:
+Im oberen Bild sieht man die Anzeige für aktuelle Daten. Das linke Teilbild zeigt einen Grundriss meiner Wohnung. Bisher sind drei Zimmer mit jeweils einem Modul ausgestattet. Hier kann ich direkt aktuelle Feuchtigkeit, Temperatur, Batteriestand und den Status der Fenster sehen. Grünes Fenster bedeutet es ist geschlossen, rotes Fenster wäre offen. 
+Im rechten Teilbild sieht man die Darstellung für Smartphones. Da ich hier nicht so viel Anzeigefläche hab, müssen die Informationen natürlich ein wenig kompakter angezeigt werden.
+Wenn ich mir den Verlauf von Temperatur und Feuchtigkeit des letzten Tages anzeigen lasse, schaut das wie folgt aus:
 
 <figure style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/badezimmer_eintag.png">
@@ -41,16 +43,20 @@ Im oberen Bild sieht man die Anzeige für aktuelle Daten. Wenn ich mir den Verla
 	</figcaption>
 </figure>
 
+Es war mir wichtig dynamisch festlegen zu können, wie weit ich in die Vergangenheit schauen möchte. Ich kann also per Buttons und andere GUI[^Gui]-Elemente den zeitlichen Bereich (x-Achse) festlegen. Auf der rechten Seite, kann ich festlegen welche Elemente ich mir als Kurve anzeigen lassen will. Für jedes Element ist da ein kleines Bild.
+
+[^GUI]: Graphical User Interface (Klick und Anzeigezeug)
+
 **Ich hatte mir das alles so gedacht: Ich baue mir Module mit denen ich Temperatur und Feuchtigkeit messen und an einen Raspberry Pi schicken kann.**
 
-Ob ich dann später Temperatur regeln kann/will oder nicht, war mir erstmal nicht so wichtig. Dabei wollte ich nicht zu viel Geld ausgeben und trotzdem ein wenig mit Technischer Informatik mich beschäftigen. Der Plan war also erstmal zu verstehen was man alles dafür braucht und wie das dann alles funktionieren soll.
+Ob ich dann später Temperatur regeln kann/will oder nicht, war mir erstmal nicht so wichtig. Dabei wollte ich nicht zu viel Geld ausgeben und mich trotzdem ein wenig mit "Technischer Informatik" beschäftigen. Der Plan war also zunächst zu verstehen was man alles dafür braucht und wie das dann alles funktionieren soll.
 
-Nachdem ich also ein paar Stunden mich im Internet schlau gemacht hab, hab ich mir ein paar Punkte aufgestellt:
+Nachdem ich mich also ein paar Stunden im Internet schlau gemacht hatte, hab ich mir ein paar Punkte dazu aufgestellt:
 
 * Selber Module Bauen/Löten.
 * Module sollen erweiterbar sein.
-* Raspberry Pi als zentrales "Gehirn" des ganzen.
-* Ganzes System soll erweiterbar sein (beliebig viele Module).
+* Raspberry Pi als zentrales "Gehirn" des Ganzen.
+* Das System soll erweiterbar sein (beliebig viele Module).
 * Kosten so gering wie möglich (bin ja Student).
 * Per Browser Zugriff und Anzeige auf aktuelle und gespeicherte Daten.
 
@@ -72,6 +78,6 @@ Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
 * Es gibt schon unzählige Informationen und ähnliche Projekte.
 * Er kostet nicht viel und verbraucht unglaublich wenig (4-5 Watt).
 
-Ich hab mich ab da für Funk entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen, weil es sehr wenig Strom braucht. Das schont Batterien und hält damit auch schön lang. Will ja nicht dauernd Batterien wechseln...
+Ich hab mich ab da für Funk entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen, weil es sehr wenig Strom braucht Daten zu senden. Das schont Batterien und hält damit auch schön lang. Ich will ja nicht dauernd Batterien wechseln müssen...
 
-So das schließt erst mal den ersten Schritt ab. Als nächstes werd' ich beschreiben wie genau ich die Funkmodule gebaut habe.
+So das schließt erst mal den ersten Schritt ab. Als nächstes werd' ich beschreiben, wie genau ich die Funkmodule gebaut habe.
