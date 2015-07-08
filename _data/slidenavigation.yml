@@ -10,6 +10,11 @@
   excerpt: "Wer und was ist das hier?"
   image: books.jpg
 
+- title: Raspberry Pi
+  url: /raspberrypi
+  excerpt: "Rund um den kleinen Rechner!"
+  image: raspberry/raspberry_pi.jpg
+
 - title: Computergrafik
   url: /computergrafik
   excerpt: "Artikel über 2D- und 3D-Grafik und alles was dazu gehört."
