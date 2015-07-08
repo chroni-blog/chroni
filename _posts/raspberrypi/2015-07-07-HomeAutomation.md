@@ -47,7 +47,7 @@ Wenn ich mir den Verlauf von Temperatur und Feuchtigkeit des letzten Tages anzei
 	</figcaption>
 </figure>
 
-Hier nutze ich Highcharts-js. Ein tolle Bibliothek für eine Weboberfläche zur Darstellung von Graphen. Es war mir wichtig dynamisch festlegen zu können, wie weit ich in die Vergangenheit schauen möchte. Ich kann also per Buttons und andere GUI[^Gui]-Elemente den zeitlichen Bereich (x-Achse) festlegen. Auf der rechten Seite, kann ich festlegen welche Elemente ich mir als Kurve anzeigen lassen will. Für jedes Element ist da ein kleines Bild.
+Hier nutze ich Highcharts-js. Ein tolle Bibliothek für eine Weboberfläche zur Darstellung von Graphen. Es war mir wichtig dynamisch festlegen zu können, wie weit ich in die Vergangenheit schauen möchte. Ich kann also per Buttons und andere GUI[^GUI]-Elemente den zeitlichen Bereich (x-Achse) festlegen. Auf der rechten Seite, kann ich festlegen welche Elemente ich mir als Kurve anzeigen lassen will. Für jedes Element ist da ein kleines Bild.
 
 [^GUI]: Graphical User Interface (Klick und Anzeigezeug)
 
