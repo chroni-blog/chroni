@@ -53,7 +53,7 @@ Hier nutze ich Highcharts-js. Ein tolle Bibliothek für eine Weboberfläche zur 
 
 ## Grobe Planung
 
-Ich hatte mir das alles so gedacht: **Ich baue mir Module mit denen ich Temperatur und Feuchtigkeit messen und an einen Raspberry Pi schicken kann.**
+Ich hatte mir das alles so gedacht: **Ich baue mir Module, mit denen ich Temperatur und Feuchtigkeit messen und an einen Raspberry Pi schicken kann.**
 
 Ob ich dann später Temperatur regeln kann/will oder nicht, war mir erstmal nicht so wichtig. Dabei wollte ich nicht zu viel Geld ausgeben und mich trotzdem ein wenig mit "Technischer Informatik" beschäftigen. Der Plan war also zunächst zu verstehen was man alles dafür braucht und wie das dann alles funktionieren soll.
 
@@ -77,6 +77,22 @@ Nachdem ich mich also ein paar Stunden im Internet schlau gemacht hatte, hab ich
 Nachdem man sich kurz mal nach Modulen und Hausautomation umgesehen hat, wird man schnell merken: Mist, das wird teuer!
 Naja, nur wenn man die fertigen Module kauft. Wenn man wie ich erstmal nur Informationen zur Analyse sammeln möchte, kann man das sehr billig selbst bauen.
 Gerade die Homepage mit den Projekten von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> haben mir da extrem geholfen. An dieser Stelle: Vielen Dank! Hier steht vieles darüber wie man selbst Funkmodule bauen kann und wie man damit Informationen versenden und empfangen kann.
+
+Ich habe selbst auch ein wenig mit kommerziellen Lösungen geliebäugelt, bin aber recht schnell zum Entschluss gekommen das wirklich alles selbst zu machen. Dabei waren mir folgendes dazu aufgefallen.
+
+Vorteile Raspberry Pi + eigene Module:
+
+* Unabhängig von kommerzielle Soft- und Hardware.
+* Komplett Modular: Software, Hardware, Übertragung (Funk, WLAN)
+* Kostengünstiger
+* Oberflächen und Konzept beliebig veränderbar
+
+Nachteile:
+
+* Man muss alles selbst machen
+* Beansprucht viel Zeit (Einarbeitung, Umsetzung)
+
+Gerade der Punkt der Kosten, die Unabhängigkeit und die Selbstgestaltung waren mir dabei wichtig. Klar ist meine Oberfläche im Moment vielleicht nicht die hübscheste... aber wenn ich Zeit und Lust habe, kann ich ja nachbessern. Ebenso kann ich meine Module verändern und sogar bis runter auf die Bits gehen, die übertragen werden. Ob da eine 0 oder 1 wann und wie oft, übertragen wird, kann ich alles selbst bestimmen. Ein netter Nebeneffekt war außerdem, dass ich mal wieder meinen Basteltrieb besänftigen konnte.
 
 Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
 
