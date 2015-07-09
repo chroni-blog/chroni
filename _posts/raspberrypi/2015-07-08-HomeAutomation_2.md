@@ -4,7 +4,7 @@ title: "Homeautomation mit dem Raspberry Pi - Teil 2"
 date: 2015-07-07
 modified: 2015-07-07
 author: Christian
-categories: unpublished
+categories: raspberrypi
 share: true
 excerpt: "Temperaturmessung zum Selbstbauen mit dem Raspberry Pi - Bauen der Funkmodule"
 tags: [raspberrypi, homeautomation]
@@ -45,7 +45,7 @@ Eine Zusammenstellung des Moduls kann also so aussehen:
 |:-------------------------|:---------------|:-----------------|
 | Leiterplatte             | PCB TinyTx3    | 0,99 €           |
 | Funkmodul                | RFM12B  433Mhz | 3,85 €           |
-| Steuereinheit            | ATTINY 84 A    | 2,05 €           |
+| Steuereinheit            | ATTINY84A      | 2,05 €           |
 | Temp/Feuchtigkeitssensor | DHT22          | 3,99 €           |
 | Fensterkontaktsensor     | MC38           | 1,99 €           |
 | Batteriehalter           | 2xAA (R6)      | 1,39 €           |
@@ -53,10 +53,13 @@ Eine Zusammenstellung des Moduls kann also so aussehen:
 |:-------------------------|:---------------|:-----------------|
 | **Gesamt**               |                | **17,25 €**      |
 
-**Ein komplettes Funkmodul mit Temperatur und Feuchtigkeitssensor (DHT22) und einem Fensterkontaktsensor kostet demnach ca. 17,25€ (zzgl. Versand)**. Dazu braucht man dann noch ein bisschen Draht für die Antenne, jeweils 2 100k&#8486; Widerstände und 2xAA Batterien.
+Alle Komponenten findet man leicht auf Ebay oder Amazon. Preise können stark schwanken, weshalb es ratsam ist etwas länger zu suchen und eventuell gleich mehrere Komponenten zu kaufen um sich Versandkosten zu sparen.
 
-Würde man sich ein ähnliche Module von z.B. HomeMatic kaufen, kosten diese schon 80€.
+**Ein komplettes Funkmodul mit Temperatur und Feuchtigkeitssensor (DHT22) und einem Fensterkontaktsensor kostet demnach ca. 17,25€ (zzgl. Versand)**. Dazu braucht man dann noch ein bisschen Draht für die Antenne, jeweils 2 100k&#8486; Widerstände und 2xAA Batterien. Um den Programmcode auf das Modul zu bekommen, fallen eventuell noch weitere Kosten an. Beschreibe ich im nächsten Blogeintrag. Für unsere Basisstation, den Raspberry Pi brauchen wir zusätzlich einen RFM2Pi. Den gibts bei <a href="https://harizanov.com/shop/">Martin Harizanov</a> für 16€ im Internet zu kaufen.
 
+Würde man sich ein ähnliche Module von z.B. HomeMatic kaufen, kosten diese schon 80€. Die Basisstation liegt bei ca. 100€.
+
+Nachfolgend stell ich alle wichtigen Komponenten dar und beschreibe kurz wozu man die braucht.
 
 #### Leiterplatte (PCB TinyTx3)
 
@@ -66,12 +69,15 @@ Die TinyTx3 Platine hab ich mir bei <a href="http://www.seeedstudio.com/service/
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/pcb.jpg">
 		<img src="{{ site.url }}/images/raspberrypi/homeautomation/pcb_small.jpg">
 	</a>
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/pcbback.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/pcbback_small.jpg">
+	</a>
 	<figcaption>
 		Leiterplatte TinyTx3
 	</figcaption>
 </figure>
 
-Dieses Ding ist schon echt verdammt klein. Da braucht man schon ein ruhiges Händchen beim Löten. Zum Glück sind da alle wichtigen Informationen aufgedruckt.
+Dieses Ding ist schon echt verdammt klein. Da braucht man schon ein ruhiges Händchen beim Löten. Zum Glück sind da alle wichtigen Informationen aufgedruckt. Auf der Rückseite gibt es ein kleines Feld auf der man die Node ID Nummer schreiben kann. Man sollte auf jeden Fall alle Module durchnummerieren! Das wird dann auch wieder bei der Programmierung wichtig.
 
 #### Funkmodul (RFM12b)
 
@@ -129,7 +135,7 @@ Sobald beide Teile des MC38 nah bei einander sind (ab ca. 1cm Distanz) fließt S
 
 ## Bau des Moduls
 
-Alles was jetzt fehlt, ist das Löten des Moduls. Gar nicht so leicht saubere Lötstellen bei dieser Größe hinzubekommen.
+Alles was jetzt fehlt, ist das Löten des Moduls. Gar nicht so leicht saubere Lötstellen bei dieser Größe hinzubekommen. Wie man die Module anbringt, kann man zum einen durch die Markierungen auf der Leiterplatte erkennen oder man orientiert sich an den folgenden Bildern.
 
 <figure class="fourth" style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/bau_1.jpg">
@@ -149,11 +155,13 @@ Alles was jetzt fehlt, ist das Löten des Moduls. Gar nicht so leicht saubere L�
 	</figcaption>
 </figure>
 
-Am besten fängt man mit dem ATTiny84A an (linkes Bild). Die Lötstellen müssen hier so perfekt wie möglich sein! Danach wenn man den Code aufspielt gibt es sonst nur Probleme! Als nächstes kann man das Funkmodul (RFM12B) anbringen. Das wären dann die zwei wichtigsten Komponenten.
+Am besten fängt man mit dem ATTiny84A an (linkes Bild). Die Lötstellen müssen hier so perfekt wie möglich sein! Wenn man später den Code aufspielt, gibt es sonst nur Probleme! Als nächstes kann man das Funkmodul (RFM12B) anbringen. Das wären dann die zwei wichtigsten Komponenten.
 
-Im zweiten Bild sieht man die Kontakte der Kabel vom Batteriehalter. Hierüber läuft dann der Strom. Im dritten Bild ist eine viel zu große Antenne zu sehen. Diese sollte eigentlich 0,6mm Durchmesser haben.
-Auch der DHT22 ist da schon angebracht.
+Im zweiten Bild sieht man die Kontakte der Kabel vom Batteriehalter. Hierüber läuft dann der Strom der Batterien. 
+
+Das dritte Bild zeigt eine viel zu große Antenne. Diese sollte ungefähr 0,6mm Durchmesser und bei 433Mhz eine Länge von ca. 16,5cm haben. Hier ist auch der DHT22 schon angebracht.
 
 Im vierten Bild ist alles bis auf der Fensterkontaktsensor angebracht. Hier sieht man nochmal genau, wo der DHT angelötet werden muss. Der zweite Kontakt ist, weil wir den nicht brauchen, nach hinten gebogen.
+Die Antenne ist hier zu einer Spirale verdreht. Leider war der Empfang in dem Gehäuse so nicht gut genug. Später hab ich die Antenne wieder gerade gezogen und aus dem Gehäuse zeigen lassen.
 
 Sobald alles fertig ist, kommen wir zum Programmcode und wie man den auf den ATTiny bekommt. Das aber dann im nächsten Teil.
