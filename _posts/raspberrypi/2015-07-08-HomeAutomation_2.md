@@ -1,8 +1,8 @@
 ---
 layout: article
 title: "Homeautomation mit dem Raspberry Pi - Teil 2"
-date: 2015-07-07
-modified: 2015-07-07
+date: 2015-07-09
+modified: 2015-07-09
 author: Christian
 categories: raspberrypi
 share: true
