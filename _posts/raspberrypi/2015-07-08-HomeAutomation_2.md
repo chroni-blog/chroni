@@ -18,6 +18,21 @@ image:
 Im ersten Teil dieser Serie, hab ich dene groben [Plan und die Übersicht](../HomeAutomation){:target="_blank"} beschrieben. Hier erklär ich, wie ich die Sendermodule der Hausautomation gebaut hab und zeige was sich damit alles anstellen lässt.
 Nun geh ich auf den Bau eines Moduls ein. 
 
+<figure class="third" style="text-align: center">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul_small.jpg">
+	</a>
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul2.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul2_small.jpg">
+	</a>
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul3.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul3_small.jpg">
+	</a>
+	<figcaption>
+		Ein Beispiel eines fertigen Moduls
+	</figcaption>
+</figure>
+
 Das wichtigste an dem Modul ist, dass man mehrere unterschiedliche Sensoren anbinden können soll. Die Sensoren sollen z.B. die Temperatur und die Feuchtigkeit messen. Ich hab mich dafür entschieden zusätzlich noch einen Fensterkontaktsensor mit anzubauen. So weiß ich dann zusätzlich ob gerade das Fenster in dem Raum offen oder geschlossen ist.
 
 Hier kann ich wieder <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> danken, weil er die meisten Module schon getestet, den Code darauf abgestimmt und frei zur Verfügung gestellt hat. Dadurch hatte ich selbst kaum noch Arbeit mit der Suche nach passenden Modulen.
@@ -34,7 +49,7 @@ Eine Zusammenstellung des Moduls kann also so aussehen:
 | Batteriehalter           | 2xAA (R6)      | 1,39 €           |
 | Gehäuse                  | ---            | 2,99 €           |
 |:-------------------------|:---------------|:-----------------|
-| Gesamt                   |                | 17,25 €          |
+| **Gesamt**               |                | **17,25 €**      |
 
 **Ein komplettes Funkmodul mit Temperatur und Feuchtigkeitssensor (DHT22) und einem Fensterkontaktsensor kostet demnach ca. 17,25€ (zzgl. Versand)**. Dazu braucht man dann noch ein bisschen Draht für die Antenne, jeweils 2 100k&#8486; Widerstände und 2xAA Batterien.
 
