@@ -29,13 +29,15 @@ Nun geh ich auf den Bau eines Moduls ein.
 		<img src="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul3_small.jpg">
 	</a>
 	<figcaption>
-		Ein Beispiel eines fertigen Moduls
+		Ein Beispiel eines fertigen Moduls. Hängt bei mir direkt oben in der Ecke an einem Fenster.
 	</figcaption>
 </figure>
 
-Das wichtigste an dem Modul ist, dass man mehrere unterschiedliche Sensoren anbinden können soll. Die Sensoren sollen z.B. die Temperatur und die Feuchtigkeit messen. Ich hab mich dafür entschieden zusätzlich noch einen Fensterkontaktsensor mit anzubauen. So weiß ich dann zusätzlich ob gerade das Fenster in dem Raum offen oder geschlossen ist.
+Mir war das wichtigste an dem Modul, dass ich mehrere unterschiedliche Sensoren anbinden kann. Die Sensoren sollen z.B. die Temperatur und die Feuchtigkeit messen. Ich hab mich dafür entschieden zusätzlich noch einen Fensterkontaktsensor mit anzubauen. So weiß ich dann zusätzlich ob gerade das Fenster in dem Raum offen oder geschlossen ist.
 
 Hier kann ich wieder <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> danken, weil er die meisten Module schon getestet, den Code darauf abgestimmt und frei zur Verfügung gestellt hat. Dadurch hatte ich selbst kaum noch Arbeit mit der Suche nach passenden Modulen.
+
+## Die Komponenten
 
 Eine Zusammenstellung des Moduls kann also so aussehen:
 
@@ -125,12 +127,33 @@ Sobald beide Teile des MC38 nah bei einander sind (ab ca. 1cm Distanz) fließt S
 </figure>
 
 
+## Bau des Moduls
 
-### Abbildung mit Komponenten
+Alles was jetzt fehlt, ist das Löten des Moduls. Gar nicht so leicht saubere Lötstellen bei dieser Größe hinzubekommen.
 
-Jedes Modul besteht dabei aus einer Platine, einer Steuereinheit, einem Funksendemodul, Batterien und ein oder mehrere Sensoren. Um Strom zu sparen, sendet man nicht andauernd Daten über Funk zur Basisstation. Das würde bei weitem zu viel Strom kosten und würde uns auch nicht sinnvollere Informationen liefern. Temperatur und Feuchtigkeit ändern sich ja schließlich nicht innerhalb weniger Sekunden. 
+<figure class="fourth" style="text-align: center">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/bau_1.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/bau_1_small.jpg">
+	</a>
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/bau_2.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/bau_2_small.jpg">
+	</a>
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/bau_3.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/bau_3_small.jpg">
+	</a>
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/bau_4.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/bau_4_small.jpg">
+	</a>
+	<figcaption>
+		Bilder während des Baus des Moduls.
+	</figcaption>
+</figure>
 
-Auf die Steuereinheit selbst kann man direkt Programmcode kopieren und dann immer wieder ausführen lassen. Hier kann man also selbst festlegen, wie oft man Daten ausliest und schickt. Die Informationen selbst, die in der Nachricht an die Basisstation (den Raspberry Pi) stehen, können natürlich auch selbst festgelegt werden. Ich selbst lasse jedes Modul alle 2 Minuten die Daten an den Raspberry Pi weiterschicken.
+Am besten fängt man mit dem ATTiny84A an (linkes Bild). Die Lötstellen müssen hier so perfekt wie möglich sein! Danach wenn man den Code aufspielt gibt es sonst nur Probleme! Als nächstes kann man das Funkmodul (RFM12B) anbringen. Das wären dann die zwei wichtigsten Komponenten.
 
-Sensoren ermitteln bei "Anfrage" der Steuereinheit die Messdaten an diese wieder zurück. Auch diese werden nur zeitlich vor einem Datenaustausch angesprochen und verbrauchen ansonsten wenig bis keinen Strom. 
+Im zweiten Bild sieht man die Kontakte der Kabel vom Batteriehalter. Hierüber läuft dann der Strom. Im dritten Bild ist eine viel zu große Antenne zu sehen. Diese sollte eigentlich 0,6mm Durchmesser haben.
+Auch der DHT22 ist da schon angebracht.
 
+Im vierten Bild ist alles bis auf der Fensterkontaktsensor angebracht. Hier sieht man nochmal genau, wo der DHT angelötet werden muss. Der zweite Kontakt ist, weil wir den nicht brauchen, nach hinten gebogen.
+
+Sobald alles fertig ist, kommen wir zum Programmcode und wie man den auf den ATTiny bekommt. Das aber dann im nächsten Teil.
