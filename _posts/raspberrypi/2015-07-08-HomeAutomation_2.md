@@ -135,7 +135,18 @@ Sobald beide Teile des MC38 nah bei einander sind (ab ca. 1cm Distanz) fließt S
 
 ## Bau des Moduls
 
-Alles was jetzt fehlt, ist das Löten des Moduls. Gar nicht so leicht saubere Lötstellen bei dieser Größe hinzubekommen. Wie man die Module anbringt, kann man zum einen durch die Markierungen auf der Leiterplatte erkennen oder man orientiert sich an den folgenden Bildern.
+Alles was jetzt fehlt, ist das Löten des Moduls. Gar nicht so leicht saubere Lötstellen bei dieser Größe hinzubekommen. Wie man die Module anbringt, kann man zum einen durch die Markierungen auf der Leiterplatte erkennen oder man orientiert sich an dem folgenden Bild.
+
+<figure style="text-align: center">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/bauplan_tinytx3.png">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/bauplan_tinytx3_small.png">
+	</a>
+	<figcaption>
+		Bauplan der Komponenten.
+	</figcaption>
+</figure>
+
+Ein paar Fotos dazu: 
 
 <figure class="fourth" style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/bau_1.jpg">
