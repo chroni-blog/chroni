@@ -35,7 +35,7 @@ Nun geh ich auf den Bau eines Moduls ein.
 
 Mir war das wichtigste an dem Modul, dass ich mehrere unterschiedliche Sensoren anbinden kann. Die Sensoren sollen z.B. die Temperatur und die Feuchtigkeit messen. Ich hab mich dafür entschieden zusätzlich noch einen Fensterkontaktsensor mit anzubauen. So weiß ich dann zusätzlich ob gerade das Fenster in dem Raum offen oder geschlossen ist.
 
-Hier kann ich wieder <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> danken, weil er die meisten Module schon getestet, den Code darauf abgestimmt und frei zur Verfügung gestellt hat. Dadurch hatte ich selbst kaum noch Arbeit mit der Suche nach passenden Modulen.
+Hier kann ich wieder <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> danken, weil er die meisten Module schon getestet, den Code darauf abgestimmt und frei zur Verfügung (Open Source) gestellt hat. Dadurch hatte ich selbst kaum noch Arbeit mit der Suche nach passenden Modulen.
 
 ## Die Komponenten
 
@@ -63,7 +63,7 @@ Nachfolgend stell ich alle wichtigen Komponenten dar und beschreibe kurz wozu ma
 
 #### Leiterplatte (PCB TinyTx3)
 
-Die TinyTx3 Platine hab ich mir bei <a href="http://www.seeedstudio.com/service/index.php?r=pcb">Seedstudio</a> bestellt. Dazu braucht ihr natürlich die <a href="http://nathan.chantrell.net/downloads/arduino/tinytx3/tinytx3_gerbers.zip">Gerberdaten/Bauplan</a>. Ein 10er Pack kostet hier 10$. Der Versand und die Herstellung dauert jedoch ein paar Wochen.
+Die TinyTx3 Platine hab ich mir bei <a href="http://www.seeedstudio.com/service/index.php?r=pcb">Seedstudio</a> bestellt. Dazu braucht ihr natürlich die <a href="http://nathan.chantrell.net/downloads/arduino/tinytx3/tinytx3_gerbers.zip">Gerberdaten/Bauplan</a> von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a>. Ein 10er Pack kostet hier 10$. Der Versand und die Herstellung dauert jedoch ein paar Wochen.
 
 <figure style="text-align: center">
 	<a href="{{ site.url }}/images/raspberrypi/homeautomation/pcb.jpg">
@@ -166,13 +166,13 @@ Ein paar Fotos dazu:
 	</figcaption>
 </figure>
 
-Am besten fängt man mit dem ATTiny84A an (linkes Bild). Die Lötstellen müssen hier so perfekt wie möglich sein! Wenn man später den Code aufspielt, gibt es sonst nur Probleme! Als nächstes kann man das Funkmodul (RFM12B) anbringen. Das wären dann die zwei wichtigsten Komponenten.
+Am besten fängt man mit dem ATTiny84A an (linkes Bild). Die Lötstellen müssen hier so perfekt wie möglich sein! Wenn man später den Code aufspielt gibt es sonst nur Probleme! Als nächstes kann man das Funkmodul (RFM12B) anbringen. Das wären dann die zwei wichtigsten Komponenten.
 
 Im zweiten Bild sieht man die Kontakte der Kabel vom Batteriehalter. Hierüber läuft dann der Strom der Batterien. 
 
 Das dritte Bild zeigt eine viel zu große Antenne. Diese sollte ungefähr 0,6mm Durchmesser und bei 433Mhz eine Länge von ca. 16,5cm haben. Hier ist auch der DHT22 schon angebracht.
 
-Im vierten Bild ist alles bis auf der Fensterkontaktsensor angebracht. Hier sieht man nochmal genau, wo der DHT angelötet werden muss. Der zweite Kontakt ist, weil wir den nicht brauchen, nach hinten gebogen.
-Die Antenne ist hier zu einer Spirale verdreht. Leider war der Empfang in dem Gehäuse so nicht gut genug. Später hab ich die Antenne wieder gerade gezogen und aus dem Gehäuse zeigen lassen.
+Im vierten Bild ist alles bis auf der Fensterkontaktsensor angebracht. Hier sieht man nochmal genau, wo der DHT angelötet werden muss. Der zweite Kontakt ist nach hinten gebogen. Den brauchen wir gar nicht.
+Die Antenne ist hier zu einer Spirale verdreht. Leider war der Empfang in dem Gehäuse so nicht gut genug in meiner Wohnung. Das Signal musste öfter geschickt werden, bis es als vollständig übertragen erkannt wurde.Später hab ich die Antenne wieder gerade gezogen und aus dem Gehäuse zeigen lassen. Damit reduzierten sich die fehlgeschlagenen Übertragungen.
 
 Sobald alles fertig ist, kommen wir zum Programmcode und wie man den auf den ATTiny bekommt. Das aber dann im nächsten Teil.
