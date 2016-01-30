@@ -76,7 +76,7 @@ Nachdem ich mich also ein paar Stunden im Internet schlau gemacht hatte, hab ich
 
 Nachdem man sich kurz mal nach Modulen und Hausautomation umgesehen hat, wird man schnell merken: Mist, das wird teuer!
 Naja, nur wenn man die fertigen Module kauft. Wenn man wie ich erstmal nur Informationen zur Analyse sammeln möchte, kann man das sehr billig selbst bauen.
-Gerade die Homepage mit den Projekten von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> haben mir da extrem geholfen. An dieser Stelle: Vielen Dank! Hier steht vieles darüber wie man selbst Funkmodule bauen kann und wie man damit Informationen versenden und empfangen kann.
+Gerade die Homepage mit den Projekten von <a href="http://nathan.chantrell.net/">Nathan Chantrell</a> hat mir da extrem geholfen. An dieser Stelle: Vielen Dank! Hier steht vieles darüber wie man selbst Funkmodule bauen und wie damit Informationen versenden und empfangen kann.
 
 Ich habe selbst auch ein wenig mit kommerziellen Lösungen geliebäugelt, bin aber recht schnell zum Entschluss gekommen das wirklich alles selbst zu machen. Dabei waren mir folgendes dazu aufgefallen.
 
@@ -92,7 +92,7 @@ Nachteile:
 * Man muss alles selbst machen
 * Beansprucht viel Zeit (Einarbeitung, Umsetzung)
 
-Gerade der Punkt der Kosten, die Unabhängigkeit und die Selbstgestaltung waren mir dabei wichtig. Klar ist meine Oberfläche im Moment vielleicht nicht die hübscheste... aber wenn ich Zeit und Lust habe, kann ich ja nachbessern. Ebenso kann ich meine Module verändern und sogar bis runter auf die Bits gehen, die übertragen werden. Ob da eine 0 oder 1 wann und wie oft, übertragen wird, kann ich alles selbst bestimmen. Ein netter Nebeneffekt war außerdem, dass ich mal wieder meinen Basteltrieb besänftigen konnte.
+Gerade der Punkt der Kosten, die Unabhängigkeit und die Selbstgestaltung waren mir dabei wichtig. Klar ist meine Oberfläche im Moment vielleicht nicht die hübscheste... aber wenn ich Zeit und Lust habe, kann ich ja nachbessern. Ebenso kann ich meine Module verändern und sogar bis runter auf die Bits gehen, die übertragen werden. Ob da eine 0 oder 1 wann und wie oft übertragen wird, kann ich alles selbst bestimmen. Ein netter Nebeneffekt war außerdem, dass ich mal wieder meinen Basteltrieb besänftigen konnte.
 
 Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
 
@@ -100,6 +100,6 @@ Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
 * Es gibt schon unzählige Informationen und ähnliche Projekte.
 * Er kostet nicht viel und verbraucht unglaublich wenig (4-5 Watt).
 
-Ich hab mich ab da für Funk entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen, weil es sehr wenig Strom braucht Daten zu senden. Das schont Batterien und hält damit auch schön lang. Ich will ja nicht dauernd Batterien wechseln müssen...
+Ich hab mich zu diesem Zeitpunkt für Funkübertragung entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen weil es sehr wenig Strom braucht Daten zu senden. Das schont Batterien und hält damit auch schön lang. Ich will ja nicht dauernd Batterien wechseln müssen...
 
-So das schließt erst mal den ersten Schritt ab. Als nächstes werd' ich beschreiben, wie genau ich die Funkmodule gebaut habe.
+So das schließt erst mal den ersten Schritt ab. Als nächstes, [Teil 2](../HomeAutomation_2){:target="_blank"}, werd' ich beschreiben, wie genau ich die Funkmodule gebaut habe.
