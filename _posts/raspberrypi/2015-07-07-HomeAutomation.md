@@ -102,4 +102,4 @@ Den Raspberry Pi hab ich aus folgenden Gründen gewählt:
 
 Ich hab mich zu diesem Zeitpunkt für Funkübertragung entschieden. Zum einen weil es dazu schon echt viel Informationen gibt und zum anderen weil es sehr wenig Strom braucht Daten zu senden. Das schont Batterien und hält damit auch schön lang. Ich will ja nicht dauernd Batterien wechseln müssen...
 
-So das schließt erst mal den ersten Schritt ab. Als nächstes, [Teil 2](../HomeAutomation_2){:target="_blank"}, werd' ich beschreiben, wie genau ich die Funkmodule gebaut habe.
+So das schließt erst mal den ersten Schritt ab. Im [zweiten Teil](../HomeAutomation_2){:target="_blank"} dieser Serie werd' ich beschreiben, wie genau ich die Funkmodule gebaut habe.
