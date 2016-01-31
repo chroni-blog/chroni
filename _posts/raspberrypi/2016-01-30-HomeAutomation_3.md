@@ -45,9 +45,9 @@ Jetzt fehlt noch der richtige Treiber für den Programmierer. Den findet man <a 
 
 Hat man den Programmierer fertig gehts nun endlich in Richtung Software. Der Code für den ATTiny selbst wird in C geschrieben. Für die, die nicht programmieren können: Kein Problem! Es gibt mehrere Beispielprogramme wo man nur sehr wenig anpassen muss. Der Code kann ganz bequem vom Windows-Rechner über USB an den ATTiny, die Recheneinheit des Moduls, übertragen werden. Die nötige Software dazu heißt <a href="https://www.arduino.cc/">Arduino</a>. Das Programm ist ein Open Source Projekt, welches auf allen gängigen Betriebssystemen (Windows, Linux, Mac OS) läuft. Ich selbst nutze die Version 1.6.0.
 
-Nach kurzer Installation muss man noch die passenden Bibliotheken für den ATTiny installieren. Diese werden in Arduino auch boards genannt. Hierzu läd man sich einfach die aktuellsten <a href="https://code.google.com/archive/p/arduino-tiny/downloads">arduino-tiny boards</a> als ZIP-Archiv runter. Arduino hat unter Windows während der Installation einen Ordner in "Dokumente" erstellt (z.B. C:\Users\\<Benutzername>\Documents\Arduino). Hier kopiert man nun den Ordner "tiny" aus dem ZIP-Archiv in den Ordner "hardware", sodass folgende Ordnerstruktur vorliegt:
+Nach kurzer Installation muss man noch die passenden Bibliotheken für den ATTiny installieren. Diese werden in Arduino auch boards genannt. Hierzu läd man sich einfach die aktuellsten <a href="https://code.google.com/archive/p/arduino-tiny/downloads">arduino-tiny boards</a> als ZIP-Archiv runter. Arduino hat unter Windows während der Installation einen Ordner in "Dokumente" erstellt (z.B. C:\Users\&lt;Benutzername&gt;\Documents\Arduino). Hier kopiert man nun den Ordner "tiny" aus dem ZIP-Archiv in den Ordner "hardware", sodass folgende Ordnerstruktur vorliegt:
 
-> C:\Users\\<Benutzername>\Documents\Arduino\hardware\tiny\avr...
+> C:\Users\&lt;Benutzername&gt;\Documents\Arduino\hardware\tiny\avr...
 
 Hat man die Dateien richtig kopiert sollte man nun nach einem Neustart von Arduino unter Tools->Board->ATtiny84 @ 8Mhz (internal oszillator, BOD disabled) anwählen können.
 
