@@ -17,22 +17,9 @@ image:
 
 In [Teil 1](../HomeAutomation){:target="_blank"} hab ich einen groben Plan und die Übersicht beschrieben, wobei [Teil 2](../HomeAutomation_2){:target="_blank"} den Aufbau der kleinen Sendermodule beschreibt. In diesem Artikel geht es darum wie man nun Code auf die Chips (ATTiny) der Sendermodule bekommt.
 
-## Bilder!!
-<!--
-<figure class="third" style="text-align: center">
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul.jpg">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul_small.jpg">
-	</a>
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul2.jpg">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul2_small.jpg">
-	</a>
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul3.jpg">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/fertiges_modul3_small.jpg">
-	</a>
-	<figcaption>
-		Ein Beispiel eines fertigen Moduls. Hängt bei mir direkt oben in der Ecke an einem Fenster.
-	</figcaption>
-</figure>-->
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/homeautomation/code_to_module.png">
+</figure>
 
 ## USB Programmierer
 
@@ -58,7 +45,8 @@ Jetzt fehlt noch der richtige Treiber für den Programmierer. Den findet man <a 
 
 Hat man den Programmierer fertig gehts nun endlich in Richtung Software. Der Code für den ATTiny selbst wird in C geschrieben. Für die, die nicht programmieren können: Kein Problem! Es gibt mehrere Beispielprogramme wo man nur sehr wenig anpassen muss. Der Code kann ganz bequem vom Windows-Rechner über USB an den ATTiny, die Recheneinheit des Moduls, übertragen werden. Die nötige Software dazu heißt <a href="https://www.arduino.cc/">Arduino</a>. Das Programm ist ein Open Source Projekt, welches auf allen gängigen Betriebssystemen (Windows, Linux, Mac OS) läuft. Ich selbst nutze die Version 1.6.0.
 
-Nach kurzer Installation muss man noch die passenden Bibliotheken für den ATTiny installieren. Diese werden in Arduino auch boards genannt. Hierzu läd man sich einfach die aktuellsten <a href="https://code.google.com/archive/p/arduino-tiny/downloads">arduino-tiny boards</a> als ZIP-Archiv runter. Arduino hat unter Windows während der Installation einen Ordner in "Dokumente" erstellt (z.B. C:\Users\<Benutzername>\Documents\Arduino). Hier kopiert man nun den Ordner "tiny" aus dem ZIP-Archiv in den Ordner "hardware", sodass folgende Ordnerstruktur vorliegt: C:\Users\<Benutzername>\Documents\Arduino\hardware\tiny\avr...
+Nach kurzer Installation muss man noch die passenden Bibliotheken für den ATTiny installieren. Diese werden in Arduino auch boards genannt. Hierzu läd man sich einfach die aktuellsten <a href="https://code.google.com/archive/p/arduino-tiny/downloads">arduino-tiny boards</a> als ZIP-Archiv runter. Arduino hat unter Windows während der Installation einen Ordner in "Dokumente" erstellt (z.B. C:\Users\<Benutzername>\Documents\Arduino). Hier kopiert man nun den Ordner "tiny" aus dem ZIP-Archiv in den Ordner "hardware", sodass folgende Ordnerstruktur vorliegt:
+C:\Users\<Benutzername>\Documents\Arduino\hardware\tiny\avr...
 
 Hat man die Dateien richtig kopiert sollte man nun nach einem Neustart von Arduino unter Tools->Board->ATtiny84 @ 8Mhz (internal oszillator, BOD disabled) anwählen können.
 
@@ -87,20 +75,21 @@ Den Code, den man braucht um Temperatur, Feuchtigkeit und Batteriestand eines Mo
 
 Ich werde hier jetzt nicht auf den kompletten Code und seine Einzelheiten eingehen. Um jedoch den Code so anpassen zu können, dass man mehrere DHT22 Funkmodule bauen kann, werde ich die relevanten Stellen kurz beschreiben. Wenn man Erweiterungen, wie z.B. einen Fensterkontaktsensor MC38 nutzen will, nutzt hier die Kommentarfunktion. Ich helf da gern weiter!
 
-Der erste Teil des Codes bindet zwei wichtige Bibliotheken ein, die man sich herunterladen und in den Ordner "C:\Users\<Benutzername>\Documents\Arduino\libraries" kopieren muss. Die Bibliothek für den <a href="https://github.com/nathanchantrell/Arduino-DHT22">DHT22</a> ermöglicht einfaches Auslesen und Berechnen der Temperatur und Feuchtigkeitsdaten. <a href="https://github.com/jcw/jeelib">Jeelib</a> ist eine Bibliothek mit Funktionen zur effizienten Energienutzung und Nutzung von Ruhephasen. Das Funkmodul soll nämlich fast die ganze Zeit "schlafen" und nur ab und zu ein Update der Daten senden.
 {% highlight c style=friendly %}
 #include <DHT22.h> // https://github.com/nathanchantrell/Arduino-DHT22
 #include <JeeLib.h> // https://github.com/jcw/jeelib
 {% endhighlight %}
 
-Danach wird dem Modul die ID 18, die Netzgruppe 210 und die Frequenz von 433Mhz gesetzt. Wichtig: <b>Jedes Modul braucht eine eigene ID!</b> Am besten man schreibt die ID direkt auf die Rückseite des Moduls und auf eine Liste. Dann behält man auch bei mehreren Modulen den Überblick.
+Der erste Teil des Codes bindet zwei wichtige Bibliotheken ein, die man sich herunterladen und in den Ordner "C:\Users\<Benutzername>\Documents\Arduino\libraries" kopieren muss. Die Bibliothek für den <a href="https://github.com/nathanchantrell/Arduino-DHT22">DHT22</a> ermöglicht einfaches Auslesen und Berechnen der Temperatur und Feuchtigkeitsdaten. <a href="https://github.com/jcw/jeelib">Jeelib</a> ist eine Bibliothek mit Funktionen zur effizienten Energienutzung und Nutzung von Ruhephasen. Das Funkmodul soll nämlich fast die ganze Zeit "schlafen" und nur ab und zu ein Update der Daten senden.
+
 {% highlight c style=friendly %}
 #define myNodeID 18      // RF12 node ID in the range 1-30
 #define network 210      // RF12 Network group
 #define freq RF12_433MHZ // Frequency of RFM12B module
 {% endhighlight %}
 
-Zum Schluss kann man noch die Sendehäufigkeit einstellen. Als Standard sind 60.000 Millisekunden eingestellt. Das würde bedeuten, dass das Modul jede Minute ein Update senden würde. Ich finde jedoch, dass Temperatur und Feuchtigkeit sich nicht so schnell ändern. Eine For-Schleife um die Funktion "loseSomeTime()" verlängert die Intervalle auf z.B. 5 Minuten. Damit sollte man auch nicht alle 6 Monate die Batterien wechseln müssen.
+Danach wird die ID 18, die Netzgruppe 210 und die Frequenz von 433Mhz gesetzt. Die ID könnt ihr zwischen 1-30 frei wählen. Wichtig: <b>Jedes Modul braucht eine eigene ID!</b> Es darf also keine ID doppelt vorkommen. Am besten man schreibt sie sich direkt auf die Rückseite des Moduls und macht eine Liste. Dann behält man auch bei mehreren Modulen den Überblick.
+
 {% highlight c style=friendly %}
 int minutes = 5;
 for (byte i = 0; i < minutes; ++i){
@@ -108,11 +97,13 @@ for (byte i = 0; i < minutes; ++i){
 }
 {% endhighlight %}
 
+Zum Schluss kann man noch die Sendehäufigkeit einstellen. Als Standard sind 60.000 Millisekunden eingestellt. Das würde bedeuten, dass das Modul jede Minute ein Update senden würde. Ich finde jedoch, dass Temperatur und Feuchtigkeit sich nicht so schnell ändern. Eine For-Schleife um die Funktion "loseSomeTime()" verlängert die Intervalle auf z.B. 5 Minuten. Damit sollte man auch nicht alle 6 Monate die Batterien wechseln müssen.
+
 
 Mit ein wenig Programmiererfahrung kann man die Logik und die Möglichkeiten natürlich stark erweitern:
-Lötet man eine Leuchtdiode an das Modul, kann man auch den Status einer LED prüfen (An, aus, blinkend). Damit bekomm ich dann sogar mit wenn meine Waschmaschine im Keller fertig ist.
-Man kann auch zweifarbige (grün/rot) LEDs an das Modul löten um die Verbindung über größere Distanzen (2 Stockwerke) zu testen.
-Schreibt doch eure Ideen/Umsetzungen gern hier rein!
+Lötet man eine Leuchtdiode an das Modul, kann man auch den Status einer LED (an, aus oder blinkend) prüfen. Damit bekomm ich dann sogar mit, wenn der Waschgang meiner Waschmaschine fertig ist.
+Man kann auch zweifarbige (grün/rot) LEDs an das Modul löten um die Funkverbindung über größere Distanzen (2 Stockwerke) zu testen. Grünes Licht für eine gelungene Übertragung, rotes Licht für einen Fehler.
+Schreibt ruhig eure Ideen/Umsetzungen hier in die Kommentare rein!
 
 Damit ist das Einrichten der Sendemodule abgeschlossen. Im nächsten Teil beschreib ich die Einrichtung des Raspberry Pis, einer MySQL Datenbank und der Weboberfläche.
 Ab dann können wir auch endlich die Funkverbindung testen und zuschauen wie die ersten Daten ankommen!
