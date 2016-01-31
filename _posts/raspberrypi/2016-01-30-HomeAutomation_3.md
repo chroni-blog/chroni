@@ -4,7 +4,7 @@ title: "Homeautomation mit dem Raspberry Pi - Teil 3"
 date: 2016-01-30
 modified: 2016-01-30
 author: Christian
-categories: unpublished
+categories: raspberrypi
 share: true
 excerpt: "Temperaturmessung zum Selbstbauen mit dem Raspberry Pi - Programmieren der Funkmodule"
 tags: [raspberrypi, homeautomation]
@@ -27,11 +27,11 @@ Um den ATTiny programmieren zu können, braucht man ein Modul, welches den Code 
 Wie man den USB Programmierer mit dem Clip, und damit direkt mit dem ATTiny, verbindet hab ich hier dargestellt:
 
 <figure class="half" style="text-align: center">
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip_small.png">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip.png">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip.png">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip_small.png">
 	</a>
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip_photo_small.jpg">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip_photo.jpg">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip_photo.jpg">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/ITC_Clip_photo_small.jpg">
 	</a>
 	<figcaption>
 		Links: Verbindungsplan des USB Programmierers mit dem ITC Test Clip (ATTiny).
@@ -45,14 +45,15 @@ Jetzt fehlt noch der richtige Treiber für den Programmierer. Den findet man <a 
 
 Hat man den Programmierer fertig gehts nun endlich in Richtung Software. Der Code für den ATTiny selbst wird in C geschrieben. Für die, die nicht programmieren können: Kein Problem! Es gibt mehrere Beispielprogramme wo man nur sehr wenig anpassen muss. Der Code kann ganz bequem vom Windows-Rechner über USB an den ATTiny, die Recheneinheit des Moduls, übertragen werden. Die nötige Software dazu heißt <a href="https://www.arduino.cc/">Arduino</a>. Das Programm ist ein Open Source Projekt, welches auf allen gängigen Betriebssystemen (Windows, Linux, Mac OS) läuft. Ich selbst nutze die Version 1.6.0.
 
-Nach kurzer Installation muss man noch die passenden Bibliotheken für den ATTiny installieren. Diese werden in Arduino auch boards genannt. Hierzu läd man sich einfach die aktuellsten <a href="https://code.google.com/archive/p/arduino-tiny/downloads">arduino-tiny boards</a> als ZIP-Archiv runter. Arduino hat unter Windows während der Installation einen Ordner in "Dokumente" erstellt (z.B. C:\Users\<Benutzername>\Documents\Arduino). Hier kopiert man nun den Ordner "tiny" aus dem ZIP-Archiv in den Ordner "hardware", sodass folgende Ordnerstruktur vorliegt:
-C:\Users\<Benutzername>\Documents\Arduino\hardware\tiny\avr...
+Nach kurzer Installation muss man noch die passenden Bibliotheken für den ATTiny installieren. Diese werden in Arduino auch boards genannt. Hierzu läd man sich einfach die aktuellsten <a href="https://code.google.com/archive/p/arduino-tiny/downloads">arduino-tiny boards</a> als ZIP-Archiv runter. Arduino hat unter Windows während der Installation einen Ordner in "Dokumente" erstellt (z.B. C:\Users\\<Benutzername>\Documents\Arduino). Hier kopiert man nun den Ordner "tiny" aus dem ZIP-Archiv in den Ordner "hardware", sodass folgende Ordnerstruktur vorliegt:
+
+> C:\Users\\<Benutzername>\Documents\Arduino\hardware\tiny\avr...
 
 Hat man die Dateien richtig kopiert sollte man nun nach einem Neustart von Arduino unter Tools->Board->ATtiny84 @ 8Mhz (internal oszillator, BOD disabled) anwählen können.
 
 <figure style="text-align: center">
-	<a href="{{ site.url }}/images/raspberrypi/homeautomation/arduino_board_selection_small.png">
-		<img src="{{ site.url }}/images/raspberrypi/homeautomation/arduino_board_selection.png">
+	<a href="{{ site.url }}/images/raspberrypi/homeautomation/arduino_board_selection.png">
+		<img src="{{ site.url }}/images/raspberrypi/homeautomation/arduino_board_selection_small.png">
 	</a>
 	<figcaption>
 		Auswahl des richtigen Boards in Arduino.
