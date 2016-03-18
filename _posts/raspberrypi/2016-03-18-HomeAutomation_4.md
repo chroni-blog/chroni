@@ -16,7 +16,9 @@ image:
 ---
 
 In [Teil 1](../HomeAutomation){:target="_blank"} hab ich einen groben Plan und die Übersicht beschrieben, wobei [Teil 2](../HomeAutomation_2){:target="_blank"} den Aufbau der kleinen Sendermodule beschreibt. 
-Der dritte [Teil](../HomeAutomation_3){:target="_blank"} hat gezeigt wie man Code auf das Modul schreibt. Jetzt wird das Empfangsmodul und der Raspberry Pi in Betrieb genommen. Ich nutze hier übrigens einen Raspberry Pi 1. Neuere Versionen sollten aber genauso funktionieren und die selben Schritte enthalten.
+Der dritte [Teil](../HomeAutomation_3){:target="_blank"} hat gezeigt wie man Code auf das Modul schreibt. 
+
+Jetzt wird das Empfangsmodul und der Raspberry Pi in Betrieb genommen. Ich nutze hier übrigens einen Raspberry Pi 1. Neuere Versionen sollten aber genauso funktionieren und die selben Schritte enthalten.
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/homeautomation/install_raspbian_and_communicate.png">
@@ -24,7 +26,7 @@ Der dritte [Teil](../HomeAutomation_3){:target="_blank"} hat gezeigt wie man Cod
 
 ## Raspbian installieren
 
-Im [Mediencenter-Artikel](../Mediencenter){:target="_blank"} wurde das System direkt über ein Image installiert. Jetzt will ich mal eine Alternative über <a href="https://www.raspberrypi.org/downloads/noobs/">NOOBS</a> zeigen. Hier läd man sich entweder NOOBS oder NOOBS Lite herunter. Ich hab hier die Lite Version genommen. Diese entpackt man einfach direkt auf die formatierte und leere SD-Karte. Ab damit in den Raspberry Pi und man kann diesen schon booten lassen!
+Im [Mediencenter-Artikel](../Mediencenter){:target="_blank"} wurde das System direkt über ein Image installiert. Jetzt will ich mal eine Alternative mit <a href="https://www.raspberrypi.org/downloads/noobs/">NOOBS</a> zeigen. Hier läd man sich entweder NOOBS oder NOOBS Lite herunter. Ich hab einfach mal die Lite Version genommen. Diese entpackt man einfach direkt auf die formatierte und leere SD-Karte. Ab damit in den Raspberry Pi und booten lassen!
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/homeautomation/noobs.png">
@@ -34,7 +36,7 @@ Im [Mediencenter-Artikel](../Mediencenter){:target="_blank"} wurde das System di
 </figure>
 
 
-Bei der NOOBS Lite Variante muss das Betriebssystem zuerst noch heruntergeladen werden. Daher braucht man hier auch einen Netzwerkzugang über Ethernet-Kabel. Anfangs braucht man auch noch einen Bildschirm (TV oder Monitor) und eine Tastatur oder eine Maus. Sobald der Pi hochgefahren ist, kann man sein Betriebssystem wählen. Hier wählen wir "Raspbian" aus (Leertaste zum bestätigen) und installieren es (Shortcut: "i"). Ab jetzt kann man sich eine Weile zurücklehnen und dem Installationsbalken zuschauen wie er sich langsam füllt.
+Bei der NOOBS Lite Variante muss das Betriebssystem zuerst noch heruntergeladen werden. Daher braucht man hier einen Netzwerkzugang zum LAN über Ethernet-Kabel. Anfangs braucht man auch noch einen Bildschirm (TV oder Monitor) und eine Tastatur oder eine Maus. Sobald der Pi hochgefahren ist, kann man sein Betriebssystem wählen. Hier wählen wir "Raspbian" aus (mit "Leertaste") und installieren es (Shortcut: "i"). Ab jetzt kann man sich eine Weile zurücklehnen und dem Installationsbalken zuschauen wie er sich langsam füllt.
 
 Nachdem die Installation beendet ist, bootet der Pi in eine vorinstallierte GUI. Diese brauchen wir jedoch nicht. Viel praktischer ist es von einem Rechner, einem Tablett oder sonst einem Gerät per SSH zuzugreifen und alles weitere Remote zu steuern. Zunächst aber die Grundeinstellungen (Tastatur, Sprache, etc.).
 Wir öffnen also ein Terminal unter "Menu" -> "Accessories" -> "Terminal" und starten
@@ -49,8 +51,17 @@ Wir öffnen also ein Terminal unter "Menu" -> "Accessories" -> "Terminal" und st
 	</figcaption>
 </figure>
 
-In den "International Options" richten wir Sprache, Zeitzone und Keyboard Layout ein. Das sollte alles recht selbsterklärend ablaufen. Locale wählt man am besten "de_DE.UTF-8 UTF8". Default lässt man auf "en_GB.UTF-8 UTF8". In "Timezone" wählt man "Europe" und dann "Berlin". Keyboard dann "Generic 105-key (Intl) PC" und bei Keyboard Layout "Other" und "German", "German". Den Rest lass ich immer auf den Standardeinstellungen. Ab jetzt schalten wir auch das Booten in die GUI aus. Unter "Boot Options" wählen wir "Console". Als nächstes beenden wir raspi-config über "Finish" und bestätigen einen Neustart.
+In den "International Options" richten wir Sprache, Zeitzone und Keyboard Layout ein. Das sollte alles recht selbsterklärend ablaufen. 
+
+* In "Locale" wählt man am besten "de_DE.UTF-8 UTF8". Default lässt man auf "en_GB.UTF-8 UTF8".
+* In "Timezone" wählt man "Europe" und dann "Berlin". Keyboard dann "Generic 105-key (Intl) PC".
+* Bei Keyboard Layout "Other" und "German", "German". Den Rest lass ich immer auf den Standardeinstellungen. 
+
+Eine wichtige Einstellung ist das Deaktivieren des Zugriffs über den seriellen Port. Dieser muss für das Modul RFM12Pi frei bleiben. Daher wählen wir unter SerialPort -> No
+
+Ab jetzt schalten wir auch das Booten in die GUI aus. Unter "Boot Options" wählen wir "Console". Als nächstes beenden wir raspi-config über "Finish" und bestätigen einen Neustart.
 Ab jetzt kann man sich mit dem Login "pi" und Passwort "raspberry" einloggen.
+
 
 ## WLAN einrichten (optional)
 
@@ -89,21 +100,34 @@ Beim ersten Zugriff erscheint eine Warnung. Diese bestätigen wir einfach und fa
 
 ## Installieren von Node-RED
 
+
+
+{% highlight bash %}
+sudo nano /boot/config.txt
+{% endhighlight %}
+
+Am Ende der Datei dann folgendes einfügen um den DeviceTree zu deaktivieren.
+
+{% highlight bash %}
+device_tree=
+{% endhighlight %}
+
 Node-RED lässt sich direkt mit folgenden Befehlen installieren:
 {% highlight bash %}
 	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt-get install python-dev python-rpi.gpio
 	sudo apt-get install nodered
 	sudo systemctl enable nodered.service
 {% endhighlight %}
 
 Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem "sudo reboot" prüfen wir ob alles funktioniert hat. Im Browser unter "http://raspberrypi:1880" sollte nun Node-RED starten.
+
 <!-- Noobs Lite herunterladen, auf formatierte SD Karte kopieren.
-- SD Karte in RPi stecken
-- booten
-- Netzwerkkabel (bei Lite) benötigt!
-- Raspbian auswählen (Leertaste), installieren (i), warten 
+ SD Karte in RPi stecken
+ booten
+ Netzwerkkabel (bei Lite) benötigt!
+ Raspbian auswählen (Leertaste), installieren (i), warten 
 
-- Internationational
-
--->
+ Internationational -->
 
