@@ -57,7 +57,7 @@ In den "International Options" richten wir Sprache, Zeitzone und Keyboard Layout
 * In "Timezone" wählt man "Europe" und dann "Berlin". Keyboard dann "Generic 105-key (Intl) PC".
 * Bei Keyboard Layout "Other" und "German", "German". Den Rest lass ich immer auf den Standardeinstellungen. 
 
-Eine wichtige Einstellung ist das Deaktivieren des Zugriffs über den seriellen Port. Dieser muss für das Modul RFM12Pi frei bleiben. Daher wählen wir unter SerialPort -> No
+Eine wichtige Einstellung ist das Deaktivieren des Zugriffs über den seriellen Port. Dieser muss für das Modul RFM12Pi frei bleiben. Daher wählen wir unter "SerialPort" und "No"
 
 Ab jetzt schalten wir auch das Booten in die GUI aus. Unter "Boot Options" wählen wir "Console". Als nächstes beenden wir raspi-config über "Finish" und bestätigen einen Neustart.
 Ab jetzt kann man sich mit dem Login "pi" und Passwort "raspberry" einloggen.
@@ -121,7 +121,7 @@ Node-RED lässt sich direkt mit folgenden Befehlen installieren:
 	sudo systemctl enable nodered.service
 {% endhighlight %}
 
-Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem "sudo reboot" prüfen wir ob alles funktioniert hat. Im Browser unter "http://raspberrypi:1880" sollte nun Node-RED starten.
+Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem "sudo reboot" prüfen wir ob alles funktioniert hat. Im Browser unter <a href="http://raspberrypi:1880">http://raspberrypi:1880</a> sollte nun Node-RED starten.
 
 <!-- Noobs Lite herunterladen, auf formatierte SD Karte kopieren.
  SD Karte in RPi stecken
