@@ -4,7 +4,7 @@ title: "Homeautomation mit dem Raspberry Pi - Teil 4"
 date: 2016-03-18
 modified: 2016-03-18
 author: Christian
-categories: unpublished /*raspberrypi*/
+categories: unpublished
 share: true
 excerpt: "Temperaturmessung zum Selbstbauen mit dem Raspberry Pi - Einrichten des RPis"
 tags: [raspberrypi, homeautomation]
