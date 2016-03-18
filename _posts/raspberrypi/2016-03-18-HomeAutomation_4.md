@@ -93,8 +93,10 @@ Node-RED lässt sich direkt mit folgenden Befehlen installieren:
 {% highlight bash %}
 	sudo apt-get update
 	sudo apt-get install nodered
+	sudo systemctl enable nodered.service
 {% endhighlight %}
 
+Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem "sudo reboot" prüfen wir ob alles funktioniert hat. Im Browser unter "http://raspberrypi:1880" sollte nun Node-RED starten.
 <!-- Noobs Lite herunterladen, auf formatierte SD Karte kopieren.
 - SD Karte in RPi stecken
 - booten
