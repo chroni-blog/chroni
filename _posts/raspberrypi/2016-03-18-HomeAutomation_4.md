@@ -26,6 +26,14 @@ Der dritte [Teil](../HomeAutomation_3){:target="_blank"} hat gezeigt wie man Cod
 
 Im [Mediencenter-Artikel](../Mediencenter){:target="_blank"} wurde das System direkt über ein Image installiert. Jetzt will ich mal eine Alternative über <a href="https://www.raspberrypi.org/downloads/noobs/">NOOBS</a> zeigen. Hier läd man sich entweder NOOBS oder NOOBS Lite herunter. Ich hab hier die Lite Version genommen. Diese entpackt man einfach direkt auf die formatierte und leere SD-Karte. Ab damit in den Raspberry Pi und man kann diesen schon booten lassen!
 
+<figure style="text-align: center">
+	<img src="{{ site.url }}/images/raspberrypi/homeautomation/noobs.png">
+	<figcaption>
+		Auswahlmenü in NOOBS. Hat sich seitdem kaum verändert.
+	</figcaption>
+</figure>
+
+
 Bei der NOOBS Lite Variante muss das Betriebssystem zuerst noch heruntergeladen werden. Daher braucht man hier auch einen Netzwerkzugang über Ethernet-Kabel. Anfangs braucht man auch noch einen Bildschirm (TV oder Monitor) und eine Tastatur oder eine Maus. Sobald der Pi hochgefahren ist, kann man sein Betriebssystem wählen. Hier wählen wir "Raspbian" aus (Leertaste zum bestätigen) und installieren es (Shortcut: "i"). Ab jetzt kann man sich eine Weile zurücklehnen und dem Installationsbalken zuschauen wie er sich langsam füllt.
 <!-- Noobs Lite herunterladen, auf formatierte SD Karte kopieren.
 - SD Karte in RPi stecken
