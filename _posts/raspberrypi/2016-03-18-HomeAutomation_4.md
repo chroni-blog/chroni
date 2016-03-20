@@ -144,6 +144,9 @@ Die Oberfläche ist in drei Bereiche geteilt: Links die Übersicht aller vorhand
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/homeautomation/Node-RED_serial2.png">
+	<figcaption>
+		Einstellungen für das Serial-Modul.
+	</figcaption>
 </figure>
 
 
