@@ -143,7 +143,7 @@ Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probiere
 Die Oberfläche ist in drei Bereiche geteilt: Links die Übersicht aller vorhandenen Module, in der Mitte das Netzwerk (anfangs leer) und rechts Informationen. Dort wählen wir `Debug`, um alle Debug-Messages zu sehen.
 
 <figure style="text-align: center">
-	<img src="{{ site.url }}/images/raspberrypi/homeautomation/Node-RED_serial2.png">
+	<img src="{{ site.url }}/images/raspberrypi/homeautomation/Node-RED_serialmodule.png">
 	<figcaption>
 		Einstellungen für das Serial-Modul.
 	</figcaption>
