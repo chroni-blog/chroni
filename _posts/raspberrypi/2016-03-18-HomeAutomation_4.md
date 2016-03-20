@@ -2,9 +2,9 @@
 layout: article
 title: "Homeautomation mit dem Raspberry Pi - Teil 4"
 date: 2016-03-18
-modified: 2016-03-18
+modified: 2016-03-20
 author: Christian
-categories: unpublished
+categories: raspberrypi
 share: true
 excerpt: "Temperaturmessung zum Selbstbauen mit dem Raspberry Pi - Einrichten des RPis"
 tags: [raspberrypi, homeautomation]
@@ -102,7 +102,7 @@ Um auf den Raspberry Pi aus dem Netzwerk zugreifen zu können brauchen wir einen
 	</figcaption>
 </figure>
 
-Wir nutzen den Hostnamen, da die IP-Adresse durch den DHCP-Dienst vom Router vergeben wird und sich dadurch im Laufe der Zeit auch mal ändern kann. Der Hostname ist per default `raspberrypi`. Beim ersten Zugriff erscheint eine Warnung. Diese bestätigen wir und fahren mit dem gewohnten Login fort. Ab jetzt haben wir Zugriff auf den Raspberry Pi aus dem Netzwerk und können ihn in irgendeinen Schrank ohne Monitor und Tastatur stecken (Netzwerk natürlich trotzdem nötig).
+Wir nutzen den Hostnamen, da die IP-Adresse durch den DHCP-Dienst vom Router vergeben wird und sich dadurch im Laufe der Zeit auch mal ändern kann. Der Hostname ist per default `raspberrypi`. Beim ersten Zugriff mit Putty erscheint eine Warnung. Diese bestätigen wir und fahren mit dem gewohnten Login fort. Ab jetzt haben wir Zugriff auf den Raspberry Pi aus dem Netzwerk und können ihn in irgendeinen Schrank ohne Monitor und Tastatur stecken (Netzwerk natürlich trotzdem nötig).
 
 Der Hostname lässt sich aber auch frei wählen. Ich hab ihn bei mir auf `home` geändert und werde auch diesen Hostnamen ab jetzt hier verwenden. Dafür muss man folgendes tun:
 * `sudo hostname -b <neuer_Hostname>` 
@@ -149,21 +149,20 @@ Die Oberfläche ist in drei Bereiche geteilt: Links die Übersicht aller vorhand
 	</figcaption>
 </figure>
 
-
 Zu erst erstellen wir durch Drag&Drop ein `input -> serial` Modul. Dieses dann auf den SerialPort `/dev/ttyAMA0` mit Baud Rate 9600 setzen. Den Rest lassen wir wie es ist. Mit `Update` bestätigen.
 
 <figure style="text-align: center">
-	<img src="{{ site.url }}/images/raspberrypi/homeautomation/Node-RED_initial_signal.png">
+	<img src="{{ site.url }}/images/raspberrypi/homeautomation/Node-RED_initial_signal.PNG">
 	<figcaption>
-		Das erste Signal in Node-RED ist angekommen. Wer es bis hierher geschafft hat kann sich getrost ein Bier aufmachen und sich freuen!
+		Das erste Signal in Node-RED ist angekommen. Wer es bis hierher geschafft hat kann sich entspannen. Der Rest ist "easy as pi(e)".
 	</figcaption>
 </figure>
 
-Als nächsten hängen wir ein Debug-Modul an und hoffen auf die ersten Zeichen unserer Sendemodule. Je nachdem wie oft das Modul sendet, kann das auch mal ein paar Minuten dauern. Wem das zu lang ist: Batterie raus und wieder rein. Dann sendet es sofort noch mal.
+Als nächstes hängen wir ein Debug-Modul an und hoffen auf die ersten Zeichen unserer Sendemodule. Je nachdem wie oft das Modul sendet, kann das auch mal ein paar Minuten dauern. Wem das zu lang ist: Batterie raus und wieder rein. Dann sendet es sofort.
 
-Kommt wider erwarten kein Signal an, kann das zum einen natürlich am Sendemodul liegen, oder aber auch an der Konfiguration des Raspberry Pi's. Als ersten Tipp kann ich hier das Tool `minicom` empfehlen.
+Kommt wider erwarten kein Signal an, kann das zum einen natürlich am Sendemodul, der Empfangsmodul oder aber auch an der Konfiguration des Raspberry Pis liegen. Als ersten Tipp kann ich hier das Tool `minicom` empfehlen.
 Dieses installiert man mit `sudo apt-get install minicom` und wird mit `minicom -b 9600 -o -D /dev/ttyAMA0` gestartet.
-Sollte man auch damit nicht herausfinden woran der Fehler liegt: Kommantar schreiben! Hab selbst schon viel Zeit verbracht bis alles ging.
+Sollte man auch damit nicht herausfinden woran der Fehler liegt: Kommantar schreiben! Hab selbst schon viel Zeit verbracht bis alles ging. Auch das flashen der Firmware kann wunder bewirken!
 {: .notice-info}
 
 Ist soweit alles am Laufen kann man das Signal dekodieren. Dazu legt man ein `function`-Modul an und verbindet es mit dem Serial-Modul von oben (jetzt `/dev/ttyAMA0`).
