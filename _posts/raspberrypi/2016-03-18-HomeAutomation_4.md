@@ -36,10 +36,10 @@ Im [Mediencenter-Artikel](../Mediencenter){:target="_blank"} wurde das System di
 </figure>
 
 
-Bei der NOOBS Lite Variante muss das Betriebssystem zuerst noch heruntergeladen werden. Daher braucht man hier einen Netzwerkzugang zum LAN über Ethernet-Kabel. Anfangs braucht man auch noch einen Bildschirm (TV oder Monitor) und eine Tastatur oder eine Maus. Sobald der Pi hochgefahren ist, kann man sein Betriebssystem wählen. Hier wählen wir "Raspbian" aus (mit "Leertaste") und installieren es (Shortcut: "i"). Ab jetzt kann man sich eine Weile zurücklehnen und dem Installationsbalken zuschauen wie er sich langsam füllt.
+Bei der NOOBS Lite Variante muss das Betriebssystem zuerst noch heruntergeladen werden. Daher braucht man hier einen Netzwerkzugang zum LAN über Ethernet-Kabel. Anfangs braucht man auch noch einen Bildschirm (TV oder Monitor) und eine Tastatur oder eine Maus. Sobald der Pi hochgefahren ist, kann man sein Betriebssystem wählen. Hier wählen wir "Raspbian" aus (mit `Leertaste`) und installieren es (Shortcut: `i`). Ab jetzt kann man sich eine Weile zurücklehnen und dem Installationsbalken zuschauen wie er sich langsam füllt.
 
 Nachdem die Installation beendet ist, bootet der Pi in eine vorinstallierte GUI. Diese brauchen wir jedoch nicht. Viel praktischer ist es von einem Rechner, einem Tablett oder sonst einem Gerät per SSH zuzugreifen und alles weitere Remote zu steuern. Zunächst aber die Grundeinstellungen (Tastatur, Sprache, etc.).
-Wir öffnen also ein Terminal unter "Menu" -> "Accessories" -> "Terminal" und starten
+Wir öffnen also ein Terminal unter `Menu` -> `Accessories` -> `Terminal` und starten
 {% highlight bash %}
 	sudo raspi-config
 {% endhighlight %}
@@ -51,22 +51,22 @@ Wir öffnen also ein Terminal unter "Menu" -> "Accessories" -> "Terminal" und st
 	</figcaption>
 </figure>
 
-In den "International Options" richten wir Sprache, Zeitzone und Keyboard Layout ein. Das sollte alles recht selbsterklärend ablaufen. 
+In den `International Options` richten wir Sprache, Zeitzone und Keyboard Layout ein. Das sollte alles recht selbsterklärend ablaufen. 
 
-* In "Locale" wählt man am besten "de_DE.UTF-8 UTF8". Default lässt man auf "en_GB.UTF-8 UTF8".
-* In "Timezone" wählt man "Europe" und dann "Berlin". Keyboard dann "Generic 105-key (Intl) PC".
-* Bei Keyboard Layout "Other" und "German", "German". Den Rest lass ich immer auf den Standardeinstellungen. 
+* In `Locale` wählt man am besten `de_DE.UTF-8 UTF8`. Default lässt man auf `en_GB.UTF-8 UTF8`.
+* In `Timezone` wählt man `Europe` und dann `Berlin`. Keyboard dann `Generic 105-key (Intl) PC`.
+* Bei Keyboard Layout `Other` und `German`, `German`. Den Rest einfach auf den Standardeinstellungen lassen.
 
-Eine wichtige Einstellung ist das Deaktivieren des Zugriffs über den seriellen Port. Dieser muss für das Modul RFM12Pi frei bleiben. Daher wählen wir unter "SerialPort" und "No"
+Eine wichtige Einstellung ist das Deaktivieren des Zugriffs über den seriellen Port. Dieser muss für das Modul RFM12Pi frei bleiben. Unter `Advanced Options` daher `Serial` und `No` wählen.
 
-Ab jetzt schalten wir auch das Booten in die GUI aus. Unter "Boot Options" wählen wir "Console". Als nächstes beenden wir raspi-config über "Finish" und bestätigen einen Neustart.
-Ab jetzt kann man sich mit dem Login "pi" und Passwort "raspberry" einloggen.
+Ab jetzt schalten wir auch das Booten in die GUI aus. Unter `Boot Options` wählen wir `Console`. Als nächstes beenden wir raspi-config über `Finish` und bestätigen einen Neustart.
+Ab jetzt kann man sich mit dem Login `pi` und Passwort `raspberry` einloggen.
 
 
 ## WLAN einrichten (optional)
 
 Falls man WLAN nutzen will muss man dieses natürlich vorher einrichten. Ist der Raspberry Pi dauerhaft im LAN per Kabel, kann man diesen Abschnitt überspringen.
-Kennt man seine SSID nicht auswendig, kann man alle erreichbaren Netzwerke mit "sudo iwlist wlan0 scan" anzeigen lassen.
+Kennt man seine SSID nicht auswendig, kann man alle erreichbaren Netzwerke mit `sudo iwlist wlan0 scan` anzeigen lassen.
 
 Zunächst rufen wir die WLAN konfigurations datei in nano auf:
 {% highlight bash %}
@@ -82,46 +82,52 @@ Z.B. so:
 	}
 {% endhighlight %}
 
-Sobald das erledigt ist (Nano: Speichern mit STRG+O, Beenden mit STRG+X), startet man das WLAN-Netzwerk neu mit
+Sobald das erledigt ist (nano: Speichern mit STRG+O, Beenden mit STRG+X), startet man das WLAN-Netzwerk neu mit
 {% highlight bash %}
 	sudo ifdown wlan0
 	sudo ifup wlan0
 {% endhighlight %}
-und prüft mit "ifconfig wlan0" ob eine gültige Netzwerk-Adresse (z.B. 192.168.x.x) zugewiesen wurde.
+und prüft mit `ifconfig wlan0` ob eine gültige Netzwerk-Adresse (z.B. 192.168.x.x) zugewiesen wurde.
 
 
 ## Zugriff auf den Raspberry Pi mit SSH
 
 Um auf den Raspberry Pi aus dem Netzwerk zugreifen zu können brauchen wir einen SSH-Client wie z.B. <a href="http://www.putty.org/">Putty</a>. Hier muss man nur noch den Hostnamen order die IP-Adresse eingeben und eine Sitzung mit "Open" öffnen.
 
-Wir nutzen den Hostnamen, da die IP-Adresse durch den DHCP-Dienst vom Router vergeben wird und sich dadurch ändern kann. Der Hostname ist per default "raspberrypi", lässt sich jedoch in "/etc/hostname" und "/etc/hosts" ändern (jeweils wieder mit nano öffnen, Neustart mit "reboot" nicht vergessen!).
+Wir nutzen den Hostnamen, da die IP-Adresse durch den DHCP-Dienst vom Router vergeben wird und sich dadurch ändern kann. Der Hostname ist per default `raspberrypi`. Beim ersten Zugriff erscheint eine Warnung. Diese bestätigen wir einfach und fahren mit dem gewohnten Login fort. Ab jetzt haben wir Zugriff auf den Raspberry Pi aus dem Netzwerk und können ihn in irgendeinen Schrank ohne Monitor und Tastatur stecken (Netzwerk natürlich trotzdem nötig).
 
-Beim ersten Zugriff erscheint eine Warnung. Diese bestätigen wir einfach und fahren mit dem gewohnten Login fort. Ab jetzt haben wir Zugriff auf den Raspberry Pi aus dem Netzwerk und können ihn in irgendeinen Schrank ohne Monitor und Tastatur stecken (Netzwerk natürlich trotzdem nötig).
+Der Hostname lässt sich frei wählen. Ich hab ihn bei mir auf "home" geändert und werde auch diesen Hostnamen ab jetzt hier verwenden. Dafür muss man folgendes tun:
+* `sudo hostname -b <neuer_Hostname>` 
+* In den beiden Dateien, `/etc/hosts` und `/etc/hostname`, `raspberrypi` mit dem neuen Namen ersetzen.
+* In "/etc/samba/smb.conf" einen Wert wie folgt ändern:
+{% highlight bash %}
+	dns proxy = yes
+{% endhighlight %}
+
+Damit ist dann der Hostname im Netzwerk auffindbar.
+
+
 
 ## Installieren von Node-RED
 
+Node-RED ist ein 
 
-
-{% highlight bash %}
-sudo nano /boot/config.txt
-{% endhighlight %}
-
-Am Ende der Datei dann folgendes einfügen um den DeviceTree zu deaktivieren.
-
-{% highlight bash %}
-device_tree=
-{% endhighlight %}
-
-Node-RED lässt sich direkt mit folgenden Befehlen installieren:
+Zu aller erst machen wir mal ein update des Betriebssystems mit:
 {% highlight bash %}
 	sudo apt-get update
 	sudo apt-get upgrade
+{% endhighlight %}
+
+Das kann schon einmal eine Weile dauern. Hier werden alle Bibliotheken, welche installiert sind, auf den neuesten Stand gebracht.
+
+Node-RED lässt sich direkt mit folgenden Befehlen installieren:
+{% highlight bash %}
 	sudo apt-get install python-dev python-rpi.gpio
 	sudo apt-get install nodered
 	sudo systemctl enable nodered.service
 {% endhighlight %}
 
-Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem "sudo reboot" prüfen wir ob alles funktioniert hat. Im Browser unter <a href="http://raspberrypi:1880">http://raspberrypi:1880</a> sollte nun Node-RED starten.
+Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem `sudo reboot` prüfen wir ob alles funktioniert hat. Im Browser unter <a href="http://home:1880">http://home:1880</a> sollte nun Node-RED starten.
 
 <!-- Noobs Lite herunterladen, auf formatierte SD Karte kopieren.
  SD Karte in RPi stecken
