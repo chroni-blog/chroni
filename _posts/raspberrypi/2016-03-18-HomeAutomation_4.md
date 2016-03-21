@@ -105,6 +105,7 @@ Um auf den Raspberry Pi aus dem Netzwerk zugreifen zu können brauchen wir einen
 Wir nutzen den Hostnamen, da die IP-Adresse durch den DHCP-Dienst vom Router vergeben wird und sich dadurch im Laufe der Zeit auch mal ändern kann. Der Hostname ist per default `raspberrypi`. Beim ersten Zugriff mit Putty erscheint eine Warnung. Diese bestätigen wir und fahren mit dem gewohnten Login fort. Ab jetzt haben wir Zugriff auf den Raspberry Pi aus dem Netzwerk und können ihn in irgendeinen Schrank ohne Monitor und Tastatur stecken (Netzwerk natürlich trotzdem nötig).
 
 Der Hostname lässt sich aber auch frei wählen. Ich hab ihn bei mir auf `home` geändert und werde auch diesen Hostnamen ab jetzt hier verwenden. Dafür muss man folgendes tun:
+
 * `sudo hostname -b <neuer_Hostname>` 
 * In den beiden Dateien, `/etc/hosts` und `/etc/hostname`, `raspberrypi` mit dem neuen Namen ersetzen.
 * In `/etc/samba/smb.conf` einen Wert wie folgt ändern:
@@ -201,6 +202,10 @@ return msg2;
 {% endhighlight %}
 
 Hängt man das Debug-Modul nun an den Ausgang rechts des function-Moduls (hier `parse` genannt), sollten die zukünftigen Signale richtig interpretiert werden.
+Ich habe hier noch in den outString den Text "DHT22" eingefügt. Da meine Module untereinander unterschiedliche Dinge können, muss ich zwischen ihnen unterscheiden. Das mache ich anhand der IDs und weise demnacht andere Modulnamen zu (DHT22, DHT22_MC38, etc.). Natürlich könnte man das auch direkt in das Signal auf dem ATtiny packen. Werd ich in Zukunft irgendwann mal machen.
+
+Hat man übrigens den Hostnamen des Pis geändert nachdem man schon ein Netzwerk mit Node-RED erstellt hat (so wie ich), wird ein neues leeres Netzwerk angezeigt. Um das vorherige Netzwerk wieder zu nutzen, kann man in `$home/.node-red/settings.js` den folgenden Wert setzen: `flowfile: 'flows_raspberrypi.json'`. Damit wird unabhängig vom Hostnamen ein fester Dateiname für das Netzwerk verwendet.
+{: .notice-info}
 
 <figure style="text-align: center">
 	<img src="{{ site.url }}/images/raspberrypi/homeautomation/Node-RED_interpreted_signal.png">
