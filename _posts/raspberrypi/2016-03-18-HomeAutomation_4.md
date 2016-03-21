@@ -24,6 +24,10 @@ Jetzt wird das Empfangsmodul und der Raspberry Pi in Betrieb genommen. Ich nutze
 	<img src="{{ site.url }}/images/raspberrypi/homeautomation/install_raspbian_and_communicate.png">
 </figure>
 
+
+
+
+
 ## Raspbian installieren
 
 Im [Mediencenter-Artikel](../Mediencenter){:target="_blank"} wurde das System direkt über ein Image installiert. Jetzt will ich mal eine Alternative mit <a href="https://www.raspberrypi.org/downloads/noobs/">NOOBS</a> zeigen. Hier läd man sich entweder NOOBS oder NOOBS Lite herunter. Ich hab einfach mal die Lite Version genommen. Diese entpackt man einfach direkt auf die formatierte und leere SD-Karte. Ab damit in den Raspberry Pi und booten lassen!
@@ -63,6 +67,14 @@ Ab jetzt schalten wir auch das Booten in die GUI aus. Also wählen wir unter `Bo
 Zu guter Letzt beenden wir raspi-config über `Finish` und bestätigen einen Neustart.
 Ab jetzt müssen wir uns mit dem Login `pi` und Passwort `raspberry` einloggen.
 
+Am besten gleich aus Sicherheitsgründen mit `passwd` ein anderes Passwort vergeben!
+{: .notice-info}
+
+
+
+
+
+
 
 ## WLAN einrichten (optional)
 
@@ -91,6 +103,10 @@ Sobald das erledigt ist (nano: Speichern mit STRG+O, Beenden mit STRG+X), starte
 und prüft mit `ifconfig wlan0` ob eine gültige Netzwerk-Adresse (z.B. 192.168.x.x) zugewiesen wurde.
 
 
+
+
+
+
 ## Zugriff auf den Raspberry Pi mit SSH
 
 Um auf den Raspberry Pi aus dem Netzwerk zugreifen zu können brauchen wir einen SSH-Client wie z.B. <a href="http://www.putty.org/">Putty</a>. Hat man diesen heruntergeladen und gestartet muss man nur noch den Hostnamen oder die IP-Adresse eingeben und eine Sitzung mit `Open` öffnen.
@@ -104,6 +120,10 @@ Um auf den Raspberry Pi aus dem Netzwerk zugreifen zu können brauchen wir einen
 
 Wir nutzen den Hostnamen, da die IP-Adresse durch den DHCP-Dienst vom Router vergeben wird und sich dadurch im Laufe der Zeit auch mal ändern kann. Der Hostname ist per default `raspberrypi`. Beim ersten Zugriff mit Putty erscheint eine Warnung. Diese bestätigen wir und fahren mit dem gewohnten Login fort. Ab jetzt haben wir Zugriff auf den Raspberry Pi aus dem Netzwerk und können ihn in irgendeinen Schrank ohne Monitor und Tastatur stecken (Netzwerk natürlich trotzdem nötig).
 
+
+
+#### Eigenen Hostnamen setzen
+
 Der Hostname lässt sich aber auch frei wählen. Ich hab ihn bei mir auf `home` geändert und werde auch diesen Hostnamen ab jetzt hier verwenden. Dafür muss man folgendes tun:
 
 * `sudo hostname -b <neuer_Hostname>` 
@@ -114,6 +134,10 @@ Der Hostname lässt sich aber auch frei wählen. Ich hab ihn bei mir auf `home` 
 {% endhighlight %}
 
 Damit ist dann der Hostname im Netzwerk auffindbar.
+
+
+
+
 
 
 
@@ -149,6 +173,9 @@ Die Oberfläche ist in drei Bereiche geteilt: Links die Übersicht aller vorhand
 		Einstellungen für das Serial-Modul.
 	</figcaption>
 </figure>
+
+
+#### Ein Node-RED Netzwerk erstellen
 
 Zu erst erstellen wir durch Drag&Drop ein `input -> serial` Modul. Dieses dann auf den SerialPort `/dev/ttyAMA0` mit Baud Rate 9600 setzen. Den Rest lassen wir wie es ist. Mit `Update` bestätigen.
 
