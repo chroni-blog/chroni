@@ -163,7 +163,7 @@ Node-RED lässt sich direkt mit folgenden Befehlen (wenn man `Raspbian Jessie` v
 	sudo systemctl enable nodered.service
 {% endhighlight %}
 
-Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem `sudo reboot` prüfen wir ob alles funktioniert hat. Im Browser unter <a href="http://home:1880">http://home:1880</a> sollte nun Node-RED starten.
+Der letzte Befehl startet Node-RED automatisch nach einem Neustart. Das probieren wir auch am besten gleich aus. Nach einem `sudo reboot` prüfen wir ob alles funktioniert hat. Hat der Pi den Hostnamen `home`wie bei mir, kann man im Browser unter <a href="http://home:1880">http://home:1880</a> die Node-RED Oberfläche starten.
 
 Die Oberfläche ist in drei Bereiche geteilt: Links die Übersicht aller vorhandenen Module, in der Mitte das Netzwerk (anfangs leer) und rechts Informationen. Dort wählen wir `Debug`, um alle Debug-Messages zu sehen.
 
