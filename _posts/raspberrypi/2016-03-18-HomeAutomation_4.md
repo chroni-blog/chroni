@@ -28,7 +28,7 @@ Jetzt wird das Empfangsmodul und der Raspberry Pi in Betrieb genommen. Ich nutze
 
 <figure class="half" style="text-align: center">
     <a href="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger1.jpg">
-        <img src="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger1_small.png">
+        <img src="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger1_small.jpg">
     </a>
     <a href="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger2.jpg">
         <img src="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger2_small.jpg">
