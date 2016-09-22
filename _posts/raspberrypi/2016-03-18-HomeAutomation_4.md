@@ -26,6 +26,17 @@ Jetzt wird das Empfangsmodul und der Raspberry Pi in Betrieb genommen. Ich nutze
 
 
 
+<figure class="half" style="text-align: center">
+    <a href="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger1.jpg">
+        <img src="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger1_small.png">
+    </a>
+    <a href="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger2.jpg">
+        <img src="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger2_small.jpg">
+    </a>
+    <figcaption>
+        So sieht der Empfänger auf dem Raspberry aus.
+    </figcaption>
+</figure>
 
 
 ## Raspbian installieren
@@ -179,6 +190,8 @@ Mit einem Doppelklick auf das erstellte Modul und einem Klick auf das Editierico
 		Einstellungen für das Serial-Modul.
 	</figcaption>
 </figure>
+
+
 
 Hier stellen wir den SerialPort auf `/dev/ttyAMA0` mit einer Baud Rate von 9600. Den Rest lassen wir wie es ist. Mit `Update` bestätigen.
 Als nächstes hängen wir ein Debug-Modul an und hoffen auf die ersten Zeichen unserer Sendemodule. Je nachdem wie oft das Modul sendet, kann das auch mal ein paar Minuten dauern. Wem das zu lang ist: Batterie raus und wieder rein. Dann sendet es sofort.
