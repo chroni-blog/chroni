@@ -25,7 +25,7 @@ Jetzt wird das Empfangsmodul und der Raspberry Pi in Betrieb genommen. Ich nutze
 </figure>
 
 
-
+<!--
 <figure class="half" style="text-align: center">
     <a href="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger1.jpg">
         <img src="{{ site.url }}/images/raspberrypi/homeautomation/empfaenger1_small.jpg">
@@ -37,7 +37,7 @@ Jetzt wird das Empfangsmodul und der Raspberry Pi in Betrieb genommen. Ich nutze
         So sieht der Empfänger auf dem Raspberry aus.
     </figcaption>
 </figure>
-
+-->
 
 ## Raspbian installieren
 
